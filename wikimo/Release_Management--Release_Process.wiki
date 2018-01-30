@@ -33,14 +33,15 @@ Release day activities/checklist can be found on [[https://wiki.mozilla.org/Rele
 Our release schedule is meant to be flexible and we may occasionally modify the length of a cycle to be shorter or longer than the 6-8 week cycle mentioned. Check the [https://wiki.mozilla.org/RapidRelease/Calendar '''Rapid Release Calendar'''] to stay updated with the upcoming branch dates.
 
 == All about Flags  ==
+
+
+[[File:Status.png|400px|right]]
 * '''tracking-firefoxN''' : A multi-state flag that currently has two values which show whether a  bug is being investigated for possible resolution in the FirefoxN release . Bugs marked tracking-firefoxN are bugs that must be resolved  one way or another before a particular release ships. [https://wiki.mozilla.org/Firefox/Drivers Release drivers] will track and shepherd the bug until it is determined the bug no longer impacts the release
 ** ?  This bug has been nominated to block FirefoxN
 ** - (minus) - Drivers have determined this bug will not block FirefoxN
 ** + (plus) -  Drivers have determined this bug will block the FirefoxN release or may be tracked after the FirefoxN release
 
 Refer to [https://blog.mozilla.org/channels/2011/06/01/more-details-about-how-to-use-the-tracking-firefox-bugzilla-flag/ these guidelines] on setting the tracking flag
-
-[[File:status_flag.jpg|300px|right]]
 
 * '''status-firefoxN''' : A multi-state flag that currently has seven values which represent the  status of the bug with respect to the FirefoxN
 ** unaffected - This bug does not affect FirefoxN
@@ -50,6 +51,7 @@ Refer to [https://blog.mozilla.org/channels/2011/06/01/more-details-about-how-to
 ** verified - This bug is fixed and verified in FirefoxN
 ** disabled - This feature is disabled in FirefoxN
 ** verified disabled - Disabling the feature is verified in FirefoxN
+<div style="clear: right"></div>
 
 
 * '''Approval Flags''' : Set on the attachment of a bug
