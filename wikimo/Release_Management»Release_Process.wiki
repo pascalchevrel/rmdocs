@@ -1,0 +1,145 @@
+== Channels/Repositories ==
+* '''Firefox Release/[https://hg.mozilla.org/releases/mozilla-release mozilla-release]''' : The official release of Firefox
+* '''Firefox Beta/[https://hg.mozilla.org/releases/mozilla-beta mozilla-beta]''' : Testing the next version of Firefox before it becomes the official release
+* '''Firefox Nightly/[https://hg.mozilla.org/mozilla-central mozilla-central]''' : Nightly releases that contains experimental features (covered regularly on Twitter from [https://twitter.com/FirefoxNightly @FirefoxNightly] [https://twitter.com/FennecNightly @FennecNightly])
+* '''Firefox ESR/[https://hg.mozilla.org/releases/mozilla-esr{{ESR_CURRENT}}/ mozilla-esr{{ESR_CURRENT}}]''' : Official Desktop releases for Organizations. Check [https://wiki.mozilla.org/Release_Management/ESR_Landing_Process wiki] for detailed information
+
+See the [https://wiki.mozilla.org/Tree_Rules Tree Rules] before pushing patch into any repository
+
+[[File:Maintrepositories.png|center]]
+
+== Download Links for Firefox for Desktop==
+Get the latest version of Firefox for Windows, macOS or Linux across all channels and check the Release notes for new features, enhancements or changes
+*[http://www.mozilla.org/firefox/ Firefox Release]
+*[http://www.mozilla.org/firefox/beta/ Firefox Beta]
+*[http://www.mozilla.org/firefox/developer/ Firefox Dev Edition]
+*[http://www.mozilla.org/firefox/nightly/ Firefox Nightly]
+*[http://www.mozilla.org/firefox/organizations/ Firefox ESR (Extended Support Release)]
+
+== Download Links for Firefox for Android ==
+You can get the latest release, beta and Nightly versions of Firefox for Android on the Google Play Store.
+* [https://play.google.com/store/apps/details?id=org.mozilla.firefox Firefox for Android ]
+* [https://play.google.com/store/apps/details?id=org.mozilla.firefox_beta Firefox Beta for Android ]
+* [https://play.google.com/store/apps/details?id=org.mozilla.fennec_aurora Firefox Nightly for Android ]
+
+== Release timeline ==
+* Firefox is released at intervals of six to eight weeks (not counting urgent patch updates), meaning that every six to eight weeks there will be a new version of Firefox Release.
+* Firefox Beta is released every week leaving us with six to eight betas every cycle unless we have chemspills leading to additional betas
+* Firefox Nightly is released every 12 hours with all the changes landed on mozilla-central
+
+Release day activities/checklist can be found on [[https://wiki.mozilla.org/Release_Management/Release_Day Release Day wiki]]
+
+Our release schedule is meant to be flexible and we may occasionally modify the length of a cycle to be shorter or longer than the 6-8 week cycle mentioned. Check the [https://wiki.mozilla.org/RapidRelease/Calendar '''Rapid Release Calendar'''] to stay updated with the upcoming branch dates.
+
+== All about Flags  ==
+* '''tracking-firefoxN''' : A multi-state flag that currently has two values which show whether a  bug is being investigated for possible resolution in the FirefoxN release . Bugs marked tracking-firefoxN are bugs that must be resolved  one way or another before a particular release ships. [https://wiki.mozilla.org/Firefox/Drivers Release drivers] will track and shepherd the bug until it is determined the bug no longer impacts the release
+** ?  This bug has been nominated to block FirefoxN
+** - (minus) - Drivers have determined this bug will not block FirefoxN
+** + (plus) -  Drivers have determined this bug will block the FirefoxN release or may be tracked after the FirefoxN release
+
+Refer to [https://blog.mozilla.org/channels/2011/06/01/more-details-about-how-to-use-the-tracking-firefox-bugzilla-flag/ these guidelines] on setting the tracking flag
+
+[[File:status_flag.jpg|300px|right]]
+
+* '''status-firefoxN''' : A multi-state flag that currently has seven values which represent the  status of the bug with respect to the FirefoxN
+** unaffected - This bug does not affect FirefoxN
+** affected - This bug affects FirefoxN
+** fixed - This bug is fixed in FirefoxN
+** wontfix - A fix for this bug will not be accepted in FirefoxN
+** verified - This bug is fixed and verified in FirefoxN
+** disabled - This feature is disabled in FirefoxN
+** verified disabled - Disabling the feature is verified in FirefoxN
+
+
+* '''Approval Flags''' : Set on the attachment of a bug
+** All patches landing on mozilla-beta/release/esr branch must have these nominated by setting a " ? ".Please make sure to fill the populated list of questions [Approval Request Comment] that come up on the attachment . This helps Release management understand the user impact & with risk-reward analysis before we grant/deny approval. If this form is left incomplete it will be sent back to you for completion.
+
+[[File:Approval_request_flags.jpg|750px|centre]]
+
+== The Process ==
+
+
+1) If you think a bug needs to be addressed in a release :
+* Set the '''tracking-firefoxN : ?''' nomination on a bug for with helpful justification and keeping these [https://blog.mozilla.org/channels/2011/06/01/more-details-about-how-to-use-the-tracking-firefox-bugzilla-flag/ guidelines] in mind
+* Mark the corresponding status flag as affected if the patch is still being worked on
+* Once the patch is ready set the approval flag appropriately depending on which branches are affected
+
+2) Members of Release Management go through all the bugs nominated for tracking & if in agreement that this bug needs to be investigated in that release we will go ahead and set '''tracking-firefoxN : +''' . Once we track a bug for a particular release we will make sure to follow-up on the progress or help with any road blockers till you have a patch nominated for approval
+
+'''Note :''' Bugs denied for tracking-firefoxN are still important .It merely means based on the information we have now,we do not feel the bug would prevent us from shipping a release. If new information comes to light, you need help getting more data before you can make the case for us to track, or you disagree with our assessment feel free to renominate again with additional justification
+
+[[File:Land patch - go home.jpg|300px|right]]
+
+
+
+3) Once you nominated a patch with '''approval-mozilla-beta/release : ?''' we will evaluate the information given in the attachment request we may either approve/deny/request more information. Once you get an approval , i.e '''approval-mozilla-beta/release : +''' , please go ahead with landing on the corresponding branch and mark status-firefoxN flag to "fixed" , making sure [https://treeherder.mozilla.org/ Treeherder] is green
+
+
+
+'''Also see''':
+* [[Release_Management/Tracking_rules|Tracking Rules]]
+* [[Release_Management/Uplift_rules|Uplift Rules]]
+
+=== Security Bug Approval Process ===
+* In case you are working on a security bug please <B> make sure to read</B> the [https://wiki.mozilla.org/Security/Bug_Approval_Process <B>wiki</B>] and follow the outlined approval process before checking in the patch.
+
+== Crashes ==
+* '''about:crashes''' gives you links to your crashes
+* You can obtain crash-data across any channel for all Firefox products by customizing the needed reports from [https://crash-stats.mozilla.com/products/Firefox this dashboard]
+* If at all, the information on the dash board does not suffice for the crasher you are investigating & say may be you need access to raw data, access to additional crash-dumps or data request etc you can always file a Bug and forward the request to socorro team as a start to help you.
+
+== ESR ==
+* See [[Release Management/ESR Landing Process]]
+
+== Queries ==
+Following are the queries that Release management goes through almost day-day to make sure we are tracking the right blockers,getting them fixed and make sure these bugs get fixed (heard of nag emails yet :) ? )  for a particular Firefox release
+* Bugs tracking for release
+** [https://bugzilla.mozilla.org/buglist.cgi?type0-1-0=notequals;type0-5-0=notequals;value0-5-0=disabled;value0-4-0=verified;list_id=4754086;field0-1-0=cf_status_firefox{{BETA_VERSION}};field0-0-0=cf_tracking_firefox{{BETA_VERSION}};value0-3-0=unaffected;value0-6-0=verified%20disabled;value0-1-0=wontfix;field0-5-0=cf_status_firefox{{BETA_VERSION}};type0-0-0=equals;value0-0-0=%2B;type0-2-0=notequals;field0-3-0=cf_status_firefox{{BETA_VERSION}};type0-4-0=notequals;columnlist=bug_severity%2Cpriority%2Cop_sys%2Cassigned_to%2Cbug_status%2Cresolution%2Cshort_desc%2Cchangeddate;field0-6-0=cf_status_firefox{{BETA_VERSION}};query_format=advanced;value0-2-0=fixed;type0-3-0=notequals;field0-2-0=cf_status_firefox{{BETA_VERSION}};field0-4-0=cf_status_firefox{{BETA_VERSION}};type0-6-0=notequals Bugs] tracking Firefox Beta {{BETA_VERSION}}
+
+* Bugs nominated for approval
+** [https://bugzilla.mozilla.org/buglist.cgi?cmdtype=dorem&remaction=run&namedcmd=approval-beta%3F&sharer_id=272375&list_id=6606224 Beta approvals]
+
+* Top-crash list
+** [https://bugzilla.mozilla.org/buglist.cgi?o5=notequals&keywords=topcrash%2C%20&keywords_type=allwords&list_id=6606248&v11=unaffected&j10=OR&o14=notequals&f13=OP&o2=equals&j16=OR&v5=wontfix&f12=CP&j4=OR&f14=cf_status_firefox{{BETA_VERSION}}&o17=notequals&o20=notequals&v2=%2B&f21=CP&f10=OP&f19=OP&f22=CP&f1=OP&f20=cf_status_firefox{{BETA_VERSION}}&j13=OR&f8=cf_status_firefox{{BETA_VERSION}}&f0=OP&j19=OR&o11=notequals&f18=CP&columnlist=bug_severity%2Cpriority%2Cop_sys%2Cassigned_to%2Cbug_status%2Cresolution%2Cshort_desc%2Cchangeddate&f15=CP&f9=CP&j7=OR&v20=verified%20disabled&f4=OP&query_format=advanced&j1=OR&v17=disabled&f3=CP&f2=cf_tracking_firefox{{BETA_VERSION}}&f11=cf_status_firefox{{BETA_VERSION}}&f5=cf_status_firefox{{BETA_VERSION}}&f17=cf_status_firefox{{BETA_VERSION}}&v8=fixed&v14=verified&f6=CP&f7=OP&o8=notequals&f16=OP Beta top-crashers]
+
+=== Nag Emails ===
+* To ensure that these tracking Bugs get the needed attention and keeping in mind the deadlines in case you forget Release Management sends you friendly nag emails for these blocker email's to make sure these get the needed priority and attention as they are are considered potential blockers for release
+* If you are working on a tracked bug you may have seen emails with Subject similar to : '''''RelMan Attention Needed: Monday May 20 -- Daily Release Tracking Alert''''' for bugs that are actively not being worked on or if any of the bugs may have a '''needsinfo''' on you and is blocking progress
+* This has also been very helpful to avoid any communication gap between Release drivers and developers and help us be on the same page and setting the right expectation about a tracked bugs progress and resolution
+
+== Release notes for Desktop/Mobile ==
+[https://wiki.mozilla.org/Release_Management/Relnotes_rules Release Notes page] describes the release notes process, relnote-firefox tracking flag, styling guide and other relevant details.
+
+Please check the [https://wiki.mozilla.org/Release_Management/Release_Notes_Process#What.27s_New.2FKnown_Issues_Section_Candidates wiki] for the process we have currently to construct release notes . Below is the link to all the existing release notes across all channels .
+
+* '''Firefox-Release''' :
+** [https://www.mozilla.org/en-US/firefox/{{CURRENT_VERSION}}.0/releasenotes/ Desktop Release notes]
+** [https://www.mozilla.org/en-US/mobile/{{CURRENT_VERSION}}.0/releasenotes/ Mobile Release notes]
+
+* '''Firefox-Beta''' :
+** [http://www.mozilla.org/en-US/firefox/{{BETA_VERSION}}.0beta/releasenotes/ Desktop Beta notes]
+** [http://www.mozilla.org/en-US/mobile/{{BETA_VERSION}}.0beta/releasenotes/ Mobile Beta notes]
+
+* '''Firefox-Nightly''' :
+** [https://www.mozilla.org/en-US/firefox/nightly/notes/ Desktop Nightly notes]
+
+== See [https://wiki.mozilla.org/Release_Management/Release_Process/FAQ FAQ] ==
+
+== Getting help ==
+* IRC:
+** irc.mozilla.org
+** Some channels:#introduction, #relman, #release-drivers, #developers, #planning, #mobile
+** [https://wiki.mozilla.org/IRC More info on irc]
+* Mailing List:
+For any release related issues :
+** release-mgmt@mozilla.com
+** release-drivers@mozilla.com
+** enterprise@mozilla.org(enterprise related issues)
+* Google groups :
+** mozilla.dev.platform
+** mozilla.dev.planning
+** mozilla.announce
+* Be part of the Channel Meeting if you are interested in day-day updates for desktop/mobile releases
+**[https://wiki.mozilla.org/Firefox/Channels/Meetings More info on channel meeting]
+
+[[Category:Release Management]]
