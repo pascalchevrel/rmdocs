@@ -57,7 +57,7 @@ Refer to [https://blog.mozilla.org/channels/2011/06/01/more-details-about-how-to
 * '''Approval Flags''' : Set on the attachment of a bug
 ** All patches landing on mozilla-beta/release/esr branch must have these nominated by setting a " ? ".Please make sure to fill the populated list of questions [Approval Request Comment] that come up on the attachment . This helps Release management understand the user impact & with risk-reward analysis before we grant/deny approval. If this form is left incomplete it will be sent back to you for completion.
 
-[[File:Approval_request_flags.jpg|750px|centre]]
+[[File:ApprovalRequest.png|750px|centre]]
 
 == The Process ==
 
