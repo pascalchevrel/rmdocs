@@ -1,17 +1,11 @@
-__NOTOC__
 __NOEDITSECTION__
-<div style="-moz-border-radius: 10px;width:38%;background-color:#FFF;display:inline-block;margin:1.5%;border: 1px solid #00539F;text-align:center;padding:2.5%;padding-top:0px;margin-left:3%">[[File:FF-wordmark-logo.png|250px|link=Release_Management/Firefox_Browser]]
-===Quick Links===
+[[File:All-firefox-logos.png|500px|center]]
+=Quick Links=
 * [[RapidRelease/Calendar | Release Calendar ]]
 * The [[RapidRelease | Release Process]] explained
 * [[Releases | Current and Past Releases]]
 * [https://www.google.com/calendar/embed?src=mozilla.com_2d37383433353432352d3939%40resource.calendar.google.com Firefox Merge/Release Calendar]
 * [https://www.google.com/calendar/embed?src=mozilla.com_dbq84anr9i8tcnmhabatstv5co%40group.calendar.google.com Release  Calendar] (Details)
-</div>
-
-<div style="clear:both">
-</div>
-
 
 =About Release Management=
 The Release Management team keeps the release process on track for upcoming releases. We focus on release quality, security, and stability. As release managers follow specific features and individual bugs, we work with developers, engineering managers, product managers, UI/UX teams, QE, and release engineering, doing whatever it takes to coordinate the many details in the creation of a new version of Firefox.  We aim to get features & fixes landed in time for proper evaluation. Our goal is to ship the most stable & excellent product possible for Firefox Desktop & Mobile for our users.
@@ -25,19 +19,26 @@ Developers and anyone in the community can help by proposing bugs for tracking, 
 The relman team maintains several tools. You can help by fixing bugs!
 * Our [https://github.com/mozilla/relman-auto-nag automatic nag tool] to send email to Firefox developers about their bugs
 * [https://bugzilla.mozilla.org/buglist.cgi?list_id=12453401&resolution=---&classification=Other&query_format=advanced&component=Ship%20It&product=Release%20Engineering ship-it] - interface to start builds of Firefox, Firefox for Android and Thunderbird
-* Google Play scripts to [https://hg.mozilla.org/build/mozharness/file/tip/scripts/push_apk.py upload APK] and [https://hg.mozilla.org/build/mozharness/file/tip/scripts/update_apk_description.py manage translations]
+* Google Play scripts to [https://github.com/mozilla-releng/mozapkpublisher/ upload the APK and manage translations]
 
 = Team info =
 * [[Release_Management/Team_members]] List of release managers, past and present
-* [[Release_Management/Quarterly_Goals]] for the relman team
 
 ==Communication Channels==
 ;E-mail
 * Team distribution list: release-mgmt at mozilla dot com
+
 ;IRC
 * [irc://irc.mozilla.org/%23release-drivers #release-drivers] - Firefox Desktop and Android release drivers. Good way to contact release managers, ask questions, escalate issues.
+
 ;Twitter
-* [https://twitter.com/MozillaReleases @MozillaReleases]
+* [https://twitter.com/MozillaReleases @MozillaReleases] Release Management team communication channel
+* [https://twitter.com/FirefoxNightly @FirefoxNightly]  Firefox Nightly communication and feeback channel
+
+;Blog
+* [http://release.mozilla.org/ Release Management Blog]
+*
+;Visio
 * [https://v.mozilla.com/flex.html?roomdirect.html&key=EXysadF68Dac Release Coordination Vidyo Link]
 
 ==Meetings==
@@ -48,8 +49,6 @@ We host and are a part of number of meetings.  You can't miss us at channel meet
 **This meeting takes place twice a week on Tuesday at 10 AM PT and Thursday at 10 AM PT in Release Coordination Vidyo Room
 ** [https://wiki.mozilla.org/Firefox/Channels/Meetings Channel Meeting Wiki Archive]
 * Release Sign-offs
-**This meeting happens a week before we are ready to ship at the Thursday Channel Meeting to address any outstanding concerns around the release
-** [https://wiki.mozilla.org/Releases/Firefox_{{Version/Gecko/release/current}}/Final_Signoffs Release sign-off meeting]
 * Release Post Mortem
 **This meetings happens at the Tuesday Channel Meeting two weeks after a release
 ** [https://wiki.mozilla.org/Releases/Post-mortems/Firefox_{{Version/Gecko/release/current}}.0 Postmortem Schedule & Agenda]
@@ -68,10 +67,9 @@ To add the basic release calendar to your Google calendar:
 When the release schedule is adjusted for any reason, we need to ensure that https://calendar.google.com/calendar/embed?src=bW96aWxsYS5jb21fZGJxODRhbnI5aTh0Y25taGFiYXRzdHY1Y29AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ is updated to reflect this.  If the calendar itself is updated, there is a link to it on this page (at the top) as well as on [[RapidRelease/Calendar]]
 
 ==Team Resources==
-Each version of Firefox is followed by a release manager who owns it from start to release. This way, Nightly, Aurora, Beta, ESR, and Release channels have someone dedicated to getting all the pieces put together correctly.
+Each version of Firefox is followed by a release manager who owns it from start to release. This way, Nightly, Beta, ESR, and Release channels have someone dedicated to getting all the pieces put together correctly.
 * [[Release_Management/Release_owners]]
 * [[Release_Management/Nightly|Nightly]] Tasks for relman during Nightly
-* [[Release_Management/Aurora_Landing_Process|Aurora Landing Process]] What we do during the Aurora cycle
 * [[Release_Management/Beta_Release_Checklist|Beta Release Checklist]]
 ** Excel based checklist: [https://drive.google.com/open?id=1JjYHkyhSyACnu-UEL-a2PUbkHp1fcncDcdot-vs4d_E Beta 44 Release Checklist]
 * [https://wiki.mozilla.org/Release_Management/ESR_Landing_Process ESR Triage]
@@ -82,11 +80,9 @@ Each version of Firefox is followed by a release manager who owns it from start 
 * [https://drive.google.com/open?id=1x27I7hAmWDWiqk3o3YC3fklhE3N59bdgHCQHF5p_lkU GoFaster release and relnote process]
 
 ;Dashboards
-* [http://people.mozilla.org/~klahnakoski/platform-history/release-history.html# Aurora, Beta Uplifts Dashboard]
 * [[Release_Management/Review_Fixes_Worth_Uplifting|Review important bug fixes landed in Nightly for uplift to Aurora, Beta, ESR]]
 * [http://mozilla.github.io/releasehealth/?channel=release Release channel Blockers and Regressions]
 * [http://mozilla.github.io/releasehealth/?channel=beta Beta channel Blockers and Regressions]
-* [http://mozilla.github.io/releasehealth/?channel=aurora Aurora channel Blockers and Regressions]
 * [http://mozilla.github.io/releasehealth/?channel=nightly Nightly channel Blockers and Regressions]
 * [https://sql.telemetry.mozilla.org/dashboard/release-management-dashboard Stability dashboard]
 * [https://mozilla.github.io/stab-crashes Stability deep-dive scripts]
@@ -103,16 +99,10 @@ Each version of Firefox is followed by a release manager who owns it from start 
 
 ;Tools
 * [http://ship-it.mozilla.org/ Ship-it UI] - [https://mana.mozilla.org/wiki/pages/viewpage.action?pageId=30769829 Mozilla VPN]
+* [https://product-details.mozilla.org/1.0/ Product-Details], a public JSON API about Firefox and Thunderbird releases
 * Our [[Release_Management/Release_Survey| Release Survey]]
 * [https://wiki.mozilla.org/User:Akeybl/Release_Dash Firefox Triage Dashboard]
 * [[Release_Management/Onboarding | Onboarding]]
 
-;B2G pages
-* [https://wiki.mozilla.org/B2G/Triage B2G Triage Page]
-* [https://wiki.mozilla.org/Release_Management/B2G_Landing#Versions_and_Scheduling B2G Landing]
-* [https://intranet.mozilla.org/Program_Management/Firefox_OS/Localization FXOS Localizations] (auth required)
-
-;Repacks
-* [[Release_Management/Repack/China|Chinese repack]]
 
 [[Category:Release_Management]]
