@@ -37,7 +37,7 @@ The relman team maintains several tools. You can help by fixing bugs!
 
 ;Blog
 * [http://release.mozilla.org/ Release Management Blog]
-*
+
 ;Visio
 * [https://v.mozilla.com/flex.html?roomdirect.html&key=EXysadF68Dac Release Coordination Vidyo Link]
 
@@ -80,7 +80,7 @@ Each version of Firefox is followed by a release manager who owns it from start 
 * [https://drive.google.com/open?id=1x27I7hAmWDWiqk3o3YC3fklhE3N59bdgHCQHF5p_lkU GoFaster release and relnote process]
 
 ;Dashboards
-* [[Release_Management/Review_Fixes_Worth_Uplifting|Review important bug fixes landed in Nightly for uplift to Aurora, Beta, ESR]]
+* [[Release_Management/Review_Fixes_Worth_Uplifting|Review important bug fixes landed in Nightly for uplift to Beta, ESR]]
 * [http://mozilla.github.io/releasehealth/?channel=release Release channel Blockers and Regressions]
 * [http://mozilla.github.io/releasehealth/?channel=beta Beta channel Blockers and Regressions]
 * [http://mozilla.github.io/releasehealth/?channel=nightly Nightly channel Blockers and Regressions]
