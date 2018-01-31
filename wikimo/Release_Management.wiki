@@ -46,7 +46,7 @@ The relman team maintains several tools. You can help by fixing bugs!
 We host and are a part of number of meetings.  You can't miss us at channel meetings, where we discuss and try to resolve any release related issues. Anyone working to get a new feature or complicated fix into Firefox may want to join the channel meeting to discuss the process with the entire team of release managers.  User advocacy, QE and stability, and release engineering team members also often join the channel meetings.
 
 * Channel Meeting
-**This meeting takes place twice a week on Tuesday at 10 AM PT and Thursday at 10 AM PT in Release Coordination Vidyo Room
+**This meeting takes place twice a week on Tuesdays 10am Pacific time (18h UTC) and Thursdays at 8am Pacific time (16h UTC) in the [https://v.mozilla.com/flex.html?roomdirect.html&key=EXysadF68Dac Release Coordination] Vidyo Room
 ** [https://wiki.mozilla.org/Firefox/Channels/Meetings Channel Meeting Wiki Archive]
 * Release Post Mortem
 **This meetings happens at the Tuesday Channel Meeting two weeks after a release
@@ -89,7 +89,7 @@ Each version of Firefox is followed by a release manager who owns it from start 
 
 ;Release managers also help with ways we can update aspects of Firefox on the fly, including graphics driver and plugin blocklisting.
 * [[Blocklisting|Blocklisting]]
-* [[Firefox/Go_Faster/System_Add-ons/Process|System add-ons]]
+* [[Firefox/Go_Faster/System_Add-ons/Process|System add-ons]] (also known as Go Faster add-ons)
 
 ;Here are some guidelines for developers, product managers, and our team as well.
 * [[Release_Management/Uplift_rules|Uplift rules]]
