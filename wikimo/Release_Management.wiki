@@ -63,7 +63,7 @@ To add the basic release calendar to your Google calendar:
 * Choose "Firefox Merge/Release schedule"
 * You can also add "Releases Scheduling" here for a more detailed view.
 
-When the release schedule is adjusted for any reason, we need to ensure that [ https://calendar.google.com/calendar/embed?src=bW96aWxsYS5jb21fZGJxODRhbnI5aTh0Y25taGFiYXRzdHY1Y29AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ our calendar]  is updated to reflect this.  If the calendar itself is updated, there is a link to it on this page (at the top) as well as on [[RapidRelease/Calendar]]
+When the release schedule is adjusted for any reason, we need to ensure that [https://calendar.google.com/calendar/embed?src=bW96aWxsYS5jb21fZGJxODRhbnI5aTh0Y25taGFiYXRzdHY1Y29AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ our calendar]  is updated to reflect this.  If the calendar itself is updated, there is a link to it on this page (at the top) as well as on [[RapidRelease/Calendar]]
 
 ==Team Resources==
 Each version of Firefox is followed by a release manager who owns it from start to release. This way, Nightly, Beta, ESR, and Release channels have someone dedicated to getting all the pieces put together correctly.
