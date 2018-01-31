@@ -73,7 +73,7 @@ Each version of Firefox is followed by a release manager who owns it from start 
 * [[Release_Management/Release_owners]]
 * [[Release_Management/Nightly|Nightly]] Tasks for relman during Nightly
 * [[Release_Management/Beta_Release_Checklist|Beta Release Checklist]]
-** Excel based checklist: [https://drive.google.com/open?id=1JjYHkyhSyACnu-UEL-a2PUbkHp1fcncDcdot-vs4d_E Beta 44 Release Checklist]
+** Excel based checklist: [https://docs.google.com/spreadsheets/d/1hhYtmyLc0GEk_NaK45KjRvhyppw7s7YSpC9xudaQZgo/edit#gid=1158959417 Mid-beta and release checklist]
 * [https://wiki.mozilla.org/Release_Management/ESR_Landing_Process ESR Triage]
 * [[Release_Management/Mobile_Publishing_Documentation|Publishing to Mobile stores]]
 * [[Release Management/Release Days|Release Days]] Merge and release day processes
