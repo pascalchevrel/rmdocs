@@ -56,7 +56,7 @@ We host and are a part of number of meetings.  You can't miss us at channel meet
 ** [https://wiki.mozilla.org/Releases/Post-mortems/Firefox_{{Version/Gecko/release/current}}.0 Postmortem Schedule & Agenda]
 
 ==Calendar Updating==
-To add the basic release calendar to your Google calendar:
+To add the basic release calendar to your Google calendar if you have a mozilla.com email:
 * Go to your [https://calendar.google.com/ calendar]
 * In the upper right, click on the Gear icon and click on ''Settings'' in the pop up menu
 * In the ''Settings'' page, click on ''Add Calendar'' in the left menu
@@ -64,6 +64,8 @@ To add the basic release calendar to your Google calendar:
 * Click on ''Public'' in the main pane
 * Click on the checkbox next to ''Public - Firefox Merge/Release Schedule''
 * You can also add "Public- Releases Scheduling" here for a more detailed view.
+
+Direct calendar link: [https://calendar.google.com/calendar?cid=bW96aWxsYS5jb21fMmQzNzM4MzQzMzM1MzQzMjM1MmQzOTM5QHJlc291cmNlLmNhbGVuZGFyLmdvb2dsZS5jb20 Firefox Merge/Release Schedule calendar ]
 
 When the release schedule is adjusted for any reason, we need to ensure that [https://calendar.google.com/calendar/embed?src=bW96aWxsYS5jb21fZGJxODRhbnI5aTh0Y25taGFiYXRzdHY1Y29AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ our calendar]  is updated to reflect this.  If the calendar itself is updated, there is a link to it on this page (at the top) as well as on [[RapidRelease/Calendar]]
 
