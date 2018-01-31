@@ -41,6 +41,9 @@ The relman team maintains several tools. You can help by fixing bugs!
 ;Visio
 * [https://v.mozilla.com/flex.html?roomdirect.html&key=EXysadF68Dac Release Coordination Vidyo Link]
 
+;Slack
+* [https://mozilla.slack.com/messages/release-coordination/ #release-coordination]
+
 ==Meetings==
 
 We host and are a part of number of meetings.  You can't miss us at channel meetings, where we discuss and try to resolve any release related issues. Anyone working to get a new feature or complicated fix into Firefox may want to join the channel meeting to discuss the process with the entire team of release managers.  User advocacy, QE and stability, and release engineering team members also often join the channel meetings.
