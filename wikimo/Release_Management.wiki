@@ -48,7 +48,6 @@ We host and are a part of number of meetings.  You can't miss us at channel meet
 * Channel Meeting
 **This meeting takes place twice a week on Tuesday at 10 AM PT and Thursday at 10 AM PT in Release Coordination Vidyo Room
 ** [https://wiki.mozilla.org/Firefox/Channels/Meetings Channel Meeting Wiki Archive]
-* Release Sign-offs
 * Release Post Mortem
 **This meetings happens at the Tuesday Channel Meeting two weeks after a release
 ** [https://wiki.mozilla.org/Releases/Post-mortems/Firefox_{{Version/Gecko/release/current}}.0 Postmortem Schedule & Agenda]
@@ -64,7 +63,7 @@ To add the basic release calendar to your Google calendar:
 * Choose "Firefox Merge/Release schedule"
 * You can also add "Releases Scheduling" here for a more detailed view.
 
-When the release schedule is adjusted for any reason, we need to ensure that https://calendar.google.com/calendar/embed?src=bW96aWxsYS5jb21fZGJxODRhbnI5aTh0Y25taGFiYXRzdHY1Y29AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ is updated to reflect this.  If the calendar itself is updated, there is a link to it on this page (at the top) as well as on [[RapidRelease/Calendar]]
+When the release schedule is adjusted for any reason, we need to ensure that [ https://calendar.google.com/calendar/embed?src=bW96aWxsYS5jb21fZGJxODRhbnI5aTh0Y25taGFiYXRzdHY1Y29AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ our calendar]  is updated to reflect this.  If the calendar itself is updated, there is a link to it on this page (at the top) as well as on [[RapidRelease/Calendar]]
 
 ==Team Resources==
 Each version of Firefox is followed by a release manager who owns it from start to release. This way, Nightly, Beta, ESR, and Release channels have someone dedicated to getting all the pieces put together correctly.
