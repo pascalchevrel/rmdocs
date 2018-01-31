@@ -87,9 +87,9 @@ Each version of Firefox is followed by a release manager who owns it from start 
 * [https://mozilla.github.io/stab-crashes Stability deep-dive scripts]
 * [https://www.flickr.com/photos/lizhenry/24368249885 Dashboard the Cat] - she likes to eat headphones
 
-;Release managers also help with ways we can update aspects of Firefox on the fly, including add-on hotfixes, and graphics driver and plugin blocklisting.
-* [[Firefox/Hotfix | Hotfix process documentation]]
+;Release managers also help with ways we can update aspects of Firefox on the fly, including graphics driver and plugin blocklisting.
 * [[Blocklisting|Blocklisting]]
+* [[Firefox/Go_Faster/System_Add-ons/Process|System add-ons]]
 
 ;Here are some guidelines for developers, product managers, and our team as well.
 * [[Release_Management/Uplift_rules|Uplift rules]]
