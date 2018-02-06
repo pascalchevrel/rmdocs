@@ -103,8 +103,6 @@ Each version of Firefox is followed by a release manager who owns it from start 
 ;Tools
 * [http://ship-it.mozilla.org/ Ship-it UI] - [https://mana.mozilla.org/wiki/pages/viewpage.action?pageId=30769829 Mozilla VPN]
 * [https://product-details.mozilla.org/1.0/ Product-Details], a public JSON API about Firefox and Thunderbird releases
-* Our [[Release_Management/Release_Survey| Release Survey]]
-* [https://wiki.mozilla.org/User:Akeybl/Release_Dash Firefox Triage Dashboard]
 * [[Release_Management/Onboarding | Onboarding]]
 
 
