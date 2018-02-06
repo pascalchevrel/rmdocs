@@ -1,0 +1,6 @@
+Product details are now automatically managed by ship-it.
+Results are published here:
+https://product-details.mozilla.org/
+
+
+[[Category: Release Management|P]]
