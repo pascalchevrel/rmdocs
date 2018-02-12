@@ -18,23 +18,31 @@ Get the latest version of Firefox for Windows, macOS or Linux across all channel
 
 == Download Links for Firefox for Android ==
 You can get the latest release, beta and Nightly versions of Firefox for Android on the Google Play Store.
-* [https://play.google.com/store/apps/details?id=org.mozilla.firefox Firefox for Android ]
-* [https://play.google.com/store/apps/details?id=org.mozilla.firefox_beta Firefox Beta for Android ]
-* [https://play.google.com/store/apps/details?id=org.mozilla.fennec_aurora Firefox Nightly for Android ]
+* [https://play.google.com/store/apps/details?id=org.mozilla.firefox Firefox for Android]
+* [https://play.google.com/store/apps/details?id=org.mozilla.firefox_beta Firefox Beta for Android]
+* [https://play.google.com/store/apps/details?id=org.mozilla.fennec_aurora Firefox Nightly for Android]
 
 == Release timeline ==
-* Firefox is released at intervals of six to eight weeks (not counting urgent patch updates), meaning that every six to eight weeks there will be a new version of Firefox Release.
-* Firefox Beta is released every week leaving us with six to eight betas every cycle unless we have chemspills leading to additional betas
-* Firefox Dev Edition is based on the beta branch. Dev Edition Beta 1 and Beta 2 are considered a pre-beta stabilization channel.
-* Firefox Nightly is released every 12 hours with all the changes landed on mozilla-central
 
-Release day activities/checklist can be found on [[https://wiki.mozilla.org/Release_Management/Release_Day Release Day wiki]]
+Firefox is released at intervals of six to eight weeks (not counting urgent patch updates), meaning that every six to eight weeks there
+will be a new version of Firefox Release.
+
+=== From mozilla-central to mozilla-release ===
+* Firefox Nightly is released every 12 hours with all the changes landed on mozilla-central
+* Every 6 to 8 weeks, we merge the code from mozilla-central to our mozilla-beta branch. The mozilla-beta branch should now only get patches aimed at stabilizing the release. Any patch on mozilla-central that we want backported to our mozilla-beta branch should follow the [[Release_Management/Uplift_rules|approval rules for uplifts]]
+* Beta 1 and Beta 2 are built from this beta branch and used to build and ship Firefox Developer Edition as a stabilization step before shipping Firefox Beta to our much wider Beta audience.
+* Starting with Beta 3, Firefox Beta is released twice a week for Desktop, leaving us with 12 to 16 betas every cycle unless we have chemspills leading to additional betas. Firefox Beta 3 is shipped to a subset of our Beta population. The full Beta population gets updated starting with beta 4 only.
+* At the end of the Beta cycle, a final build is validated by our QA and tagged for release into the mozilla-release branch
+
+=== Android specificities ===
+* Firefox Nightly is released every 24 hours
+* Starting with Beta 3, Firefox Beta is released once a week for Android, leaving us with 6 to 9 betas every cycle.
+
+Release day activities/checklist can be found on the [[Release_Management/Release_Day|Release Day wiki page]]
 
 Our release schedule is meant to be flexible and we may occasionally modify the length of a cycle to be shorter or longer than the 6-8 week cycle mentioned. Check the [https://wiki.mozilla.org/RapidRelease/Calendar '''Rapid Release Calendar'''] to stay updated with the upcoming branch dates.
 
 == All about Flags  ==
-
-
 [[File:Status.png|400px|right]]
 * '''tracking-firefoxN''' : A multi-state flag that currently has two values which show whether a  bug is being investigated for possible resolution in the FirefoxN release . Bugs marked tracking-firefoxN are bugs that must be resolved  one way or another before a particular release ships. [https://wiki.mozilla.org/Firefox/Drivers Release drivers] will track and shepherd the bug until it is determined the bug no longer impacts the release
 ** ?  This bug has been nominated to block FirefoxN
