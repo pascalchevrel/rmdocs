@@ -1,22 +1,33 @@
-= Current Team =
+The Release Management team ensures that we ship the best possible software to our end users.
+
+The team is comprised of release managers that shepperd our beta and final releases, release engineers that build tools allowing release managers to make more informed decisions on releases, uplift and crashes as well as project managers that make sure we have a sizable and active pre-release population so as to catch functional and stability regressions at the earliest stage possible.
+
+= Team =
+[[File:Relman-team.JPG|right|500px|Release Management Team - SFO, April 2017]]
 * Manager: [https://mozillians.org/en-US/u/sylvestre/ Sylvestre Ledru (:sylvestre)]
-* Desktop & Mobile RM: [https://mozillians.org/en-US/u/lizhenry/ Liz Henry (:lizzard)]
-* Desktop & Mobile RM: [https://mozillians.org/en-US/u/rkothari/ Ritu Kothari (:ritu)]
-* Desktop & Mobile RM: [https://mozillians.org/en-US/u/gchang/ Gerry Chang (:gchang)]
-* Desktop & Mobile RM: [https://mozillians.org/en-US/u/jcristau/ Julien Cristau (:jcristau)]
-* Nightly RM: [https://mozillians.org/en-US/u/marcia/ Marcia Knous (:marcia)]
-* Nightly PM: [https://mozillians.org/en-US/u/pascalc/ Pascal Chevrel (:pascalc)]
-* Release Engineer: [https://mozillians.org/en-US/u/cdenizet/ Calixte Denizet (:calixte)]
-* Release Engineer: [https://mozillians.org/en-US/u/marco/ Marco Castelluccio (:marco)]
-* Release Engineer: [https://mozillians.org/en-US/u/janx/ Jan Keromnes (:janx)]
+* Firefox Release Managers:
+** [https://mozillians.org/en-US/u/lizhenry/ Liz Henry (:lizzard)]
+** [https://mozillians.org/en-US/u/rkothari/ Ritu Kothari (:ritu)]
+** [https://mozillians.org/en-US/u/gchang/ Gerry Chang (:gchang)]
+** [https://mozillians.org/en-US/u/jcristau/ Julien Cristau (:jcristau)]
+** [https://mozillians.org/en-US/u/RyanVM/ Ryan VanderMeulen (:RyanVM)]
+* Firefox Nightly Release Manager and crash analysis: [https://mozillians.org/en-US/u/marcia/ Marcia Knous (:marcia)]
+* Firefox Nightly Project Manager: [https://mozillians.org/en-US/u/pascalc/ Pascal Chevrel (:pascalc)]
+* Release Engineers:
+** [https://mozillians.org/en-US/u/cdenizet/ Calixte Denizet (:calixte)]
+** [https://mozillians.org/en-US/u/marco/ Marco Castelluccio (:marco)]
+** [https://mozillians.org/en-US/u/janx/ Jan Keromnes (:janx)]
 * Static Analyzer Specialist: [https://mozillians.org/en-US/u/bpostelnicu/ Andi Bogdan Postelnicu]
 
+=Team Blogs=
 
-[[File:Relman-team.JPG|frame|300px|Release Management Team - SFO, April 2017]]
+* Liz Henry [http://bookmaniac.org http://bookmaniac.org] Twitter: [https://twitter.com/lizhenry @lizhenry]
+* Sylvestre Ledru [http://sylvestre.ledru.info/blog/ http://sylvestre.ledru.info/blog/]  Twitter: [https://twitter.com/SylvestreLedru @SylvestreLedru]
+* Marcia Knous [http://mozillamarciaknous.wixsite.com/mozcommunity http://mozillamarciaknous.wixsite.com/mozcommunity] Twitter: [https://twitter.com/MozCommunity @MozCommunity]
+* Pascal Chevrel [http://www.chevrel.org/carnet http://www.chevrel.org/carnet] Twitter: [https://twitter.com/pascalchevrel @lizhenry]
 
-{{clear}}
 
-= Release Management Alumni =
+= Alumni =
 
 * Release Quality Manager: [https://mozillians.org/fr/u/KaiRo/ Robert Kaiser (:KaiRo)]
 * Staff Release Manager: [https://mozillians.org/en-US/u/lsblakk/ Lukas Blakk (:lsblakk)]
@@ -29,18 +40,6 @@
 * 2013 Intern: [https://mozillians.org/en-US/u/wcheong/ Willie Cheong]
 * 2012 Intern: [https://mozillians.org/en-US/u/lianne719/ Lianne Lee]
 
-[[File:Relman-team2014.JPG|frame|300px|Release Management Team - Portland workweek (2014)]]
-{{clear}}
-
-=Team Blogs=
-
-* Liz Henry [http://bookmaniac.org http://bookmaniac.org] Twitter: [https://twitter.com/lizhenry @lizhenry]
-* Lukas Blakk [http://lukasblakk.com/ http://lukasblakk.com]   Twitter: [https://twitter.com/lsblakk @lsblakk]
-* Bhavana Bajaj [https://twitter.com/tweetbhavana twitter:@tweetbhavana]
-* Benjamin Kerensa [http://benjaminkerensa.com http://benjaminkerensa.com] Twitter: [https://twitter.com/bkerensa @bkerensa]
-* Sylvestre Ledru [http://sylvestre.ledru.info/blog/ http://sylvestre.ledru.info/blog/]  Twitter: [https://twitter.com/SylvestreLedru @SylvestreLedru]
-* Lawrence Mandel [http://lawrencemandel.com/ http://lawrencemandel.com/]  Twitter: [https://twitter.com/mmmandel @mmmandel]
-* Marcia Knous [http://mozillamarciaknous.wixsite.com/mozcommunity http://mozillamarciaknous.wixsite.com/mozcommunity] Twitter: [https://twitter.com/MozCommunity @MozCommunity]
 
 
 [[category:Release_Management]]
