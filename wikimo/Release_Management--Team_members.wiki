@@ -1,31 +1,44 @@
-The Release Management team ensures that we ship the best possible software to our end users.
+The Release Management team (part of the Product Integrity department) ensures that we ship the best possible software to our end users.
 
-The team is comprised of release managers that shepperd our beta and final releases, release engineers that build tools allowing release managers to make more informed decisions on releases, uplift and crashes as well as project managers that make sure we have a sizable and active pre-release population so as to catch functional and stability regressions at the earliest stage possible.
+The team is comprised of release managers that sheperd our beta and final releases, release engineers that build tools allowing release managers to make more informed decisions on releases, uplift and crashes as well as project managers that make sure we have a sizable and active pre-release population so as to catch functional and stability regressions at the earliest stage possible.
 
 = Team =
 [[File:Relman-team.JPG|right|500px|Release Management Team - SFO, April 2017]]
-* Manager: [https://mozillians.org/en-US/u/sylvestre/ Sylvestre Ledru (:sylvestre)]
+* Manager: [https://mozillians.org/u/sylvestre/ Sylvestre Ledru (:sylvestre)]
 * Firefox Release Managers:
-** [https://mozillians.org/en-US/u/lizhenry/ Liz Henry (:lizzard)]
-** [https://mozillians.org/en-US/u/rkothari/ Ritu Kothari (:ritu)]
-** [https://mozillians.org/en-US/u/gchang/ Gerry Chang (:gchang)]
-** [https://mozillians.org/en-US/u/jcristau/ Julien Cristau (:jcristau)]
-** [https://mozillians.org/en-US/u/RyanVM/ Ryan VanderMeulen (:RyanVM)]
-* Firefox Nightly Release Manager and crash analysis: [https://mozillians.org/en-US/u/marcia/ Marcia Knous (:marcia)]
-* Firefox Nightly Project Manager: [https://mozillians.org/en-US/u/pascalc/ Pascal Chevrel (:pascalc)]
+** [https://mozillians.org/u/lizhenry/ Liz Henry (:lizzard)]
+** [https://mozillians.org/u/rkothari/ Ritu Kothari (:ritu)]
+** [https://mozillians.org/u/gchang/ Gerry Chang (:gchang)]
+** [https://mozillians.org/u/jcristau/ Julien Cristau (:jcristau)]
+** [https://mozillians.org/u/RyanVM/ Ryan VanderMeulen (:RyanVM)]
+* Firefox Nightly Release Manager and crash analysis: [https://mozillians.org/u/marcia/ Marcia Knous (:marcia)]
+* Firefox Nightly Project Manager: [https://mozillians.org/u/pascalc/ Pascal Chevrel (:pascalc)]
 * Release Engineers:
-** [https://mozillians.org/en-US/u/cdenizet/ Calixte Denizet (:calixte)]
-** [https://mozillians.org/en-US/u/marco/ Marco Castelluccio (:marco)]
-** [https://mozillians.org/en-US/u/janx/ Jan Keromnes (:janx)]
-* Static Analyzer Specialist: [https://mozillians.org/en-US/u/bpostelnicu/ Andi Bogdan Postelnicu]
+** [https://mozillians.org/u/cdenizet/ Calixte Denizet (:calixte)]
+** [https://mozillians.org/u/marco/ Marco Castelluccio (:marco)]
+** [https://mozillians.org/u/janx/ Jan Keromnes (:janx)]
+* Static Analyzer Specialist: [https://mozillians.org/u/ABPostelnicu/ Andi Bogdan Postelnicu]
+
+{{clear}}
+
+You can contact our team members via one of the [[Release_Management#Communication_Channels | communication channels]] listed on our home page.
+
+Mozilla is an open source project and as such we work with many volunteers across the globe that help us with their technical or regional specific expertise. <br>
+A special shout-out to
+[https://mozillians.org/u/philipp/ Philipp Madersbacher (:philipp)] for his crash triage help and his work on identifying regressions reported by our end-users before and after we ship Firefox.
 
 =Team Blogs=
 
-* Liz Henry [http://bookmaniac.org http://bookmaniac.org] Twitter: [https://twitter.com/lizhenry @lizhenry]
-* Sylvestre Ledru [http://sylvestre.ledru.info/blog/ http://sylvestre.ledru.info/blog/]  Twitter: [https://twitter.com/SylvestreLedru @SylvestreLedru]
-* Marcia Knous [http://mozillamarciaknous.wixsite.com/mozcommunity http://mozillamarciaknous.wixsite.com/mozcommunity] Twitter: [https://twitter.com/MozCommunity @MozCommunity]
-* Pascal Chevrel [http://www.chevrel.org/carnet http://www.chevrel.org/carnet] Twitter: [https://twitter.com/pascalchevrel @lizhenry]
+We blog and tweet as a team there:
+* [http://release.mozilla.org/ Release Management Blog]
+* [[File:Twitter-icon.png|16px]] [https://twitter.com/MozillaReleases @MozillaReleases]
 
+Some of our team members are also active on their personal blog and Twitter:
+* Liz Henry [http://bookmaniac.org http://bookmaniac.org] [[File:Twitter-icon.png|16px]] [https://twitter.com/lizhenry @lizhenry]
+* Sylvestre Ledru [http://sylvestre.ledru.info/blog/ http://sylvestre.ledru.info/blog/] [[File:Twitter-icon.png|16px]] [https://twitter.com/SylvestreLedru @SylvestreLedru]
+* Marcia Knous [http://mozillamarciaknous.wixsite.com/mozcommunity http://mozillamarciaknous.wixsite.com/mozcommunity] [[File:Twitter-icon.png|16px]][https://twitter.com/MozCommunity @MozCommunity]
+* Pascal Chevrel [http://www.chevrel.org/carnet http://www.chevrel.org/carnet]  [[File:Twitter-icon.png|16px]] [https://twitter.com/pascalchevrel @pascalchevrel]
+* Jan Keromnes [https://plus.google.com/+JanKeromnes In the clouds] [[File:Twitter-icon.png|16px]] [https://twitter.com/jankeromnes @jankeromnes]
 
 = Alumni =
 
