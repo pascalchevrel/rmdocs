@@ -31,14 +31,14 @@ A special shout-out to
 
 We blog and tweet as a team there:
 * [http://release.mozilla.org/ Release Management Blog]
-* [[File:Twitter-icon.png|16px]] [https://twitter.com/MozillaReleases @MozillaReleases]
+* [[File:Twitter-icon.png|16px]] [https://twitter.com/MozillaReleases MozillaReleases]
 
 Some of our team members are also active on their personal blog and Twitter:
-* Liz Henry [http://bookmaniac.org http://bookmaniac.org] [[File:Twitter-icon.png|16px]] [https://twitter.com/lizhenry @lizhenry]
-* Sylvestre Ledru [http://sylvestre.ledru.info/blog/ http://sylvestre.ledru.info/blog/] [[File:Twitter-icon.png|16px]] [https://twitter.com/SylvestreLedru @SylvestreLedru]
-* Marcia Knous [http://mozillamarciaknous.wixsite.com/mozcommunity http://mozillamarciaknous.wixsite.com/mozcommunity] [[File:Twitter-icon.png|16px]][https://twitter.com/MozCommunity @MozCommunity]
-* Pascal Chevrel [http://www.chevrel.org/carnet http://www.chevrel.org/carnet]  [[File:Twitter-icon.png|16px]] [https://twitter.com/pascalchevrel @pascalchevrel]
-* Jan Keromnes [https://plus.google.com/+JanKeromnes In the clouds] [[File:Twitter-icon.png|16px]] [https://twitter.com/jankeromnes @jankeromnes]
+* Liz Henry [http://bookmaniac.org http://bookmaniac.org] [[File:Twitter-icon.png|16px]] [https://twitter.com/lizhenry lizhenry]
+* Sylvestre Ledru [http://sylvestre.ledru.info/blog/ http://sylvestre.ledru.info/blog/] [[File:Twitter-icon.png|16px]] [https://twitter.com/SylvestreLedru SylvestreLedru]
+* Marcia Knous [http://mozillamarciaknous.wixsite.com/mozcommunity http://mozillamarciaknous.wixsite.com/mozcommunity] [[File:Twitter-icon.png|16px]][https://twitter.com/MozCommunity MozCommunity]
+* Pascal Chevrel [http://www.chevrel.org/carnet http://www.chevrel.org/carnet] [[File:Twitter-icon.png|16px]] [https://twitter.com/pascalchevrel pascalchevrel]
+* Jan Keromnes [https://plus.google.com/+JanKeromnes In the clouds] [[File:Twitter-icon.png|16px]] [https://twitter.com/jankeromnes jankeromnes]
 
 = Alumni =
 
