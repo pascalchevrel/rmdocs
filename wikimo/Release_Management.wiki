@@ -83,6 +83,7 @@ Each version of Firefox is followed by a release manager who owns it from start 
 * [https://drive.google.com/open?id=1x27I7hAmWDWiqk3o3YC3fklhE3N59bdgHCQHF5p_lkU GoFaster release and relnote process]
 
 ;Dashboards
+* [https://mozilla.github.io/delivery-dashboard/ Delivery Dashboard]
 * [[Release_Management/Review_Fixes_Worth_Uplifting|Review important bug fixes landed in Nightly for uplift to Beta, ESR]]
 * [http://mozilla.github.io/releasehealth/?channel=release Release channel Blockers and Regressions]
 * [http://mozilla.github.io/releasehealth/?channel=beta Beta channel Blockers and Regressions]
