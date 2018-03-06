@@ -1,45 +1,45 @@
-Product details is a public JSON API which contains release information for Firefox (desktop and mobile) and Thunderbird.
+'''Product Details''' is a public JSON API which contains release information for Firefox (desktop and mobile) and Thunderbird.
 The data is managed by the Release Management team through Ship-it and exported available at this domain:
 
 https://product-details.mozilla.org/
 
 The data provided by this API is meant to be the source of truth for all tools needing to know specific information about a Firefox release or channel.
 
-Historically that data was managed with direct commits into a code repository on svn. The [current version of the API is 1.0](https://product-details.mozilla.org/1.0/) and is meant to be fully compatible with the version we had hosted on svn. If we rewrite the structure of these files in the future, this will be done in version 2.0 and there will be a transition period during which both 1.0 and 2.0 are available.
+Historically that data was managed with direct commits into a code repository on svn. The [https://product-details.mozilla.org/1.0/ current version of the API is 1.0] and is meant to be fully compatible with the version we had hosted on svn. If we rewrite the structure of these files in the future, this will be done in version 2.0 and there will be a transition period during which both 1.0 and 2.0 are available.
 
-The mozilla.org development team maintains a copy of the [product-details files on GitHub](https://github.com/mozilla/product-details-json) that is synced with product-details.mozilla.org so as to facilitate deployment and continuous deployment of mozilla.org.
+The mozilla.org development team maintains a copy of the [https://github.com/mozilla/product-details-json product-details files on GitHub ] that is synced with product-details.mozilla.org so as to facilitate deployment and continuous deployment of mozilla.org.
 
-Since this data is managed via Ship-It, bug reports about the data or requests for additional data should be done on bugzilla in [Release Engineering::Ship-It](https://bugzilla.mozilla.org/enter_bug.cgi?product=Release%20Engineering&component=Ship%20It) and not through the Github Repository.
+Since this data is managed via Ship-It, bug reports about the data or requests for additional data should be done on bugzilla in [https://bugzilla.mozilla.org/enter_bug.cgi?product=Release%20Engineering&component=Ship%20It Release Engineering::Ship-It] and not through the Github Repository.
 
 Here is the list of files we provide:
 
 === all.json ===
 This file holds historical information about all Firefox, Firefox for Mobile (aka Fennec), Firefox Dev Edition and Thunderbird releases we shipped in the past.
 Example:
-<syntaxhighlight lang="JavaScript">
+<syntaxhighlight lang="JSON">
 firefox-58.0: {
-	category:	"major",
-	product:	"firefox",
-	build_number:	6,
-	description:	"",
-	is_security_driven:	false,
-	version:	"58.0",
-	date:	"2018-01-23",
+    "category":           "major",
+    "product":            "firefox",
+    "build_number":       6,
+    "description":        "",
+    "is_security_driven": false,
+    "version":            "58.0",
+    "date":               "2018-01-23",
 }
 </syntaxhighlight>
 
 === devedition.json ===
 This file is a recent addition and contains the same historical information as all.json but only for Firefox Dev Edition since version 54. Note the name of the key: devedition-XX.0bY.
 
-<syntaxhighlight lang="JavaScript">
+<syntaxhighlight lang="JSON">
 devedition-59.0b1: {
-	category:	"dev",
-	product:	"devedition",
-	build_number:	11,
-	description:	"",
-	is_security_driven:	false,
-	version:	"59.0b1",
-	date:	"2018-01-17",
+    "category":           "dev",
+    "product":            "devedition",
+    "build_number":       11,
+    "description":        "",
+    "is_security_driven": false,
+    "version":            "59.0b1",
+    "date":               "2018-01-17",
 }
 </syntaxhighlight>
 
@@ -50,14 +50,14 @@ This file holds historical information about all Firefox releases for desktop we
 This file contains all the Firefox Desktop release dates for Betas
 example:
 
-<syntaxhighlight lang="JavaScript">
+<syntaxhighlight lang="JSON">
 {
-	…
-	59.0b11	"2018-02-20",
-	59.0b12	"2018-02-23",
-	59.0b13	"2018-02-27",
-	59.0b14	"2018-03-02",
-	…
+    …
+    "59.0b11": "2018-02-20",
+    "59.0b12": "2018-02-23",
+    "59.0b13": "2018-02-27",
+    "59.0b14": "2018-03-02",
+    …
 }
 </syntaxhighlight>
 
@@ -68,83 +68,85 @@ This file contains all the Firefox Desktop release dates for major releases (XX.
 This file contains all the Firefox Desktop release dates for minor releases (XX.X.Y releases)
 
 === firefox_primary_builds.json ===
-This file contains all the Firefox builds we provide per locale. The filesize fields in this file are always set to 0, this is not a bug, we are keeping these fields in the schema for historical reasons only but no longer populate them with data.
+This file contains all the Firefox builds we provide per locale. The filesize fields in this file are always set to 0, this is not a bug, we are keeping these fields with this schema for historical reasons only but no longer populate them with data.
 ex:
 
-<syntaxhighlight lang="JavaScript">
-ach {
-	52.6.0esr {
-		Linux {
-			filesize: 0,
-		},
-		OS X {
-			filesize: 0,
-		},
-		Windows {
-			filesize: 0,
-		},
-	},
-	54.0a2 {
-		Linux {
-			filesize: 0,
-		},
-		OS X {
-			filesize: 0,
-		},
-		Windows {
-			filesize: 0,
-		},
-	},
-	58.0.2 {
-		Linux {
-			filesize: 0,
-		},
-		OS X {
-			filesize: 0,
-		},
-		Windows {
-			filesize: 0,
-		},
-	},
-	52.6.0esr {
-		Linux {
-			filesize: 0,
-		},
-		OS X {
-			filesize: 0,
-		},
-		Windows {
-			filesize: 0,
-		},
-	},
-	60.0a1 {
-		Linux {
-			filesize: 0,
-		},
-		OS X {
-			filesize: 0,
-		},
-		Windows {
-			filesize: 0,
-		},
-	},
+<syntaxhighlight lang="JSON">
+{
+    "ach": {
+        "52.6.0esr": {
+            "Linux": {
+                "filesize": 0,
+            },
+            "OS X": {
+                "filesize": 0,
+            },
+            "Windows": {
+                "filesize": 0,
+            },
+        },
+        "54.0a2": {
+            "Linux": {
+                "filesize": 0,
+            },
+            "OS X": {
+                "filesize": 0,
+            },
+            "Windows": {
+                "filesize": 0,
+            },
+        },
+        "58.0.2": {
+            "Linux": {
+                "filesize": 0,
+            },
+            "OS X": {
+                "filesize": 0,
+            },
+            "Windows": {
+                "filesize": 0,
+            },
+        },
+        "52.6.0esr": {
+            "Linux": {
+                "filesize": 0,
+            },
+            "OS X": {
+                "filesize": 0,
+            },
+            "Windows": {
+                "filesize": 0,
+            },
+        },
+        "60.0a1": {
+            "Linux": {
+                "filesize": 0,
+            },
+            "OS X": {
+                "filesize": 0,
+            },
+            "Windows": {
+                "filesize": 0,
+            },
+        },
+    }
 }
 </syntaxhighlight>
 
 
 === firefox_versions.json ===
-This file contains all the versions we ship:
-<syntaxhighlight lang="JavaScript">
+This file contains all the versions we ship for Firefox for Desktop:
+<syntaxhighlight lang="JSON">
 {
-	FIREFOX_NIGHTLY:	"60.0a1",
-	FIREFOX_AURORA:	"",
-	FIREFOX_ESR:	"52.6.0esr",
-	FIREFOX_ESR_NEXT:	"",
-	LATEST_FIREFOX_DEVEL_VERSION:	"59.0b14",
-	FIREFOX_DEVEDITION:	"59.0b14",
-	LATEST_FIREFOX_OLDER_VERSION:	"3.6.28",
-	LATEST_FIREFOX_RELEASED_DEVEL_VERSION:	"59.0b14",
-	LATEST_FIREFOX_VERSION:	"58.0.2",
+    "FIREFOX_NIGHTLY":                        "60.0a1",
+    "FIREFOX_AURORA":                         "",
+    "FIREFOX_ESR":                            "52.6.0esr",
+    "FIREFOX_ESR_NEXT":                       "",
+    "LATEST_FIREFOX_DEVEL_VERSION":           "59.0b14",
+    "FIREFOX_DEVEDITION":                     "59.0b14",
+    "LATEST_FIREFOX_OLDER_VERSION":           "3.6.28",
+    "LATEST_FIREFOX_RELEASED_DEVEL_VERSION":  "59.0b14",
+    "LATEST_FIREFOX_VERSION":                 "58.0.2",
 }
 </syntaxhighlight>
 
@@ -164,70 +166,213 @@ This folder contains the l10n changeset per locale used for each build. The tran
 example:
 
 l10n/Firefox-58.0-build6.json file
-<syntaxhighlight lang="JavaScript">
+<syntaxhighlight lang="JSON">
 {
-	locales	{
-		pa-IN {
-			changeset: "5634ac6e7d9b",
-		},
-		gd {
-			changeset: "da7de9b6e635",
-		},
-		…
-	},
-	submittedAt: "2018-01-18T22:53:08+00:00",
-	shippedAt: "2018-01-23T13:20:26+00:00",
-	name: "Firefox-58.0-build6",
+    "locales": {
+        "pa-IN": {
+            "changeset": "5634ac6e7d9b",
+        },
+        "gd": {
+            "changeset": "da7de9b6e635",
+        },
+        …
+    },
+    "submittedAt": "2018-01-18T22:53:08+00:00",
+    "shippedAt": "2018-01-23T13:20:26+00:00",
+    "name": "Firefox-58.0-build6",
 }
 </syntaxhighlight>
 
 === languages.json ===
 This is the list of all the BCP-47 locales we support with their English and native names:
 
-<syntaxhighlight lang="JavaScript">
-cs {
-	English	"Czech",
-	native	"Čeština",
-},
-csb {
-	English	"Kashubian",
-	native	"Kaszëbsczi",
-},
-cy {
-	English	"Welsh",
-	native	"Cymraeg",
-},
-…
+<syntaxhighlight lang="JSON">
+{
+    "cs": {
+        "English": "Czech",
+        "native":  "Čeština",
+    },
+    "csb": {
+        "English": "Kashubian",
+        "native":  "Kaszëbsczi",
+    },
+    "cy": {
+        "English": "Welsh",
+        "native":  "Cymraeg",
+    },
+    …
+}
 </syntaxhighlight>
 
 === mobile_android.json ===
-<syntaxhighlight lang="JavaScript">
+This file holds historical information about all Firefox releases for Android we shipped in the past.
+
+=== mobile_details.json ===
+This file contains all the release information for Firefox for Android and Firefox for iOS. We are keeping this file around for backward compatibility with consumers and only the version numbers are updated today. The builds,  beta_builds and alpha_builds sections are static.
+
+If you are interested in getting the version number we ship per channel  use mobile_versions.json instead of this file.
+
+<syntaxhighlight lang="JSON">
 {
+  "nightly_version": "60.0a1",
+  "alpha_version": "60.0a1",
+  "beta_version": "59.0b13",
+  "version": "58.0.2",
+  "ios_beta_version": "9.1",
+  "ios_version": "9.0",
+  "builds": [
+        {
+            "locale": {
+                "code": "ar",
+                "english": "Arabic",
+                "native": "\u0639\u0631\u0628\u064a"
+            }
+        },
+        {
+            "locale": {
+                "code": "be",
+                "english": "Belarusian",
+                "native": "\u0411\u0435\u043b\u0430\u0440\u0443\u0441\u043a\u0430\u044f"
+            }
+        },
+        …
+    ],
+    "beta_builds": [
+        {
+            "locale": {
+                "code": "cs",
+                "english": "Czech",
+                "native": "\u010ce\u0161tina"
+            },
+            "download": {
+                "android": "market://details?id=org.mozilla.firefox_beta"
+            }
+        },
+        {
+            "locale": {
+                "code": "de",
+                "english": "German",
+                "native": "Deutsch"
+            },
+            "download": {
+                "android": "market://details?id=org.mozilla.firefox_beta"
+            }
+        },
+        …
+    ],
+    "alpha_builds": [
+        {
+            "locale": {
+                "code": "en-US",
+                "english": "English (US)",
+                "native": "English (US)"
+            },
+            "download": {
+                "android": "market://details?id=org.mozilla.firefox"
+            }
+        }
+    ]
+},
 }
 </syntaxhighlight>
-=== mobile_details.json ===
 === mobile_history_development_releases.json ===
-=== mobile_history_major_releases.json ===
-=== mobile_history_stability_releases.json ===
-=== mobile_versions.json ===
-=== regions/ ===
-=== thunderbird.json ===
-=== thunderbird_beta_builds.json ===
-=== thunderbird_history_development_releases.json ===
-=== thunderbird_history_major_releases.json ===
-=== thunderbird_history_stability_releases.json ===
-=== thunderbird_primary_builds.json ===
-=== thunderbird_versions.json ===
+This file contains all the Firefox for Android release dates for Betas. The beta numbers are incrementing by 2 because we ship two beta builds for Desktop per week but only one beta build for Android.
 
+example:
+
+<syntaxhighlight lang="JSON">
+{
+    …
+    "59.0b3":  "2018-01-24",
+    "59.0b5":  "2018-01-29",
+    "59.0b7":  "2018-02-07",
+    "59.0b9":  "2018-02-13",
+    "59.0b13": "2018-03-01",
+    …
+}
+</syntaxhighlight>
+
+
+=== mobile_history_major_releases.json ===
+This file contains all the Firefox for Android release dates for major releases (XX.0 releases)
+
+=== mobile_history_stability_releases.json ===
+This file contains all the Firefox for Android release dates for minor releases (XX.X.Y releases)
+
+
+=== mobile_versions.json ===
+This file contains all the versions we ship for Firefox for Android:
+
+<syntaxhighlight lang="JSON">
+{
+  "nightly_version": "60.0a1",
+  "alpha_version": "60.0a1",
+  "beta_version": "59.0b13",
+  "version": "58.0.2",
+  "ios_beta_version": "9.1",
+  "ios_version": "9.0",
+</syntaxhighlight>
+
+=== regions/ ===
+The files in this folder store the localized names for countries. The data was extracted from our Gecko localization files and converted to JSON as we needed it for projects that needed to associate product and regional data. Those files are updated by the l10n-drivers team.
+
+Example with regions/fr.json:
+<syntaxhighlight lang="JSON">
+{
+    "af": "Afghanistan",
+    "za": "Afrique du Sud",
+    "qz": "Akrotiri",
+    "al": "Albanie",
+    …
+}
+</syntaxhighlight>
+
+=== thunderbird.json ===
+This file holds historical information about all Thunderbird releases we shipped in the past.
+
+=== thunderbird_beta_builds.json ===
+This file is empty and not used today.
+
+
+=== thunderbird_history_development_releases.json ===
+This file contains all the Thunderbird release dates for Betas.
+
+=== thunderbird_history_major_releases.json ===
+This file contains all the Thunderbird release dates for major releases (XX.0 releases)
+
+=== thunderbird_history_stability_releases.json ===
+This file contains all the Thunderbird release dates for minor releases (XX.X.Y releases)
+
+=== thunderbird_primary_builds.json ===
+This file contains all the Thunderbird builds we provide per locale. The filesize fields have the same value for all lcoales, this is not a bug, we are keeping these fields with this schema for historical reasons only but no longer populate them with fresh data.
+
+<syntaxhighlight lang="JSON">
+{
+    "el": {
+        "52.6.0": {
+            "Windows": {
+                "filesize": 25.1,
+            },
+            "OS X": {
+                "filesize": 50.8,
+            },
+            "Linux": {
+                "filesize": 31.8,
+            },
+        },
+    }
+}
+</syntaxhighlight>
+
+=== thunderbird_versions.json ===
+This file contains all the versions we ship for Thunderbird:
+<syntaxhighlight lang="JSON">
+{
+    "LATEST_THUNDERBIRD_VERSION":         "52.6.0",
+    "LATEST_THUNDERBIRD_ALPHA_VERSION":   "54.0a2",
+    "LATEST_THUNDERBIRD_DEVEL_VERSION":   "59.0b2",
+    "LATEST_THUNDERBIRD_NIGHTLY_VERSION": "60.0a1"
+}
+</syntaxhighlight>
 
 [[Category: Release Management|P]]
-
-firefox-58.0: {
-	category:	major,
-	product:	firefox,
-	build_number:	6,
-	description:	null,
-	is_security_driven:	false,
-	version:	58.0,
-	date:	2018-01-23,
-}
