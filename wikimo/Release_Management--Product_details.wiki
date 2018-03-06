@@ -1,6 +1,233 @@
-Product details are now automatically managed by ship-it.
-Results are published here:
+Product details is a public JSON API which contains release information for Firefox (desktop and mobile) and Thunderbird.
+The data is managed by the Release Management team through Ship-it and exported available at this domain:
+
 https://product-details.mozilla.org/
+
+The data provided by this API is meant to be the source of truth for all tools needing to know specific information about a Firefox release or channel.
+
+Historically that data was managed with direct commits into a code repository on svn. The [current version of the API is 1.0](https://product-details.mozilla.org/1.0/) and is meant to be fully compatible with the version we had hosted on svn. If we rewrite the structure of these files in the future, this will be done in version 2.0 and there will be a transition period during which both 1.0 and 2.0 are available.
+
+The mozilla.org development team maintains a copy of the [product-details files on GitHub](https://github.com/mozilla/product-details-json) that is synced with product-details.mozilla.org so as to facilitate deployment and continuous deployment of mozilla.org.
+
+Since this data is managed via Ship-It, bug reports about the data or requests for additional data should be done on bugzilla in [Release Engineering::Ship-It](https://bugzilla.mozilla.org/enter_bug.cgi?product=Release%20Engineering&component=Ship%20It) and not through the Github Repository.
+
+Here is the list of files we provide:
+
+=== all.json ===
+This file holds historical information about all Firefox, Firefox for Mobile (aka Fennec), Firefox Dev Edition and Thunderbird releases we shipped in the past.
+Example:
+<syntaxhighlight lang="JavaScript">
+firefox-58.0: {
+	category:	"major",
+	product:	"firefox",
+	build_number:	6,
+	description:	"",
+	is_security_driven:	false,
+	version:	"58.0",
+	date:	"2018-01-23",
+}
+</syntaxhighlight>
+
+=== devedition.json ===
+This file is a recent addition and contains the same historical information as all.json but only for Firefox Dev Edition since version 54. Note the name of the key: devedition-XX.0bY.
+
+<syntaxhighlight lang="JavaScript">
+devedition-59.0b1: {
+	category:	"dev",
+	product:	"devedition",
+	build_number:	11,
+	description:	"",
+	is_security_driven:	false,
+	version:	"59.0b1",
+	date:	"2018-01-17",
+}
+</syntaxhighlight>
+
+=== firefox.json ===
+This file holds historical information about all Firefox releases for desktop we shipped in the past.
+
+=== firefox_history_development_releases.json ===
+This file contains all the Firefox Desktop release dates for Betas
+example:
+
+<syntaxhighlight lang="JavaScript">
+{
+	…
+	59.0b11	"2018-02-20",
+	59.0b12	"2018-02-23",
+	59.0b13	"2018-02-27",
+	59.0b14	"2018-03-02",
+	…
+}
+</syntaxhighlight>
+
+=== firefox_history_major_releases.json ===
+This file contains all the Firefox Desktop release dates for major releases (XX.0 releases)
+
+=== firefox_history_stability_releases.json ===
+This file contains all the Firefox Desktop release dates for minor releases (XX.X.Y releases)
+
+=== firefox_primary_builds.json ===
+This file contains all the Firefox builds we provide per locale. The filesize fields in this file are always set to 0, this is not a bug, we are keeping these fields in the schema for historical reasons only but no longer populate them with data.
+ex:
+
+<syntaxhighlight lang="JavaScript">
+ach {
+	52.6.0esr {
+		Linux {
+			filesize: 0,
+		},
+		OS X {
+			filesize: 0,
+		},
+		Windows {
+			filesize: 0,
+		},
+	},
+	54.0a2 {
+		Linux {
+			filesize: 0,
+		},
+		OS X {
+			filesize: 0,
+		},
+		Windows {
+			filesize: 0,
+		},
+	},
+	58.0.2 {
+		Linux {
+			filesize: 0,
+		},
+		OS X {
+			filesize: 0,
+		},
+		Windows {
+			filesize: 0,
+		},
+	},
+	52.6.0esr {
+		Linux {
+			filesize: 0,
+		},
+		OS X {
+			filesize: 0,
+		},
+		Windows {
+			filesize: 0,
+		},
+	},
+	60.0a1 {
+		Linux {
+			filesize: 0,
+		},
+		OS X {
+			filesize: 0,
+		},
+		Windows {
+			filesize: 0,
+		},
+	},
+}
+</syntaxhighlight>
+
+
+=== firefox_versions.json ===
+This file contains all the versions we ship:
+<syntaxhighlight lang="JavaScript">
+{
+	FIREFOX_NIGHTLY:	"60.0a1",
+	FIREFOX_AURORA:	"",
+	FIREFOX_ESR:	"52.6.0esr",
+	FIREFOX_ESR_NEXT:	"",
+	LATEST_FIREFOX_DEVEL_VERSION:	"59.0b14",
+	FIREFOX_DEVEDITION:	"59.0b14",
+	LATEST_FIREFOX_OLDER_VERSION:	"3.6.28",
+	LATEST_FIREFOX_RELEASED_DEVEL_VERSION:	"59.0b14",
+	LATEST_FIREFOX_VERSION:	"58.0.2",
+}
+</syntaxhighlight>
+
+This is one of the most used and oldest JSON files we provide and its structure has some technical debt that we maintain so as to not break consumers of the API.
+* FIREFOX_NIGHTLY is Firefox for Nightly.
+* FIREFOX_AURORA is empty since we no longer have an Aurora branch.
+* FIREFOX_ESR_NEXT is usually empty except for a couple of months a year when we have two ESR overlapping and we need to provide both on mozilla.org for download.
+* LATEST_FIREFOX_DEVEL_VERSION is the latest Firefox Beta built, not necessarily exposed for downloading
+* FIREFOX_DEVEDITION is Firefox Developer Edition (Beta 1 to 4 in the release cycle)
+* LATEST_FIREFOX_OLDER_VERSION is unused today, it is the last version we shipped before we moved to the Rapid Release cycle
+* LATEST_FIREFOX_RELEASED_DEVEL_VERSION is the validated latest Firefox Beta built, exposed for downloading
+* LATEST_FIREFOX_VERSION is the Firefox Version we ship on the release channel
+
+=== l10n/ ===
+This folder contains the l10n changeset per locale used for each build. The translation of our products is done in separate l10n repositories, each locale provides a good known version of their translations through a sign off process with l10n-drivers and these changeset per locale are used to build Firefox, Thunderbird and Fennec.
+
+example:
+
+l10n/Firefox-58.0-build6.json file
+<syntaxhighlight lang="JavaScript">
+{
+	locales	{
+		pa-IN {
+			changeset: "5634ac6e7d9b",
+		},
+		gd {
+			changeset: "da7de9b6e635",
+		},
+		…
+	},
+	submittedAt: "2018-01-18T22:53:08+00:00",
+	shippedAt: "2018-01-23T13:20:26+00:00",
+	name: "Firefox-58.0-build6",
+}
+</syntaxhighlight>
+
+=== languages.json ===
+This is the list of all the BCP-47 locales we support with their English and native names:
+
+<syntaxhighlight lang="JavaScript">
+cs {
+	English	"Czech",
+	native	"Čeština",
+},
+csb {
+	English	"Kashubian",
+	native	"Kaszëbsczi",
+},
+cy {
+	English	"Welsh",
+	native	"Cymraeg",
+},
+…
+</syntaxhighlight>
+
+=== mobile_android.json ===
+<syntaxhighlight lang="JavaScript">
+{
+}
+</syntaxhighlight>
+=== mobile_details.json ===
+=== mobile_history_development_releases.json ===
+=== mobile_history_major_releases.json ===
+=== mobile_history_stability_releases.json ===
+=== mobile_versions.json ===
+=== regions/ ===
+=== thunderbird.json ===
+=== thunderbird_beta_builds.json ===
+=== thunderbird_history_development_releases.json ===
+=== thunderbird_history_major_releases.json ===
+=== thunderbird_history_stability_releases.json ===
+=== thunderbird_primary_builds.json ===
+=== thunderbird_versions.json ===
 
 
 [[Category: Release Management|P]]
+
+firefox-58.0: {
+	category:	major,
+	product:	firefox,
+	build_number:	6,
+	description:	null,
+	is_security_driven:	false,
+	version:	58.0,
+	date:	2018-01-23,
+}
