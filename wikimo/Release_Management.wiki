@@ -71,7 +71,7 @@ When the release schedule is adjusted for any reason, we need to ensure that [ht
 
 ==Team Resources==
 Each version of Firefox is followed by a release manager who owns it from start to release. This way, Nightly, Beta, ESR, and Release channels have someone dedicated to getting all the pieces put together correctly.
-* [[Release_Management/Release_owners]]
+* [[Release_Management/Release_owners|Release Owners]]
 * [[Release_Management/Nightly|Nightly]] Tasks for relman during Nightly
 * [[Release_Management/Beta_Release_Checklist|Beta Release Checklist]]
 ** Excel based checklist: [https://docs.google.com/spreadsheets/d/1hhYtmyLc0GEk_NaK45KjRvhyppw7s7YSpC9xudaQZgo/edit#gid=1158959417 Mid-beta and release checklist]
@@ -103,8 +103,8 @@ Each version of Firefox is followed by a release manager who owns it from start 
 
 ;Tools
 * [http://ship-it.mozilla.org/ Ship-it UI] - [https://mana.mozilla.org/wiki/pages/viewpage.action?pageId=30769829 Mozilla VPN]
-* [https://product-details.mozilla.org/1.0/ Product-Details], a public JSON API about Firefox and Thunderbird releases
-* [[Release_Management/Onboarding | Onboarding]]
+* [[Release_Management/Product_details|Product-Details]], a public JSON API about Firefox and Thunderbird releases
+* [[Release_Management/Onboarding|Onboarding]]
 
 
 [[Category:Release_Management]]
