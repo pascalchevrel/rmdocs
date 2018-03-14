@@ -11,13 +11,14 @@ The mozilla.org development team maintains a copy of the [https://github.com/moz
 
 Since this data is managed via Ship-It, bug reports about the data or requests for additional data should be done on bugzilla in [https://bugzilla.mozilla.org/enter_bug.cgi?product=Release%20Engineering&component=Ship%20It Release Engineering::Ship-It] and not through the Github Repository.
 
+
 Here is the list of files we provide:
 
 === all.json ===
 This file holds historical information about all Firefox, Firefox for Mobile (aka Fennec), Firefox Dev Edition and Thunderbird releases we shipped in the past.
 Example:
 <syntaxhighlight lang="JSON">
-firefox-58.0: {
+"firefox-58.0": {
     "category":           "major",
     "product":            "firefox",
     "build_number":       6,
@@ -32,7 +33,7 @@ firefox-58.0: {
 This file is a recent addition and contains the same historical information as all.json but only for Firefox Dev Edition since version 54. Note the name of the key: devedition-XX.0bY.
 
 <syntaxhighlight lang="JSON">
-devedition-59.0b1: {
+"devedition-59.0b1": {
     "category":           "dev",
     "product":            "devedition",
     "build_number":       11,
