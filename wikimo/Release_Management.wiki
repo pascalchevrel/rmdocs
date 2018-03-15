@@ -100,6 +100,8 @@ Each version of Firefox is followed by a release manager who owns it from start 
 * [[Release_Management/Uplift_rules|Uplift rules]]
 * [[Release_Management/Tracking_rules|Tracking rules]]
 * [[Release_Management/Relnotes_rules|Release notes rules]]
+* [[Release_Management/Glossary|Glossary of terms used by Release Management]]
+
 
 ;Tools
 * [http://ship-it.mozilla.org/ Ship-it UI] - [https://mana.mozilla.org/wiki/pages/viewpage.action?pageId=30769829 Mozilla VPN]
