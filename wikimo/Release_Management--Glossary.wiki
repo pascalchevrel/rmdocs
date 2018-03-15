@@ -1,0 +1,50 @@
+We have a lot of internal jargon, acronyms and internal project names at Mozilla.
+This glossary lists some of the key terms we use in the Release Management team.
+
+== Chemspill ==
+Short for Chemical Spill. A security-driven dot release of our product.
+
+== Dawn ==
+Name of the project that removed the intermediary channel called Aurora which existed between Nightly and Beta so as to reduce our release time. You can read more about it on the Release Management blog: [https://release.mozilla.org/firefox/release/2017/04/17/Dawn-Project-FAQ.html Dawn project or the end of Aurora].
+
+== Dot release ==
+A minor release in which only the version number behind the dot is changed, hence its name.
+Ex:
+Major Release 60
+Dot Release is 60.0.1
+
+Dot releases are usually done to fix a stability (top-crash)  or a security (Chemspill) issue and are done outside of the usual release dates.
+
+== Nightly soft code freeze ==
+Last week of the nightly cycle on mozilla-central justr before the merge to beta during which landing risky or experimental code in the repository is discouraged.
+
+== Nucleus ==
+Name of the internal application used by release managers to prepare and publish release notes. The data in this application is fetched by mozilla.org.
+
+== r-d ==
+Acronym for Release-drivers.
+
+== RelEng ==
+Short for Release Engineering.
+
+== Relman ==
+Short for Release Management.
+
+== Relnotes ==
+Short for Release notes.
+
+== Ship-It ==
+Name of the internal application used by release management to store all the metadata relevant to a release (version, code and l10n shas, date, platforms, chemspill or not…) and make it available to release engineering tools for releases. The data is also exposed publicly as JSON files as part of a public API called [[https://wiki.mozilla.org/Release_Management/Product_details|Product-Details]].
+
+== String Freeze ==
+Period during which the introduction, modification or deletion of strings exposed to the end-users is not allowed so as to allow our localizers to translate our product. We currently do not have a formal string freeze enforced for Firefox.
+
+== Socorro ==
+Internal name of the web application which processes crash data at [https://crash-stats.mozilla.com crash-stats.mozilla.com]
+
+== Train Model ==
+Our release process Mozilla has a fixed-schedule release model known as the [http://web.archive.org/web/20171012150350/https://blog.mozilla.org/channels/2011/07/18/every-six-weeks/ Train Model], in which we release Firefox every six to eight weeks. Since 2016 we have a "flexible train model" which means that we still plan release dates but adjust the length of each cycle during the year to meet internal and market needs.
+
+== WNP ==
+Short for "what's new pages". The page that is displayed in our product when they get a major update. These pages are hosted on mozilla.org for our Desktop products and on Google Play,  Apple AppStore and other software stores for mobile.
+
