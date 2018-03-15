@@ -50,39 +50,69 @@ If you land code that introduces new crashers or lower the overall quality of Fi
 
 == All about Flags  ==
 [[File:Status.png|400px|right]]
-* '''tracking-firefoxN''': A multi-state flag that currently has two values which show whether a  bug is being investigated for possible resolution in the FirefoxN release. Bugs marked tracking-firefoxN are bugs that must be resolved  one way or another before a particular release ships. [[Firefox/Drivers|Release drivers]] will track and shepherd the bug until it is determined the bug no longer impacts the release
-** '''''?'''''  — This bug has been nominated to block FirefoxN
-** '''''-''''' (minus) — Drivers have determined this bug will not block FirefoxN
-** '''''+''''' (plus) —  Drivershave determined this bug will block the FirefoxN release or may be tracked after the FirefoxN release
+=== tracking-firefoxXX ===
+A flag which show whether a bug is being investigated for possible resolution in the Firefox XX release. Bugs marked tracking-Firefox XX are bugs that must be resolved one way or another before a particular release ships. [[Firefox/Drivers|Release drivers]] will track and shepherd the bug until it is determined the bug no longer impacts the release.
 
-Refer to [https://blog.mozilla.org/channels/2011/06/01/more-details-about-how-to-use-the-tracking-firefox-bugzilla-flag/ these guidelines] on setting the tracking flag
+{| class="wikitable"
+|+ tracking-firefoxXX
+|-
+| ? || This bug has been nominated to block Firefox XX
+|-
+|  - ||  Drivers have determined this bug will not block Firefox XX
+|-
+|  +|| Drivers have determined this bug will block the Firefox XX release or may be tracked after the Firefox XX release
+|-
+|}
 
-* '''status-firefoxN''': A multi-state flag that currently has seven values which represent the  status of the bug with respect to the FirefoxN
-** ''unaffected'' — This bug does not affect FirefoxN
-** ''affected'' — This bug affects FirefoxN
-** ''fixed'' — This bug is fixed in FirefoxN
-** ''wontfix'' — A fix for this bug will not be accepted in FirefoxN
-** ''verified'' — This bug is fixed and verified in FirefoxN
-** ''disabled'' — This feature is disabled in FirefoxN
-** ''verified disabled'' — Disabling the feature is verified in FirefoxN
-<div style="clear: right"></div>
+Refer to [http://web.archive.org/web/20160417051846/https://blog.mozilla.org/channels/2011/06/01/more-details-about-how-to-use-the-tracking-firefox-bugzilla-flag/ these guidelines] on setting the tracking flag
+
+=== status-firefoxXX ===
+A flag which represents the status of the bug with respect to Firefox XX.
+
+{| class="wikitable"
+|+ status-firefoxXX
+|-
+| --- || We don't know whether Firefox XX is affected
+|-
+| ? || We don't know whether Firefox XX is affected, but we want to find out
+|-
+| unaffected || This bug does not affect Firefox XX
+|-
+| affected || This bug affects Firefox XX
+|-
+| fix-optional || This bug affects Firefox XX, we would take a fix but don't consider it as release blocking
+|-
+| fixed || This bug is fixed in Firefox XX
+|-
+| verified || This bug is fixed and verified in Firefox XX
+|-
+| checkin-pending || A patch for this bug was written and we are waiting for the code to be committed to the branch
+|-
+| disabled || This feature is disabled in Firefox XX
+|-
+| verified disabled || Disabling the feature is verified in Firefox XX
+|-
+| wontfix || A fix for this bug will not be accepted in Firefox XX
+|-
+|}
 
 * '''Approval Flags''': Set on the attachment of a bug
-** All patches landing on ''mozilla-beta/release/esr'' branches must have these nominated by setting a ''''' ? ''''' flag. <br>Please make sure to fill in the populated list of questions '''[Approval Request Comment]''' that come up on the attachment. This helps Release Management understand the user impact & the risk/reward analysis before we grant or deny approval. If this form is left incomplete it will be sent back to you for completion.
+All patches landing on ''mozilla-beta/release/esr'' branches must have these nominated by setting a ''''' ? ''''' flag. <br>Please make sure to fill in the populated list of questions '''[Approval Request Comment]''' that come up on the attachment.
+This helps Release Management understand the user impact & the risk/reward analysis before we grant or deny approval. If this form is left incomplete it will be sent back to you for completion.
 
 [[File:ApprovalRequest.png|750px|centre]]
 
 == The Process ==
 1) If you think a bug needs to be addressed in a release:
-* Set the '''tracking-firefoxN: ?''' nomination on a bug for with helpful justification and keeping these [https://blog.mozilla.org/channels/2011/06/01/more-details-about-how-to-use-the-tracking-firefox-bugzilla-flag/ guidelines] in mind
+* Set the '''tracking-Firefox XX: ?''' nomination on a bug for with helpful justification and keeping these [https://blog.mozilla.org/channels/2011/06/01/more-details-about-how-to-use-the-tracking-firefox-bugzilla-flag/ guidelines] in mind
 * Mark the corresponding status flag as affected if the patch is still being worked on
 * Once the patch is ready set the approval flag appropriately depending on which branches are affected
 
-2) Members of Release Management go through all the bugs nominated for tracking and if in agreement that this bug needs to be investigated in that release we will go ahead and set '''tracking-firefoxN: +'''. Once we track a bug for a particular release we will make sure to follow-up on the progress or help with any road blockers till you have a patch nominated for approval.
+2) Members of Release Management go through all the bugs nominated for tracking and if in agreement that this bug needs to be investigated in that release we will go ahead and set '''tracking-Firefox XX: +'''. Once we track a bug for a particular release we will make sure to follow-up on the progress or help with any road blockers till you have a patch nominated for approval.
 
-'''Note:''' Bugs denied for ''tracking-firefoxN'' are still important. It merely means based on the information we have now,we do not feel the bug would prevent us from shipping a release. If new information comes to light, you need help getting more data before you can make the case for us to track, or you disagree with our assessment feel free to renominate again with additional justification.
+'''Note:''' Bugs denied for ''tracking-Firefox XX'' are still important. It merely means based on the information we have now,we do not feel the bug would prevent us from shipping a release. If new information comes to light, you need help getting more data before you can make the case for us to track, or you disagree with our assessment feel free to renominate again with additional justification.
 
-3) Once you nominated a patch with '''approval-mozilla-beta/release: ?''' we will evaluate the information given in the attachment request we may either approve/deny/request more information. Once you get an approval , i.e '''approval-mozilla-beta/release: +''', please go ahead with landing on the corresponding branch and mark '''status-firefoxN''' flag to ''fixed'', making sure [https://treeherder.mozilla.org/ Treeherder] is green.
+3) Once you nominated a patch with '''approval-mozilla-beta/release: ?''' we will evaluate the information given in the attachment request we may either approve/deny/request more information. Once you get an approval , i.e '''approval-mozilla-beta/release: +''', please go ahead with landing on the corresponding branch and mark '''status-Firefox XX''' flag to ''fixed'', making sure [https://treeherder.mozilla.org/ Treeherder] is green.
 
 
 '''Also see''':
