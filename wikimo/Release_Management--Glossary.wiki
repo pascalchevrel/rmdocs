@@ -48,3 +48,4 @@ Our release process Mozilla has a fixed-schedule release model known as the [htt
 == WNP ==
 Short for "what's new pages". The page that is displayed in our product when they get a major update. These pages are hosted on mozilla.org for our Desktop products and on Google Play,  Apple AppStore and other software stores for mobile.
 
+[[Category:Release Management]]
