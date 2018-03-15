@@ -42,6 +42,12 @@ Release day activities/checklist can be found on the [[Release_Management/Releas
 Our release schedule is meant to be flexible and we may occasionally modify the length of a cycle to be shorter or longer than the 6-8 week cycle mentioned. Check the [[RapidRelease/Calendar|Rapid Release Calendar] to stay updated with the upcoming branch dates.
 
 
+=== Nightly soft code freeze ===
+The last week of the nightly cycle, before merge day (when mozilla-central is merged into the mozilla-beta repository and a new release cycle starts), is  nightly soft code freeze week, meaning that developers should not land on mozilla-central code that is deemed risky for the stability and general quality of Firefox and that features that are controlled by a pref and were not activated during the nightly cycle should not be activated during this week.
+
+If you land code that introduces new crashers or lower the overall quality of Firefox this week, we will back it out instead of waiting for a follow-up fix.
+
+
 == All about Flags  ==
 [[File:Status.png|400px|right]]
 * '''tracking-firefoxN''': A multi-state flag that currently has two values which show whether a  bug is being investigated for possible resolution in the FirefoxN release. Bugs marked tracking-firefoxN are bugs that must be resolved  one way or another before a particular release ships. [[Firefox/Drivers|Release drivers]] will track and shepherd the bug until it is determined the bug no longer impacts the release
@@ -113,7 +119,7 @@ Following are the queries that Release management goes through almost day-day to
 == Release notes for Desktop/Android ==
 [[Release_Management/Relnotes_rules|Release Notes page]] describes the release notes process, the '''''relnote-firefox''''' tracking flag, styling guide and other relevant details.
 
-Please check the [https://wiki.mozilla.org/Release_Management/Release_Notes_Process#What.27s_New.2FKnown_Issues_Section_Candidates wiki] for the process we have currently to construct release notes . Below is the link to all the existing release notes across all channels.
+Please check the [[Release_Management/Release_Notes_Process#What.27s_New.2FKnown_Issues_Section_Candidates Release Notes documentation]] for the process we currently have to construct release notes. Below are the links to all the existing release notes across all channels.
 
 * '''Firefox Release'''
 ** [https://www.mozilla.org/firefox/releasenotes/ Desktop Release notes]
