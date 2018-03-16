@@ -1,0 +1,12 @@
+
+During the Nightly development cycle, release managers should do the following:
+
+* Check for bugs nominated for tracking
+* File top crashes and newly appearing crashes from crash-stats
+* Find owners for tracked bugs. This is important as it gives us a chance to fix new regressions and crashes before they move to channels which have more users.
+* Track bugs related to new feature development that are aimed for their release.
+** Look for new features at the planning meeting, by asking engineering and product managers, and by spotting heavy activity in meta bugs
+* Check for what's new pages and get them to localizers (see https://wiki.mozilla.org/Release_Management/Aurora_Landing_Process#A_few_days_before_the_merge_day)
+* Write release notes towards the end of the cycle for mobile and desktop versions.
+
+[[Category:Release Management]]
