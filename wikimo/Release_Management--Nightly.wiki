@@ -17,7 +17,7 @@
 ** Interesting changes should be communicated to our alpha-testers via our @FirefoxNightly Twitter account
 ** Interesting changes with an end-user impact to the end user should have the relnote flag set
 * Write Release Notes during the cycle based on what is nominated to be included in release notes
-* Watch reports on Twitter, IRC and other communication channels about major regressions. Ask releng for a patch to be backed out and nightlies re-spun if the end-user impact is important and may lead to loosing alpha testers.
+* Watch reports on Twitter, IRC and other communication channels about major regressions. Ask releng for a patch to be backed out and nightlies re-spun if the end-user impact may lead to loosing alpha testers.
 
 == End of cycle ==
 * Check that there is no visual regression on the What's New Page caused by template changes on mozilla.org or gecko changes in rendering a week before merge day
@@ -29,6 +29,7 @@
 
 == See also ==
 * [[Nightly|FAQ about Firefox Nightly]]
+* [[Release_Management/Queries/Nightly|Bugzilla Queries for Firefox Nightly]]
 * [[Release_Management/Beta_Release_Checklist|Beta Release Checklist]]
 
 [[Category:Release Management]]
