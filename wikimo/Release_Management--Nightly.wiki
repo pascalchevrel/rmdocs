@@ -1,12 +1,34 @@
 
-During the Nightly development cycle, release managers should do the following:
+<div style="float:right; clear:both; margin-left:0.5em;">__TOC__</div>
+<div style="font-size: 130%;">'''This page lists what the release management team should do during the Nightly development cycle on Desktop.'''</div>
 
+== Beginning of a new cycle ==
+* Update the version number on Ship-it on merge day when [https://hg.mozilla.org/mozilla-central/file/tip/browser/config/version.txt mozilla-central] is updated with a new version number.
+* Ask releng for a push of [[Release_Management/Product_details|product-details]] to production once we have all the locales built.
+* Copy the previous release notes template in Nucleus with the new version number. You don't have to set it as public as long as there are no note added, a 'coming soon' page will be displayed on mozilla.org as long as the release is created in Nucleus.
+
+== During the cycle ==
 * Check for bugs nominated for tracking
-* File top crashes and newly appearing crashes from crash-stats
+* Check bugs filed with the ''nightly-community'' keyword, those are filed by our more engaged alpha-testers and are often recent regressions
 * Find owners for tracked bugs. This is important as it gives us a chance to fix new regressions and crashes before they move to channels which have more users.
 * Track bugs related to new feature development that are aimed for their release.
-** Look for new features at the planning meeting, by asking engineering and product managers, and by spotting heavy activity in meta bugs
-* Check for what's new pages and get them to localizers (see https://wiki.mozilla.org/Release_Management/Aurora_Landing_Process#A_few_days_before_the_merge_day)
-* Write release notes towards the end of the cycle for mobile and desktop versions.
+* File top crashes and newly appearing crashes from crash-stats
+* Watch all commits on mozilla-central for interesting features
+** Interesting changes should be communicated to our alpha-testers via our @FirefoxNightly Twitter account
+** Interesting changes with an end-user impact to the end user should have the relnote flag set
+* Write Release Notes during the cycle based on what is nominated to be included in release notes
+* Watch reports on Twitter, IRC and other communication channels about major regressions. Ask releng for a patch to be backed out and nightlies re-spun if the end-user impact is important and may lead to loosing alpha testers.
+
+== End of cycle ==
+* Check that there is no visual regression on the What's New Page caused by template changes on mozilla.org or gecko changes in rendering a week before merge day
+* Ask the Bugzilla team to create status and tracking flags for the next version, ex: [https://bugzilla.mozilla.org/show_bug.cgi?id=1444839 Bug 1444839]
+
+== Android ==
+* We do not maintain release notes for Firefox Nightly on Android
+* There is no what's new page for Android
+
+== See also ==
+* [[Nightly|FAQ about Firefox Nightly]]
+* [[Release_Management/Beta_Release_Checklist|Beta Release Checklist]]
 
 [[Category:Release Management]]
