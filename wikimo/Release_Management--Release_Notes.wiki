@@ -1,0 +1,67 @@
+{{RELEASE_MANAGEMENT_UPDATE_NEEDED}}
+
+=Release Notes=
+
+==What's the purpose of release notes?==
+Release notes are a central source of information about changes in each Firefox release. They're mainly aimed at advanced and technical users of Firefox who want to be informed about the changes in Firefox's latest updates. They may be web developers, IT managers who deploy Firefox for their users, or people who need to know all the details of the browser they use to accomplish their work.  Technical journalists also follow our release notes in order to write stories on changes in Firefox.
+
+Here is the full list of [https://www.mozilla.org/en-US/firefox/releases/ past Firefox release notes].
+
+==How you can help with release notes==
+;1. Nominate fixes and features!
+Anyone can go to a bug in bugzilla.mozilla.org, and nominate fixes or changes for release notes. Open the "Tracking Flags" menu on the right side of the page. Then please set the relnote-firefox: flag to "?". Release management checks this flag regularly.
+
+A form will pop up in the Bugzilla comments box, asking for your suggested wording for the note and an optional url to link to further documentation.
+
+;2. Explain the fix
+If your fix or other project should be in release notes, tell us what it did, what it means, and what the users and tech press should know. Ideally, we link from each note to an MDN page, a blog post hosted somewhere on mozilla.org, or even a wiki page for users to understand changes, fixes, and new features.  Details are very useful here.
+
+==What release managers do for relnotes==
+Release management may skim through the entire list of fixed bugs for a release to find possible release notes. That's often around 4000 bugs! (List of fixed bugs for the [https://bugzilla.mozilla.org/buglist.cgi?f1=target_milestone&f2=cf_status_firefox{{RELEASE_VERSION}}&j_top=OR&list_id=12572116&o1=substring&o2=anywordssubstr&product=Core&product=Firefox&product=Firefox%20for%20Android&product=Firefox%20for%20iOS&product=Hello%20%28Loop%29&product=Toolkit&query_format=advanced&v1={{RELEASE_VERSION}}&v2=fixed%2C%20verified&order=bug_status%2Cpriority%2Cassigned_to%2Cbug_id&limit=0 current release]; for [https://bugzilla.mozilla.org/buglist.cgi?f1=target_milestone&f2=cf_status_firefox{{BETA_VERSION}}&j_top=OR&list_id=12572116&o1=substring&o2=anywordssubstr&product=Core&product=Firefox&product=Firefox%20for%20Android&product=Firefox%20for%20iOS&product=Hello%20%28Loop%29&product=Toolkit&query_format=advanced&v1={{BETA_VERSION}}&v2=fixed%2C%20verified&order=bug_status%2Cpriority%2Cassigned_to%2Cbug_id&limit=0 beta]; for [https://bugzilla.mozilla.org/buglist.cgi?f1=target_milestone&f2=cf_status_firefox{{AURORA_VERSION}}&j_top=OR&list_id=12572116&o1=substring&o2=anywordssubstr&product=Core&product=Firefox&product=Firefox%20for%20Android&product=Firefox%20for%20iOS&product=Hello%20%28Loop%29&product=Toolkit&query_format=advanced&v1={{AURORA_VERSION}}&v2=fixed%2C%20verified&order=bug_status%2Cpriority%2Cassigned_to%2Cbug_id&limit=0 aurora].)
+
+We also ask engineering managers and developer teams to tell us what note-worthy fixes are upcoming for aurora, beta, and release channels. We  check other sources like http://hacks.mozilla.org to find notable new work. In every release cycle, relman asks people on several engineering mailing lists to read release note drafts, review them, and suggest changes.
+
+The release notes are written and managed in the [[Websites/Mozilla.org/Publishing|Nucleus interface]] available on https://nucleus.mozilla.org/.
+
+Notable fixes and new features in more detail for developers can be found at https://developer.mozilla.org/en-US/Firefox/Releases
+
+==Aurora and Beta Cycles==
+
+For the first aurora release, from the nucleus interface:
+* Create a new aurora release
+* Copy the requirements and description from the previous aurora release
+* Make sure that is_public is disabled
+* Ask for review to the various relevant teams (the list is available in the Release Team Calendar)
+* Enable is_public on the aurora release day
+
+For the first beta release, from the nucleus interface:
+* Copy the aurora release (is_public is going to be disabled)
+** Use the checkbox in the releases list, then the dropdown, to copy it.
+* Update the title
+* Update the date
+* Update the description text (since aurora Text links to information about what Developer Edition is)
+* Ask for review (cf aurora)
+* Enable is_public on the beta release day
+
+During the aurora/beta cycle:
+* Scan the relnote-firefox "?" flags
+* Try to find some important unresolved bugs
+* Check if some features have not been disabled
+
+==Release==
+* Same step as Beta
+* Once the notes have been signed off and the release is live, ''is_public'' has to be turned on.
+
+==Product details==
+For the links in the Firefox download pages to point to the correct associated release notes, you will next need to [[Release Management/Product details|edit product details]] in svn.
+
+You can check the links to release notes at:
+
+* Release: https://www.mozilla.org/firefox/new/
+* Beta: http://www.mozilla.org/firefox/channel/#beta
+* Aurora: https://www.mozilla.org/firefox/channel/#aurora
+* ESR: https://www.mozilla.org/firefox/organizations/all/
+
+
+
+[[Category:Release_Management|R]]
