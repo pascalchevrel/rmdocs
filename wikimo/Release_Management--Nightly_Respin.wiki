@@ -1,4 +1,4 @@
-<p style="font-size: larger; font-weight:bold;">This page details the process to backout a faulty patch and, if needed, get nightlies respun.</p>
+<p style="font-size: larger; font-weight:bold;">This page details the process to back out a faulty patch and, if needed, get nightlies respun.</p>
 
 
 == Summarized process ==
@@ -7,12 +7,12 @@
 # Ask release engineering to stop automatic nightly updates because of the bug filed in step 1
 # Warn our users about the regression via our Twitter account and #nightly IRC channel, give the bug number.
 # Investigate to find the faulty patch via mozregression or stack traces for crashes
-# Ask release engineering for the backout of the patch and nightly respins, give the bug number as reference
+# Ask release engineering for the back out of the patch and nightly respun, give the bug number as reference
 # Mark the bug as blocking the bug referenced for the faulty patch
 # Ask the patch author to investigate the regression (NeedInfo in Bugzilla)
 # When updates are back announce that the fix is served on Twitter and IRC
 
-== When should we backout a patch? ==
+== When should we back out a patch? ==
 
 We want to back out a patch when a significant regression is identified. This is usually either a functional regression (browser unusable, content rendering broken) or a sudden spike of crashes on the Nightly channel.
 
@@ -20,7 +20,7 @@ We want the nightly channel to be as stable and usable by our community as possi
 
 == How to find the patch to back out ==
 
-If it is a functional regression (reproductible case), then we should use [mozregression](https://mozilla.github.io/mozregression/quickstart.html). If it is a spike in crashes not necessarily reproductable (random crashes while surfing), then our crash analysis experts in the Release Management team should be contacted. The analysis of the stack trace combined with hg logs on mozilla-central often allow finding the ug that introduced the instability.
+If it is a functional regression (reproducible case), then we should use [https://mozilla.github.io/mozregression/quickstart.html mozregression]. If it is a spike in crashes not necessarily reproducible (random crashes while surfing), then our crash analysis experts in the Release Management team should be contacted. The analysis of the stack trace combined with hg logs on mozilla-central often allow finding the bug number that introduced the instability.
 
 == Bug filing ==
 
@@ -32,7 +32,7 @@ The bug number will be used to track the work to fix the regression. Communicate
 
 == Stopping automatic background updates ==
 
-If you think that a lot of people are going to be impacted by a regression, ask release engineering to stop automatic updates. You can contact the oncall sheriff in the #sheriffs IRC channel or ask in the #releng channel.
+If you think that a lot of people are going to be impacted by a regression, ask release engineering to stop automatic updates. You can contact the on-call sheriff in the #sheriffs IRC channel or ask in the #releng channel.
 
 Blocking automatic updates won't prevent people to get an update if they check manually for it in the About dialog. It will also not prevent new users to install Firefox Nightly from mozilla.org but it will mitigate greatly the impact on our existing user base.
 
@@ -48,7 +48,7 @@ If the next nightly is about to be built and the impact is moderate, it is not n
 
 '''Note:''' Some members of the release management team have the technical knowledge and permissions to back out patches.
 
-== Comunicating about the issue ==
+== Communicating about the issue ==
 
 We should not hesitate to communicate the issue with a reference to the bug number to our community so as to minimize the number of duplicate bugs. If the issue needs steps to reproduce which are not obvious or a specific hardware/OS combination, having all communications centralized in a single bug helps.
 
