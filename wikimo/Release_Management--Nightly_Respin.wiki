@@ -4,10 +4,10 @@
 == Summarized process ==
 
 # File a bug with as much details possible about the regression / crash if a bug hasn't been filed yet
-# Ask release engineering to stop automatic nightly updates because of the bug filed in step 1
+# Ask sheriffs to stop automatic nightly updates because of the bug filed in step 1
 # Warn our users about the regression via our Twitter account and #nightly IRC channel, give the bug number.
 # Investigate to find the faulty patch via mozregression or stack traces for crashes
-# Ask release engineering for the back out of the patch and nightly respun, give the bug number as reference
+# Ask sheriffs for the back out of the patch and nightly respun, give the bug number as reference
 # Mark the bug as blocking the bug referenced for the faulty patch
 # Ask the patch author to investigate the regression (NeedInfo in Bugzilla)
 # When updates are back announce that the fix is served on Twitter and IRC
@@ -32,9 +32,11 @@ The bug number will be used to track the work to fix the regression. Communicate
 
 == Stopping automatic background updates ==
 
-If you think that a lot of people are going to be impacted by a regression, ask release engineering to stop automatic updates. You can contact the on-call sheriff in the #sheriffs IRC channel or ask in the #releng channel.
+If you think that a lot of people are going to be impacted by a regression, ask sheriffs to stop automatic updates. You can contact the on-call sheriff in the #sheriffs IRC channel. In case nobody is available, release engineering can do it (#releng channel).
 
-Blocking automatic updates won't prevent people to get an update if they check manually for it in the About dialog. It will also not prevent new users to install Firefox Nightly from mozilla.org but it will mitigate greatly the impact on our existing user base.
+Blocking automatic updates will not prevent new users to install Firefox Nightly from mozilla.org but it will mitigate greatly the impact on our existing user base.
+
+We can ask for automatic updates to be stoped for a specific OS.
 
 Most of the major regressions are reported immediately via our @FirefoxNightly Twitter account followers, usually when more than 2 people report a similar regression there is a high chance that it will be serious and stopping automatic updates should be done rapidly.
 
