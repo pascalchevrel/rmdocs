@@ -1,7 +1,19 @@
 
 <div style="float:right; clear:both; margin-left:0.5em;">__TOC__</div>
-<div style="font-size: 130%;">'''This page lists what the release management team should do during the Nightly development cycle on Desktop.'''</div>
+<p style="font-size: x-large; font-weight:bold;">This page lists what the release management team should do during the Nightly development cycle on Desktop.</p>
 
+
+= Summarized process =
+# Update nightly version in Ship-it at the beginning of the cyle
+# Create new blank release notes in Nucleus
+# Watch regressions during the cycle,
+# File top crashes in Bugzilla from Socorro
+# Watch commits and communicate to testers what needs testing
+# Check for bugs nominated for tracking and find owners
+# Add interesting features to release notes
+# Create new flags in Bugzilla for the next version at the end of the cycle
+
+= Cycle details =
 == Beginning of a new cycle ==
 * Update the version number on Ship-it on merge day when [https://hg.mozilla.org/mozilla-central/file/tip/browser/config/version.txt mozilla-central] is updated with a new version number.
 * Ask releng for a push of [[Release_Management/Product_details|product-details]] to production once we have all the locales built.
@@ -33,3 +45,4 @@
 * [[Release_Management/Beta_Release_Checklist|Beta Release Checklist]]
 
 [[Category:Release Management]]
+[[Category:Release_Management:Processes]]
