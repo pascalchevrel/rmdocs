@@ -1,0 +1,62 @@
+<p style="font-size: larger; font-weight:bold;">This page details the process to backout a faulty patch and, if needed, get nightlies respun.</p>
+
+
+== Summarized process ==
+
+# File a bug with as much details possible about the regression / crash if a bug hasn't been filed yet
+# Ask release engineering to stop automatic nightly updates because of the bug filed in step 1
+# Warn our users about the regression via our Twitter account and #nightly IRC channel, give the bug number.
+# Investigate to find the faulty patch via mozregression or stack traces for crashes
+# Ask release engineering for the backout of the patch and nightly respins, give the bug number as reference
+# Mark the bug as blocking the bug referenced for the faulty patch
+# Ask the patch author to investigate the regression (NeedInfo in Bugzilla)
+# When updates are back announce that the fix is served on Twitter and IRC
+
+== When should we backout a patch? ==
+
+We want to back out a patch when a significant regression is identified. This is usually either a functional regression (browser unusable, content rendering broken) or a sudden spike of crashes on the Nightly channel.
+
+We want the nightly channel to be as stable and usable by our community as possible. If the browser is crashing or barely usable, our users leave and we need to make we have a sizable nightly community. Deciding on backing out a patch, blocking automatic updates and rebuilding nightlies after the back out is a balance between the fact that bugs are expected on this channel and the fact that we want this channel to be of the highest quality possible to have a user base. The Release Management team are in charge of finding this balance.
+
+== How to find the patch to back out ==
+
+If it is a functional regression (reproductible case), then we should use [mozregression](https://mozilla.github.io/mozregression/quickstart.html). If it is a spike in crashes not necessarily reproductable (random crashes while surfing), then our crash analysis experts in the Release Management team should be contacted. The analysis of the stack trace combined with hg logs on mozilla-central often allow finding the ug that introduced the instability.
+
+== Bug filing ==
+
+* If the bug was already filed by a community member, then use it to track the regression and qualify it. Add the nightly-community keyword if missing.
+* If it is a crash, get a Crash ID from the people that reported it and file a bug via Socorro.
+* If it is a functional regression and no bug was filed yet, file it.
+
+The bug number will be used to track the work to fix the regression. Communicate to our community that a bug exist so as to avoid having many duplicated filed.
+
+== Stopping automatic background updates ==
+
+If you think that a lot of people are going to be impacted by a regression, ask release engineering to stop automatic updates. You can contact the oncall sheriff in the #sheriffs IRC channel or ask in the #releng channel.
+
+Blocking automatic updates won't prevent people to get an update if they check manually for it in the About dialog. It will also not prevent new users to install Firefox Nightly from mozilla.org but it will mitigate greatly the impact on our existing user base.
+
+Most of the major regressions are reported immediately via our @FirefoxNightly Twitter account followers, usually when more than 2 people report a similar regression there is a high chance that it will be serious and stopping automatic updates should be done rapidly.
+
+'''Note:''' Some members of the release management team have the technical knowledge and permissions to stop automatic updates.
+
+== Asking for a back out of the patch  and new nightlies ==
+
+You can contact sheriffs in the #sheriffs IRC channel to back out the patch that caused the regression when you have identified it. The back out commit will reference the bug number.
+
+If the next nightly is about to be built and the impact is moderate, it is not necessarily needed to ask for nightly builds to be respun after the back out.
+
+'''Note:''' Some members of the release management team have the technical knowledge and permissions to back out patches.
+
+== Comunicating about the issue ==
+
+We should not hesitate to communicate the issue with a reference to the bug number to our community so as to minimize the number of duplicate bugs. If the issue needs steps to reproduce which are not obvious or a specific hardware/OS combination, having all communications centralized in a single bug helps.
+
+We should also remember communicating about the resolving of the issue and urge people to upgrade to the updated nightly (so as to reduce automatic crash reports and unneeded bugs filed).
+
+Communicating about major regressions in Nightly is also part of the informal social contract we have with our alpha testers, making sure they are informed of major technical issues impacting them helps keeping them engaged.
+
+The main communication channels to communicate a regression are our @FirefoxNightly Twitter account, our #nightly IRC channel (bridged with our Telegram group) and potentially the #nightly-newbies slack channel if employees or NDAed volunteers reported it there.
+
+[[Category:Release_Management]]
+[[Category:Release_Management:Processes]]
