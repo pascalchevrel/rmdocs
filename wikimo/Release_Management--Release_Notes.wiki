@@ -2,10 +2,9 @@
 <p style="font-size: larger; font-weight:bold;">This page explains how the release management team prepares release notes for Firefox.</p>
 
 
-==Summarized process==
+== Summarized process ==
 
-==What's the purpose of release notes?==
-
+== What's the purpose of release notes? ==
 Release notes are a central source of information about changes in each Firefox release. They're mainly aimed at advanced and technical users of Firefox who want to be informed about the changes in Firefox's latest updates.
 
 They may be web developers, IT managers who deploy Firefox for their users, or people who need to know all the details of the browser they use to accomplish their work. Technical journalists also follow our release notes in order to write stories on changes in Firefox.
@@ -35,39 +34,45 @@ The changes that should be included in releases notes include:
 * New locales
 * Important system requirements changes (ex: end of support of Windows XP)
 
-==How you can help with release notes==
-;1. Nominate fixes and features!
-Go to a bug in [https://bugzilla.mozilla.org Bugzilla], and nominate fixes or changes for release notes. Expand the "Tracking Flags" section. Then please set the relnote-firefox: flag to "?". Release management checks this flag regularly.
+== How to nominate a bug for release notes addition ==
+
+ 1. '''Nominate a bug'''. Go to a bug in [https://bugzilla.mozilla.org Bugzilla], and nominate fixes or changes for release notes. Expand the "Tracking Flags" section. Then please set the relnote-firefox: flag to "?". Release management checks this flag regularly.
 
 A form will pop up in the Bugzilla comments box, asking for your suggested wording for the note and an optional url to link to further documentation.
 
-;2. Explain the fix
-If your fix or other project should be in release notes, tell us what it did, what it means, and what the users and tech press should know. Ideally, we link from each note to an MDN page, a blog post hosted somewhere on mozilla.org, or even a wiki page for users to understand changes, fixes, and new features. Details are very useful here.
+2. '''Explain the fix'''. If your fix or other project should be in release notes, tell us what it did, what it means, and what the users and tech press should know. Ideally, we link from each note to an MDN page, a blog post hosted somewhere on mozilla.org, or even a wiki page for users to understand changes, fixes, and new features. Details are very useful here.
 
-Here is [https://youtu.be/G6VeZyOP_Rk a video showing the process].
+Here is [https://youtu.be/G6VeZyOP_Rk a short video showing the above process].
+
+== When should you nominate a bug for release notes addition ==
+
+If you think your feature should be added to release notes, it's a good idea to nominate it for addition as soon as it is on the nightly channel.
+
+If your feature is ready for testing on the nightly channel but is behind feature flag as it isn't planned to ship on Beta/Release soon, please nominate it so as that we can expose it to our alpha-testers. The r+ flag will be set by release management only when it ships to beta/release but we have specific release notes for our alpha testers.
+
+== The relnote-firefox tracking flag values ==
 
 {| class="wikitable"
-|+ “relnote-firefox” tracking flag values
+|+ “relnote-firefox” tracking flag values and their meaning
 |-
 | --- || This bug has not been nominated for inclusion in Firefox release notes
 |-
-| ?  || This bug has been nominated for inclusion in Firefox release notes. Please fill out the template so as to help release-drivers with formulating the actual release note content.
+| ?  || This bug has been nominated for inclusion in Firefox release notes. <br>Please fill out the template so as to help release-drivers with formulating the actual release note content.
 |-
 | X+  || Drivers have determined this bug will be included in Firefox X release notes.
 |-
 | X+1+ || Drivers have determined this bug will be included in Firefox X+1 release notes.
 |-
-| X+1+ || Drivers have determined this bug will be included in Firefox X+2 release notes.
+| X+2+ || Drivers have determined this bug will be included in Firefox X+2 release notes.
 |-
-| X+1+ || Drivers have determined this bug will be included in Firefox X+3 release notes.
+| X+3+ || Drivers have determined this bug will be included in Firefox X+3 release notes.
 |-
-| X+1+ || Drivers have determined this bug will be included in Firefox X+4 release notes.
+| X+4+ || Drivers have determined this bug will be included in Firefox X+4 release notes.
 |-
 |}
 
-
 ==What release managers do for relnotes==
-Release management may skim through the entire list of fixed bugs for a release to find possible release notes. That's often around 4000 bugs! (List of fixed bugs for the [https://bugzilla.mozilla.org/buglist.cgi?f1=target_milestone&f2=cf_status_firefox{{RELEASE_VERSION}}&j_top=OR&list_id=12572116&o1=substring&o2=anywordssubstr&product=Core&product=Firefox&product=Firefox%20for%20Android&product=Firefox%20for%20iOS&product=Hello%20%28Loop%29&product=Toolkit&query_format=advanced&v1={{RELEASE_VERSION}}&v2=fixed%2C%20verified&order=bug_status%2Cpriority%2Cassigned_to%2Cbug_id&limit=0 current release]; for [https://bugzilla.mozilla.org/buglist.cgi?f1=target_milestone&f2=cf_status_firefox{{BETA_VERSION}}&j_top=OR&list_id=12572116&o1=substring&o2=anywordssubstr&product=Core&product=Firefox&product=Firefox%20for%20Android&product=Firefox%20for%20iOS&product=Hello%20%28Loop%29&product=Toolkit&query_format=advanced&v1={{BETA_VERSION}}&v2=fixed%2C%20verified&order=bug_status%2Cpriority%2Cassigned_to%2Cbug_id&limit=0 beta]; for [https://bugzilla.mozilla.org/buglist.cgi?f1=target_milestone&f2=cf_status_firefox{{CENTRAL_VERSION}}&j_top=OR&list_id=12572116&o1=substring&o2=anywordssubstr&product=Core&product=Firefox&product=Firefox%20for%20Android&product=Firefox%20for%20iOS&product=Hello%20%28Loop%29&product=Toolkit&query_format=advanced&v1={{CENTRAL_VERSION)}}&v2=fixed%2C%20verified&order=bug_status%2Cpriority%2Cassigned_to%2Cbug_id&limit=0 nightly].)
+Release management may skim through the entire list of fixed bugs for a release to find possible release notes. That's often around 4000 bugs! (List of fixed bugs for the [https://bugzilla.mozilla.org/buglist.cgi?f1=target_milestone&f2=cf_status_firefox{{RELEASE_VERSION}}&j_top=OR&list_id=12572116&o1=substring&o2=anywordssubstr&product=Core&product=Firefox&product=Firefox%20for%20Android&product=Firefox%20for%20iOS&product=Hello%20%28Loop%29&product=Toolkit&query_format=advanced&v1={{RELEASE_VERSION}}&v2=fixed%2C%20verified&order=bug_status%2Cpriority%2Cassigned_to%2Cbug_id&limit=0 current release]; for [https://bugzilla.mozilla.org/buglist.cgi?f1=target_milestone&f2=cf_status_firefox{{BETA_VERSION}}&j_top=OR&list_id=12572116&o1=substring&o2=anywordssubstr&product=Core&product=Firefox&product=Firefox%20for%20Android&product=Firefox%20for%20iOS&product=Hello%20%28Loop%29&product=Toolkit&query_format=advanced&v1={{BETA_VERSION}}&v2=fixed%2C%20verified&order=bug_status%2Cpriority%2Cassigned_to%2Cbug_id&limit=0 beta]; for [https://bugzilla.mozilla.org/buglist.cgi?f1=target_milestone&f2=cf_status_firefox{{AURORA_VERSION}}&j_top=OR&list_id=12572116&o1=substring&o2=anywordssubstr&product=Core&product=Firefox&product=Firefox%20for%20Android&product=Firefox%20for%20iOS&product=Hello%20%28Loop%29&product=Toolkit&query_format=advanced&v1={{AURORA_VERSION}}&v2=fixed%2C%20verified&order=bug_status%2Cpriority%2Cassigned_to%2Cbug_id&limit=0 nightly].)
 
 We also ask engineering managers and developer teams to tell us what note-worthy fixes are upcoming for nightly, beta, and release channels. We check other sources like http://hacks.mozilla.org to find notable new work. In every release cycle, relman asks people on several engineering mailing lists to read release note drafts, review them, and suggest changes.
 
@@ -106,7 +111,6 @@ During the nightly/beta cycle:
 For the links in the Firefox 	 pages to point to the correct associated release notes, you will next need to update [[Release Management/Product_details|product details]].
 
 This page describes the rules applied by the Release Team about the relnotes flag.
-
 
 [[category:Release_Management|R]]
 [[category:Release_Management:Processes|R]]
