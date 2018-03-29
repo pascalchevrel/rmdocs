@@ -1,23 +1,39 @@
-=Release Notes=
+{{DISPLAYTITLE:Release Notes}}
+<p style="font-size: larger; font-weight:bold;">This page explains how the release management team prepares release notes for Firefox.</p>
+
+
+==Summarized process==
 
 ==What's the purpose of release notes?==
-Release notes are a central source of information about changes in each Firefox release. They're mainly aimed at advanced and technical users of Firefox who want to be informed about the changes in Firefox's latest updates. They may be web developers, IT managers who deploy Firefox for their users, or people who need to know all the details of the browser they use to accomplish their work. Technical journalists also follow our release notes in order to write stories on changes in Firefox.
 
-The release notes page lists all the new features, changes or unfixed critical bugs for a specific release of Firefox. Their edition and content are under the responsibility of the release team.
+Release notes are a central source of information about changes in each Firefox release. They're mainly aimed at advanced and technical users of Firefox who want to be informed about the changes in Firefox's latest updates.
 
-Here is the full list of [https://www.mozilla.org/en-US/firefox/releases/ past Firefox release notes].
+They may be web developers, IT managers who deploy Firefox for their users, or people who need to know all the details of the browser they use to accomplish their work. Technical journalists also follow our release notes in order to write stories on changes in Firefox.
 
-Examples:
-* [https://www.mozilla.org/firefox//android/59.0/releasenotes/ Firefox 59 Android release notes]
-* [https://www.mozilla.org/firefox/59.0/releasenotes/ Firefox 59 Desktop release notes]
-* [https://www.mozilla.org/firefox/60.0beta/releasenotes/ Firefox 60 Beta release notes]
-* [https://www.mozilla.org/firefox/61.0a1/releasenotes/ 61 Nightly release notes]
+The release notes page lists all the new features, changes or unfixed critical bugs for a specific release of Firefox. Their edition and content are under the responsibility of the release management team.
 
-The release notes for the beta and release channels are published at the day we ship Firefox or Firefox Beta to our users. Release notes on the Nightly channel are produced conrinuously during the cycle, as a consequence the notes for Nightly are also available as an [https://www.mozilla.org/en-US/firefox/nightly/notes/feed/ RSS Feed].
+Examples of past release notes:
+* [https://www.mozilla.org/firefox//android/59.0/releasenotes/ Firefox 59 for Android]
+* [https://www.mozilla.org/firefox/59.0/releasenotes/ Firefox 59 for Desktop]
+* [https://www.mozilla.org/firefox/60.0beta/releasenotes/ Firefox 60 Beta for Desktop]
+* [https://www.mozilla.org/firefox/61.0a1/releasenotes/ Firefox Nightly 61 for Desktop]
 
+Here is the full list of [https://www.mozilla.org/firefox/releases/ past Firefox release notes].
+
+The release notes for the beta and release channels are published at the day we ship Firefox or Firefox Beta to our users.
+Release notes on the Nightly channel are produced continuously during the cycle, as a consequence the notes for Nightly are also available as an [https://www.mozilla.org/en-US/firefox/nightly/notes/feed/ RSS Feed] to allow testers to be notified when a new note is added to a release.
 
 The ''[https://drive.google.com/open?id=0B3Po9bsZ673yNFRLTGwtRjZGN2s Drafts of release notes]'' Google drive folder contains gdocs of release notes from prevous releases.
 
+The release management team maintains release notes for Firefox Desktop and Firefox for Android only. Release notes for other products are not in our scope at the moment.
+
+== How to decide whether a change should be included in release notes? ==
+The changes that should be included in releases notes include:
+* New features for end users and web developers
+* Important changes for end users and web developers
+* Important stability and security fixes
+* New locales
+* Important system requirements changes (ex: end of support of Windows XP)
 
 ==How you can help with release notes==
 ;1. Nominate fixes and features!
@@ -51,7 +67,7 @@ Here is [https://youtu.be/G6VeZyOP_Rk a video showing the process].
 
 
 ==What release managers do for relnotes==
-Release management may skim through the entire list of fixed bugs for a release to find possible release notes. That's often around 4000 bugs! (List of fixed bugs for the [https://bugzilla.mozilla.org/buglist.cgi?f1=target_milestone&f2=cf_status_firefox{{RELEASE_VERSION}}&j_top=OR&list_id=12572116&o1=substring&o2=anywordssubstr&product=Core&product=Firefox&product=Firefox%20for%20Android&product=Firefox%20for%20iOS&product=Hello%20%28Loop%29&product=Toolkit&query_format=advanced&v1={{RELEASE_VERSION}}&v2=fixed%2C%20verified&order=bug_status%2Cpriority%2Cassigned_to%2Cbug_id&limit=0 current release]; for [https://bugzilla.mozilla.org/buglist.cgi?f1=target_milestone&f2=cf_status_firefox{{BETA_VERSION}}&j_top=OR&list_id=12572116&o1=substring&o2=anywordssubstr&product=Core&product=Firefox&product=Firefox%20for%20Android&product=Firefox%20for%20iOS&product=Hello%20%28Loop%29&product=Toolkit&query_format=advanced&v1={{BETA_VERSION}}&v2=fixed%2C%20verified&order=bug_status%2Cpriority%2Cassigned_to%2Cbug_id&limit=0 beta]; for [https://bugzilla.mozilla.org/buglist.cgi?f1=target_milestone&f2=cf_status_firefox{{AURORA_VERSION}}&j_top=OR&list_id=12572116&o1=substring&o2=anywordssubstr&product=Core&product=Firefox&product=Firefox%20for%20Android&product=Firefox%20for%20iOS&product=Hello%20%28Loop%29&product=Toolkit&query_format=advanced&v1={{AURORA_VERSION}}&v2=fixed%2C%20verified&order=bug_status%2Cpriority%2Cassigned_to%2Cbug_id&limit=0 aurora].)
+Release management may skim through the entire list of fixed bugs for a release to find possible release notes. That's often around 4000 bugs! (List of fixed bugs for the [https://bugzilla.mozilla.org/buglist.cgi?f1=target_milestone&f2=cf_status_firefox{{RELEASE_VERSION}}&j_top=OR&list_id=12572116&o1=substring&o2=anywordssubstr&product=Core&product=Firefox&product=Firefox%20for%20Android&product=Firefox%20for%20iOS&product=Hello%20%28Loop%29&product=Toolkit&query_format=advanced&v1={{RELEASE_VERSION}}&v2=fixed%2C%20verified&order=bug_status%2Cpriority%2Cassigned_to%2Cbug_id&limit=0 current release]; for [https://bugzilla.mozilla.org/buglist.cgi?f1=target_milestone&f2=cf_status_firefox{{BETA_VERSION}}&j_top=OR&list_id=12572116&o1=substring&o2=anywordssubstr&product=Core&product=Firefox&product=Firefox%20for%20Android&product=Firefox%20for%20iOS&product=Hello%20%28Loop%29&product=Toolkit&query_format=advanced&v1={{BETA_VERSION}}&v2=fixed%2C%20verified&order=bug_status%2Cpriority%2Cassigned_to%2Cbug_id&limit=0 beta]; for [https://bugzilla.mozilla.org/buglist.cgi?f1=target_milestone&f2=cf_status_firefox{{CENTRAL_VERSION}}&j_top=OR&list_id=12572116&o1=substring&o2=anywordssubstr&product=Core&product=Firefox&product=Firefox%20for%20Android&product=Firefox%20for%20iOS&product=Hello%20%28Loop%29&product=Toolkit&query_format=advanced&v1={{CENTRAL_VERSION)}}&v2=fixed%2C%20verified&order=bug_status%2Cpriority%2Cassigned_to%2Cbug_id&limit=0 nightly].)
 
 We also ask engineering managers and developer teams to tell us what note-worthy fixes are upcoming for nightly, beta, and release channels. We check other sources like http://hacks.mozilla.org to find notable new work. In every release cycle, relman asks people on several engineering mailing lists to read release note drafts, review them, and suggest changes.
 
@@ -87,74 +103,10 @@ During the nightly/beta cycle:
 * Once the notes have been signed off and the release is live, ''is_public'' has to be turned on.
 
 ==Product details==
-For the links in the Firefox download pages to point to the correct associated release notes, you will next need to update [[Release Management/Product_details|edit product details]].
+For the links in the Firefox 	 pages to point to the correct associated release notes, you will next need to update [[Release Management/Product_details|product details]].
+
 This page describes the rules applied by the Release Team about the relnotes flag.
 
-===============================
-
-= relnote-firefox tracking flag =
-
-It is multi-state flag that currently has several values which indicate whether a bug has been included in firefox release/beta/aurora/nightly release-notes. Bugs nominated for “relnote-firefox” (by setting the flag to “?”) are bugs that are deemed to have a high end-user impact and and should be included in the release notes on firefox release/beta/aurora/nightly release.
-
-= How to decide whether a bug should be included in release notes? =
-The different categories of bugs that should be included in releases notes include:
-* New features for end users (example: pocket)
-* New features for developers (ex:WebSocket now available in Web Workers)
-* New features for user of the developer tools (ex: performances tools)
-* New locales
-* Important changes for end user (ex: changes in the interface for the android app)
-* Important changes for developers or sysadmin
-
-
-
-
-= Release note writing process =
-
-* Gather the notes (2 weeks ahead of release)
-** Find note nominees from Bugzilla's relnote-firefox:? flag, and from the Firefox Trello board for the release.
-** Put into a Google doc draft.
-** Relman + Marketing work on making sure the notes are accurate and have a verifiable source
-** Checking with devs and managers as necessary to clarify
-** Ask devs, managers, SUMO, or MDN editors to write posts and articles on mozilla.org sites so we can link to them from the notes
-* Relman emails out the draft for feedback (approx. 1 week ahead of release)
-* Second editing phase
-* Relman puts the edited notes into the Nucleus back end. Each note should have a bug number associated in Nucleus, if possible
-* Relman sends out the links to staging to the comms team
-* Final edit phase
-
-Relevant information from the bug should be added as an item in the [https://nucleus.mozilla.org/ Nucleus database] for a specific release.
-Look for the "fixed" or "verified" flag to make sure the issue is fixed for the first time in that release.
-
-Legacy: in the past, the "relnote" keyword was used. It has been disabled from Bugzilla and should not be available.
-
-= Categories of release note entries =
-* New - new features
-* Fixed - List of known Issues that have been fixed
-* Changed - Important changes to browser interface/behavior that will be valuable for Firefox end-users to know about.
-* Developer - Issues that are of special interest to Firefox Developer audience
-* HTML5 - Issues related to Web platform (will be renamed)
-* Unresolved - List of known issues that are not resolved in this release.
-
-= Best practices for writing release notes =
-
-* Web Developer Release Notes are now added as one note and then point directly to MDN for that release (Example: https://developer.mozilla.org/en-US/Firefox/Releases/49#Changes_for_Web_developers).
-
-* All URLs in relnotes should be de-localized. Typically this means removing the 'en-US/' portion of the URL.
-
-* A relnote that applies to both desktop and android should be written once and associated with both releases.
-
-* Don't link to bugs.
-
-* Relnotes are sentence fragments. Don't start them with 'The', 'A', etc. Don't use periods.
-
-* Keep relnotes as short as possible. If you find yourself wanting to start a new sentence, figure out a way to rephrase the note.
-
-* Do not use abbreviations. For example, "pref" should be "preference".
-
-* Group items that belong to a category together. For example, items with WebRTC can be grouped together.
-
-* "Developer" tag is for "Developer Tools".
-
-* Get the release notes ready for review by requesting feedback across Mozilla. The audience reviewing this includes RelMan, release-drivers, fx-team, front-end team, SUMO team, platform-devs, QE, etc. Please follow up and close on the review feedback comments promptly.
 
 [[category:Release_Management|R]]
+[[category:Release_Management:Processes|R]]
