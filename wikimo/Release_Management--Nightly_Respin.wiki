@@ -28,7 +28,11 @@ If it is a functional regression (reproducible case), then we should use [https:
 * If it is a crash, get a Crash ID from the people that reported it and file a bug via Socorro.
 * If it is a functional regression and no bug was filed yet, file it.
 
-The bug number will be used to track the work to fix the regression. Communicate to our community that a bug exist so as to avoid having many duplicated filed.
+Have the ''status-firefoxN'' tracking flag set as ''affected'', the ''tracking-firefoxN'' set as ''blocking'' and the target milestone set to ''mozillaN'' where N is the version number for Nightly.
+
+Once the back out is done, mark the bug as FIXED and change the ''status-firefoxN'' tracking flag from ''affected'' to ''fixed''.
+
+The bug number will be used to track the work to fix the regression. Communicate to our community that a bug exists so as to avoid having many duplicate bugs filed.
 
 == Stopping automatic background updates ==
 
