@@ -1,3 +1,5 @@
+{{DISPLAYTITLE:Nightly Respin}}
+
 <p style="font-size: larger; font-weight:bold;">This page details the process to back out a faulty patch and, if needed, get nightlies respun.</p>
 
 
@@ -65,4 +67,4 @@ Communicating about major regressions in Nightly is also part of the informal so
 The main communication channels to communicate a regression are our @FirefoxNightly Twitter account, our #nightly IRC channel (bridged with our Telegram group) and potentially the #nightly-newbies slack channel if employees or NDAed volunteers reported it there.
 
 [[Category:Release_Management]]
-[[Category:Release_Management:Processes]]
+[[Category:Release_Management:Processes|Nightly Respin]]
