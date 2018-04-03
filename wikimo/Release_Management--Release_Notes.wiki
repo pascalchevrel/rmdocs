@@ -44,23 +44,24 @@ The changes that should be included in releases notes include:
 * Important system requirements changes (ex: end of support for an OS version)
 * New locales
 
-== How to nominate a bug for release notes addition ==
+== How to nominate a bug for release notes addition? ==
+=== Nomination in Bugzilla ===
 1. '''Nominate a bug'''. Go to a bug in [https://bugzilla.mozilla.org Bugzilla], and nominate fixes or changes for release notes. Expand the "Tracking Flags" section. Then please set the relnote-firefox: flag to "?". Release management checks this flag regularly.
 
 A form will pop up in the Bugzilla comments box, asking for your suggested wording for the note and an optional url to link to further documentation.
 
-2. '''Explain the fix'''. If your fix or other project should be in release notes, tell us what it did, what it means, and what the users and tech press should know. Ideally, we link from each note to an MDN page, a blog post hosted somewhere on mozilla.org, or even a wiki page for users to understand changes, fixes, and new features. Details are very useful here.
+2. '''Explain the fix'''. If your fix or other project should be in release notes, tell us what it did, what it means, and what the users and tech press should know. Ideall
+y, we link from each note to an MDN page, a blog post hosted somewhere on mozilla.org, or even a wiki page for users to understand changes, fixes, and new features. Details are very useful here.
 
 Here is [https://youtu.be/G6VeZyOP_Rk a short video showing the above process].
 
-Note that most of the changes impacting web developers (tooling, web standard support and new technologies) are documented on MDN which has specific pages for releases aimed at developers.
-The MDN team tracks the bugs with the ''dev-doc-needed'' keyword added on Bugzilla.
+Note that most of the changes impacting web developers (tooling, web standard support and new technologies) are documented on MDN which has specific pages for releases aimed at developers. The MDN team tracks all the bugs with the ''dev-doc-needed'' keyword.
 
 We add a link in our release notes to the MDN documentation above with a single note with the wording "Changes affecting developers" pointing to the MDN page for developers for the release.
 
 Example: [https://developer.mozilla.org/en-US/Firefox/Releases/59 Firefox 59 for developers]
 
-== The relnote-firefox tracking flag values ==
+=== The relnote-firefox tracking flag values ===
 
 {| class="wikitable"
 |+ “relnote-firefox” tracking flag values and their meaning
@@ -81,7 +82,7 @@ Example: [https://developer.mozilla.org/en-US/Firefox/Releases/59 Firefox 59 for
 |-
 |}
 
-==What release managers do for relnotes==
+==What release managers do for relnotes?==
 * We check in Bugzilla bugs nominated for release note addition for Nightly and add them to Nightly release notes if necessary
 * We check mozilla-central commits daily for features potentially note-worthy. We ping the patch author and ask him to nominate her bug for release notes addition.
 * We also ask engineering managers and developer teams to tell us what note-worthy fixes are upcoming for nightly, beta, and release channels.
@@ -102,7 +103,7 @@ Release management may also skim through the entire list of fixed bugs for a rel
 * "Developer" tag is for "Developer Tools".
 * Get the release notes ready for review by requesting feedback across Mozilla. The audience reviewing this includes RelMan, release-drivers, fx-team, front-end team, SUMO team, platform-devs, QE, etc. Please follow up and close on the review feedback comments promptly.
 
-==Nucleus: our publishing tool==
+== Nucleus: our publishing tool ==
 Release notes are written and managed in [https://nucleus.mozilla.org Nucleus].
 
 The release notes page on mozilla.org for a specific version will not be available while the ''is_public'' flag is not selected in Nucleus but it will be available on the staging instance of mozilla.org (www-dev.allizom.org).
