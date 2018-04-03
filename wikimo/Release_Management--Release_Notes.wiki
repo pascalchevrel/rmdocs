@@ -28,11 +28,15 @@ Here is the full list of [https://www.mozilla.org/firefox/releases/ past Firefox
 The release notes for the beta and release channels are published on the day we ship Firefox or Firefox Beta to our users.
 Release notes on the Nightly channel are produced continuously during the cycle, as a consequence the notes for Nightly are also available as an [https://www.mozilla.org/en-US/firefox/nightly/notes/feed/ RSS Feed] to allow testers to be notified when a new note is added to a release.
 
-The ''[https://drive.google.com/open?id=0B3Po9bsZ673yNFRLTGwtRjZGN2s Drafts of release notes]'' Google drive folder contains gdocs of release notes from prevous releases.
+The [https://drive.google.com/open?id=0B3Po9bsZ673yNFRLTGwtRjZGN2s Drafts of release notes] Google drive folder contains gdocs of release notes from prevous releases.
 
 The release management team maintains release notes for Firefox Desktop and Firefox for Android only. Release notes for other products are not in our scope at the moment.
 
 == How to decide whether a change should be included in release notes? ==
+If you think your feature should be added to release notes, it's a good idea to nominate it for addition as soon as it is on the nightly channel.
+
+If your feature is ready for testing on the nightly channel but is behind feature flag as it isn't planned to ship on Beta/Release soon, please nominate it so as that we can expose it to our alpha-testers. The r+ flag will be set by release management only when it ships to beta/release but we have specific release notes for our alpha testers.
+
 The changes that should be included in releases notes include:
 * New features for end users and web developers
 * Important changes for end users and web developers
@@ -55,12 +59,6 @@ The MDN team tracks the bugs with the ''dev-doc-needed'' keyword added on Bugzil
 We add a link in our release notes to the MDN documentation above with a single note with the wording "Changes affecting developers" pointing to the MDN page for developers for the release.
 
 Example: [https://developer.mozilla.org/en-US/Firefox/Releases/59 Firefox 59 for developers]
-
-== When should you nominate a bug for release notes addition ==
-
-If you think your feature should be added to release notes, it's a good idea to nominate it for addition as soon as it is on the nightly channel.
-
-If your feature is ready for testing on the nightly channel but is behind feature flag as it isn't planned to ship on Beta/Release soon, please nominate it so as that we can expose it to our alpha-testers. The r+ flag will be set by release management only when it ships to beta/release but we have specific release notes for our alpha testers.
 
 == The relnote-firefox tracking flag values ==
 
@@ -107,9 +105,9 @@ Release management may also skim through the entire list of fixed bugs for a rel
 ==Nucleus: our publishing tool==
 Release notes are written and managed in [https://nucleus.mozilla.org Nucleus].
 
-The release notes page on mozilla.org for a specific version will not be available while the''is_public''flag is not selected in Nucleus but it will be available on the staging instance of mozilla.org (www-dev.allizom.org).
+The release notes page on mozilla.org for a specific version will not be available while the ''is_public'' flag is not selected in Nucleus but it will be available on the staging instance of mozilla.org (www-dev.allizom.org).
 
-If a release is created in Nucleus but the release notes page doesn't have the''is_public''flag set to true, a "coming soon" page is displayed on mozilla.org.
+If a release is created in Nucleus but the release notes page doesn't have the ''is_public'' flag set to true, a "coming soon" page is displayed on mozilla.org.
 
 The specific release notes process for the Nightly cycle is detailed in the [[Release_Management/Nightly|Nightly cycle process]] page.
 
@@ -118,7 +116,7 @@ For the first beta release, from the nucleus interface:
 * Update the title
 * Update the date
 * Update the description text
-* Enable''is_public''on the beta release day
+* Enable ''is_public'' on the beta release day
 
 For the release, from the nucleus interface:
 * Copy the beta release (is_public is going to be disabled)
