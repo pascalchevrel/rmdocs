@@ -93,7 +93,8 @@ We may also skim through the entire list of fixed bugs for a release to find pos
 * Fixed bugs for [https://bugzilla.mozilla.org/buglist.cgi?f1=target_milestone&f2=cf_status_firefox{{BETA_VERSION}}&j_top=OR&list_id=12572116&o1=substring&o2=anywordssubstr&product=Core&product=Firefox&product=Firefox%20for%20Android&product=Firefox%20for%20iOS&product=Hello%20%28Loop%29&product=Toolkit&query_format=advanced&v1={{BETA_VERSION}}&v2=fixed%2C%20verified&order=bug_status%2Cpriority%2Cassigned_to%2Cbug_id&limit=0 beta]
 * Fixed bugs for [https://bugzilla.mozilla.org/buglist.cgi?f1=target_milestone&f2=cf_status_firefox{{CENTRAL_VERSION}}&j_top=OR&list_id=12572116&o1=substring&o2=anywordssubstr&product=Core&product=Firefox&product=Firefox%20for%20Android&product=Firefox%20for%20iOS&product=Hello%20%28Loop%29&product=Toolkit&query_format=advanced&v1={{CENTRAL_VERSION}}&v2=fixed%2C%20verified&order=bug_status%2Cpriority%2Cassigned_to%2Cbug_id&limit=0 nightly]
 
-== Writing process ==
+== Notes creation ==
+=== Writing Notes: step by step process ===
 * Gather the notes (2 weeks ahead of release)
 ** Find note nominees from Bugzilla's ''relnote-firefox:? ''flag, and from the Firefox Trello board for the release.
 ** Put into a Google doc draft.
@@ -113,13 +114,13 @@ We may also skim through the entire list of fixed bugs for a release to find pos
 Relevant information from the bug should be added as an item in the [https://nucleus.mozilla.org/ Nucleus database] for a specific release.
 Look for the "fixed" or "verified" flag in Bugzilla to make sure the issue is fixed for the first time in that release.
 
-== Best practices for writing release notes ==
+=== Best practices for writing release notes ===
 * Web Developer Release Notes are now added as one note and then point directly to MDN for that release (Example: https://developer.mozilla.org/en-US/Firefox/Releases/49#Changes_for_Web_developers).
-* All URLs in relnotes should be de-localized. Typically this means removing the 'en-US/' portion of the URL.
-* A relnote that applies to both desktop and android should be written once and associated with both releases.
+* All URLs in notes should be de-localized. Typically this means removing the 'en-US/' portion of the URL.
+* A note that applies to both Desktop and Android should be written once and associated with both releases.
 * Don't link to bugs in the note (we do link to bugs in dot releases).
-* Relnotes are sentence fragments. Don't start them with 'The', 'A', etc. Don't use periods. In general, unless there is a good reason the note has more than one sentence.
-* Keep relnotes as short as possible. If you find yourself wanting to start a new sentence, figure out a way to rephrase the note.
+* Notes are sentence fragments. Don't start them with 'The', 'A', etc. Don't use periods. In general, unless there is a good reason the note has more than one sentence.
+* Keep notes as short as possible. If you find yourself wanting to start a new sentence, figure out a way to rephrase the note.
 * Do not use abbreviations. For example, "pref" should be "preference".
 * Group items that belong to a category together. For example, items with WebRTC can be grouped together.
 * "Developer" tag is for "Developer Tools".
@@ -128,12 +129,22 @@ Look for the "fixed" or "verified" flag in Bugzilla to make sure the issue is fi
 == Nucleus: our publishing tool ==
 Release notes are written and managed in [https://nucleus.mozilla.org Nucleus].
 
+The specific release notes process for the Nightly cycle is detailed in the [[Release_Management/Nightly|Nightly cycle process]] page.
+
+=== Nucleus and mozilla.org ===
 The release notes page on mozilla.org for a specific version will not be available while the ''is_public'' flag is not selected in Nucleus but it will be available on the staging instance of mozilla.org (www-dev.allizom.org).
 
 If a release is created in Nucleus but the release notes page doesn't have the ''is_public'' flag set to true, a "coming soon" page is displayed on mozilla.org.
 
-The specific release notes process for the Nightly cycle is detailed in the [[Release_Management/Nightly|Nightly cycle process]] page.
+There are simplified URLs for release notes that do not contain the version number and will always redirect to the latest version for the channel as provided in product-details:
+* Release: https://www.mozilla.org/firefox/notes/
+* Beta: https://www.mozilla.org/firefox/beta/notes/
+* Nightly: https://www.mozilla.org/firefox/nightly/notes/
+* ESR: https://www.mozilla.org/firefox/organizations/notes/
 
+Mozilla.org synces with Nucleus every 15mn, depending on CDN caching it may take up to 25mn to get release notes available worldwide.
+
+=== Creating a new release notes page ===
 For the first beta release, from the nucleus interface:
 * Copy the nightly release (is_public is going to be disabled)
 * Update the title
@@ -151,7 +162,22 @@ For the release, from the nucleus interface:
 
 Note that the System Requirements page for a release is also managed from Nucleus. If Firefox system requirements change, don't forget to update them for the release affected.
 
-Mozilla.org synces with Nucleus every 15mn, depending on CDN caching it may take up to 25mn to get release notes available worldwide.
+=== Release notes Categories ===
+{| class="wikitable"
+|-
+| New || New features
+|-
+| Fixed || List of known Issues that have been fixed
+|-
+| Changed  || Important changes to browser interface/behavior that will be valuable for Firefox end-users to know about
+|-
+| Developer || Issues that are of special interest to Firefox Developer audience
+|-
+| HTML5 || Issues related to Web platform
+|-
+| Unresolved || List of known issues that are not resolved in this release
+|-
+|}
 
 
 [[category:Release_Management|Release Notes]]
