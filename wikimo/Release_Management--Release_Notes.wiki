@@ -7,15 +7,16 @@
 # Add notes for the upcoming release in Nucleus, associate them with the right Firefox versions (ESR, release, Beta…)
 # Create a shared document and list there all the notes you added in Nucleus (copy-paste) for editorial review
 # Update individual notes in Nucleus from the editorial review feedback
+# Add links to security advisories and developper documentation for the release
 # Update Product-details with the version we ship
-# Mark the release as "is_public" in Nucleus when we want to publish release notes
+# Mark the release as ''is_public'' in Nucleus when we want to publish release notes
 
 == What's the purpose of release notes? ==
-Release notes are a central source of information about changes in each Firefox release. They're mainly aimed at advanced and technical users of Firefox who want to be informed about the changes in Firefox's latest updates.
+Release notes are a central source of information about changes in each Firefox release. They're mainly aimed at advanced and technical users of Firefox who want to be informed about the changes in Firefox' latest updates.
 
 They may be web developers, IT managers who deploy Firefox for their users, or people who need to know all the details of the browser they use to accomplish their work. Technical journalists also follow our release notes in order to write stories on changes in Firefox.
 
-The release notes page lists all the new features, changes or unfixed critical bugs for a specific release of Firefox. Their edition and content are under the responsibility of the release management team.
+The release notes page lists notable new features, changes or unfixed critical bugs for a specific release of Firefox. Their edition and content are under the responsibility of the release management team.
 
 Examples of past release notes:
 * [https://www.mozilla.org/firefox//android/59.0/releasenotes/ Firefox 59 for Android]
@@ -26,7 +27,7 @@ Examples of past release notes:
 Here is the full list of [https://www.mozilla.org/firefox/releases/ past Firefox release notes].
 
 The release notes for the beta and release channels are published on the day we ship Firefox or Firefox Beta to our users.
-Release notes on the Nightly channel are produced continuously during the cycle, as a consequence the notes for Nightly are also available as an [https://www.mozilla.org/en-US/firefox/nightly/notes/feed/ RSS Feed] to allow testers to be notified when a new note is added to a release.
+Release notes on the Nightly channel are produced continuously during the cycle. As a consequence the notes for Nightly are also available as an [https://www.mozilla.org/en-US/firefox/nightly/notes/feed/ RSS Feed] to allow testers to be notified when a new note is added to a release.
 
 The [https://drive.google.com/open?id=0B3Po9bsZ673yNFRLTGwtRjZGN2s Drafts of release notes] Google drive folder contains gdocs of release notes from prevous releases.
 
@@ -50,16 +51,11 @@ The changes that should be included in releases notes include:
 
 A form will pop up in the Bugzilla comments box, asking for your suggested wording for the note and an optional url to link to further documentation.
 
-2. '''Explain the fix'''. If your fix or other project should be in release notes, tell us what it did, what it means, and what the users and tech press should know. Ideall
-y, we link from each note to an MDN page, a blog post hosted somewhere on mozilla.org, or even a wiki page for users to understand changes, fixes, and new features. Details are very useful here.
+2. '''Explain the fix'''. If your fix or other project should be in release notes, tell us what it did, what it means, and what the users and tech press should know. Ideally, we link from each note to an MDN page, a blog post hosted somewhere on mozilla.org, or even a wiki page for users to understand changes, fixes, and new features. Details are very useful here.
 
 Here is [https://youtu.be/G6VeZyOP_Rk a short video showing the above process].
 
-Note that most of the changes impacting web developers (tooling, web standard support and new technologies) are documented on MDN which has specific pages for releases aimed at developers. The MDN team tracks all the bugs with the ''dev-doc-needed'' keyword.
-
-We add a link in our release notes to the MDN documentation above with a single note with the wording "Changes affecting developers" pointing to the MDN page for developers for the release.
-
-Example: [https://developer.mozilla.org/en-US/Firefox/Releases/59 Firefox 59 for developers]
+Note that most of the changes impacting web developers (tooling, web standard support and new technologies) are documented on MDN which has specific pages for releases aimed at developers. The MDN team tracks these bugs with the ''dev-doc-needed'' keyword.
 
 === The relnote-firefox tracking flag values ===
 
@@ -82,21 +78,53 @@ Example: [https://developer.mozilla.org/en-US/Firefox/Releases/59 Firefox 59 for
 |-
 |}
 
-==What release managers do for relnotes?==
-* We check in Bugzilla bugs nominated for release note addition for Nightly and add them to Nightly release notes if necessary
-* We check mozilla-central commits daily for features potentially note-worthy. We ping the patch author and ask him to nominate her bug for release notes addition.
-* We also ask engineering managers and developer teams to tell us what note-worthy fixes are upcoming for nightly, beta, and release channels.
-* We check other sources such as the [https://blog.nightly.mozilla.org Nightly] and [https://hacks.mozilla.org Hacks] blogs to find notable new work.
-* In every release cycle, relman asks people on several engineering mailing lists to read release note drafts, review them, and suggest changes.
+== Gathering of notes during the cycle ==
+For complex software such as Firefox with thousands of patches during a cycle and external contributors, tracking what should be noted in release notes is not always easy.
 
-Release management may also skim through the entire list of fixed bugs for a release to find possible release notes. List of fixed bugs for the [https://bugzilla.mozilla.org/buglist.cgi?f1=target_milestone&f2=cf_status_firefox{{RELEASE_VERSION}}&j_top=OR&list_id=12572116&o1=substring&o2=anywordssubstr&product=Core&product=Firefox&product=Firefox%20for%20Android&product=Firefox%20for%20iOS&product=Hello%20%28Loop%29&product=Toolkit&query_format=advanced&v1={{RELEASE_VERSION}}&v2=fixed%2C%20verified&order=bug_status%2Cpriority%2Cassigned_to%2Cbug_id&limit=0 current release]; for [https://bugzilla.mozilla.org/buglist.cgi?f1=target_milestone&f2=cf_status_firefox{{BETA_VERSION}}&j_top=OR&list_id=12572116&o1=substring&o2=anywordssubstr&product=Core&product=Firefox&product=Firefox%20for%20Android&product=Firefox%20for%20iOS&product=Hello%20%28Loop%29&product=Toolkit&query_format=advanced&v1={{BETA_VERSION}}&v2=fixed%2C%20verified&order=bug_status%2Cpriority%2Cassigned_to%2Cbug_id&limit=0 beta]; for [https://bugzilla.mozilla.org/buglist.cgi?f1=target_milestone&f2=cf_status_firefox{{CENTRAL_VERSION}}&j_top=OR&list_id=12572116&o1=substring&o2=anywordssubstr&product=Core&product=Firefox&product=Firefox%20for%20Android&product=Firefox%20for%20iOS&product=Hello%20%28Loop%29&product=Toolkit&query_format=advanced&v1={{CENTRAL_VERSION}}&v2=fixed%2C%20verified&order=bug_status%2Cpriority%2Cassigned_to%2Cbug_id&limit=0 nightly].)
+Here is the main list of actions the release management team does to prepare release notes:
+* Check bugs nominated for release note addition for Nightly and add them to Nightly release notes if necessary
+* Check mozilla-central commits daily for features potentially note-worthy. Ping the patch author and ask her to nominate the bug for release notes addition.
+* Ask engineering managers and developer teams to tell us what note-worthy fixes are upcoming for nightly, beta, and release channels.
+* Check other sources such as the [https://blog.nightly.mozilla.org Nightly] and [https://hacks.mozilla.org Hacks] blogs to find notable new work.
+* Ask people on several engineering mailing lists to read release note drafts, review them, and suggest changes.
+
+We may also skim through the entire list of fixed bugs for a release to find possible release notes:
+* Fixed bugs for the [https://bugzilla.mozilla.org/buglist.cgi?f1=target_milestone&f2=cf_status_firefox{{RELEASE_VERSION}}&j_top=OR&list_id=12572116&o1=substring&o2=anywordssubstr&product=Core&product=Firefox&product=Firefox%20for%20Android&product=Firefox%20for%20iOS&product=Hello%20%28Loop%29&product=Toolkit&query_format=advanced&v1={{RELEASE_VERSION}}&v2=fixed%2C%20verified&order=bug_status%2Cpriority%2Cassigned_to%2C     bug_id&limit=0 current release]
+* Fixed bugs for [https://bugzilla.mozilla.org/buglist.cgi?f1=target_milestone&f2=cf_status_firefox{{BETA_VERSION}}&j_top=OR&list_id=12572116&o1=substring&o2=anywordssubstr&product=Core&product=Firefox&product=Firefox%20for%20Android&product=Firefox%20for%20iOS&product=Hello%20%28Loop%29&product=Toolkit&query_format=advanced&v1={{BETA_VERSION}}&v2=fixed%2C%20verified&order=bug_status%2Cpriority%2Cassigned_to%2Cbug_id&limit=0 beta]
+* Fixed bugs for [https://bugzilla.mozilla.org/buglist.cgi?f1=target_milestone&f2=cf_status_firefox{{CENTRAL_VERSION}}&j_top=OR&list_id=12572116&o1=substring&o2=anywordssubstr&product=Core&product=Firefox&product=Firefox%20for%20Android&product=Firefox%20for%20iOS&product=Hello%20%28Loop%29&product=Toolkit&query_format=advanced&v1={{CENTRAL_VERSION}}&v2=fixed%2C%20verified&order=bug_status%2Cpriority%2Cassigned_to%2Cbug_id&limit=0 nightly]
+
+== Writing process ==
+* Gather the notes (2 weeks ahead of release)
+** Find note nominees from Bugzilla's ''relnote-firefox:? ''flag, and from the Firefox Trello board for the release.
+** Put into a Google doc draft.
+** Release Management & Marketing work on making sure the notes are accurate and have a verifiable source
+** Checking with developerss and managers as necessary to clarify
+** Ask developerss, managers, SUMO, or MDN editors to write posts and articles on mozilla.org sites so we can link to them from the notes
+* Release Management emails out the draft for feedback (approximately 1 week ahead of release)
+* Second editing phase
+* Release Management puts the edited notes into the Nucleus back end. Each note should have a bug number associated in Nucleus, if possible
+* Release Management sends out the links to staging to the communications team
+* Final edit phase
+
+Relevant information from the bug should be added as an item in the [https://nucleus.mozilla.org/ Nucleus database] for a specific release.
+Look for the "fixed" or "verified" flag to make sure the issue is fixed for the first time in that release.
+
+Add a link in our release notes to the MDN documentation above with a single note with the wording "Changes affecting developers" pointing to the MDN page for developers for the release.
+
+Example:
+'''Developer''' - Changes affecting [https://developer.mozilla.org/en-US/Firefox/Releases/59 developers]
+
+Add a link to our security advisories within a single note with the wording "Various security fixes", this link is provided by the Security team.
+Example:
+'''Fixed''' - Various [https://www.mozilla.org/security/advisories/mfsa2018-06/ security fixes]
+
 
 == Best practices for writing release notes ==
 * Web Developer Release Notes are now added as one note and then point directly to MDN for that release (Example: https://developer.mozilla.org/en-US/Firefox/Releases/49#Changes_for_Web_developers).
 * All URLs in relnotes should be de-localized. Typically this means removing the 'en-US/' portion of the URL.
 * A relnote that applies to both desktop and android should be written once and associated with both releases.
-* Don't link to bugs in the note.
-* Relnotes are sentence fragments. Don't start them with 'The', 'A', etc. Don't use periods.
+* Don't link to bugs in the note (we do link to bugs in dot releases).
+* Relnotes are sentence fragments. Don't start them with 'The', 'A', etc. Don't use periods. In general, unless there is a good reason the note has more than one sentence.
 * Keep relnotes as short as possible. If you find yourself wanting to start a new sentence, figure out a way to rephrase the note.
 * Do not use abbreviations. For example, "pref" should be "preference".
 * Group items that belong to a category together. For example, items with WebRTC can be grouped together.
@@ -126,6 +154,8 @@ For the release, from the nucleus interface:
 * Update the description text
 * Update the notes
 * Once the notes have been signed off and the release is live, select ''is_public''.
+
+Note that the System Requirements page for a release is also managed from Nucleus. If Firefox system requirements change, don't forget to update them for the release affected.
 
 Mozilla.org synces with Nucleus every 15mn, depending on CDN caching it may take up to 25mn to get release notes available worldwide.
 
