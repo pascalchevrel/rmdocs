@@ -89,7 +89,7 @@ Here is the main list of actions the release management team does to prepare rel
 * Ask people on several engineering mailing lists to read release note drafts, review them, and suggest changes.
 
 We may also skim through the entire list of fixed bugs for a release to find possible release notes:
-* Fixed bugs for the [https://bugzilla.mozilla.org/buglist.cgi?f1=target_milestone&f2=cf_status_firefox{{RELEASE_VERSION}}&j_top=OR&list_id=12572116&o1=substring&o2=anywordssubstr&product=Core&product=Firefox&product=Firefox%20for%20Android&product=Firefox%20for%20iOS&product=Hello%20%28Loop%29&product=Toolkit&query_format=advanced&v1={{RELEASE_VERSION}}&v2=fixed%2C%20verified&order=bug_status%2Cpriority%2Cassigned_to%2C     bug_id&limit=0 current release]
+* Fixed bugs for the [https://bugzilla.mozilla.org/buglist.cgi?f1=target_milestone&f2=cf_status_firefox{{RELEASE_VERSION}}&j_top=OR&list_id=12572116&o1=substring&o2=anywordssubstr&product=Core&product=Firefox&product=Firefox%20for%20Android&product=Firefox%20for%20iOS&product=Hello%20%28Loop%29&product=Toolkit&query_format=advanced&v1={{RELEASE_VERSION}}&v2=fixed%2C%20verified&order=bug_status%2Cpriority%2Cassigned_to%2Cbug_id&limit=0 current release]
 * Fixed bugs for [https://bugzilla.mozilla.org/buglist.cgi?f1=target_milestone&f2=cf_status_firefox{{BETA_VERSION}}&j_top=OR&list_id=12572116&o1=substring&o2=anywordssubstr&product=Core&product=Firefox&product=Firefox%20for%20Android&product=Firefox%20for%20iOS&product=Hello%20%28Loop%29&product=Toolkit&query_format=advanced&v1={{BETA_VERSION}}&v2=fixed%2C%20verified&order=bug_status%2Cpriority%2Cassigned_to%2Cbug_id&limit=0 beta]
 * Fixed bugs for [https://bugzilla.mozilla.org/buglist.cgi?f1=target_milestone&f2=cf_status_firefox{{CENTRAL_VERSION}}&j_top=OR&list_id=12572116&o1=substring&o2=anywordssubstr&product=Core&product=Firefox&product=Firefox%20for%20Android&product=Firefox%20for%20iOS&product=Hello%20%28Loop%29&product=Toolkit&query_format=advanced&v1={{CENTRAL_VERSION}}&v2=fixed%2C%20verified&order=bug_status%2Cpriority%2Cassigned_to%2Cbug_id&limit=0 nightly]
 
@@ -103,21 +103,15 @@ We may also skim through the entire list of fixed bugs for a release to find pos
 * Release Management emails out the draft for feedback (approximately 1 week ahead of release)
 * Second editing phase
 * Release Management puts the edited notes into the Nucleus back end. Each note should have a bug number associated in Nucleus, if possible
+* Add a note for developer pointing to the MDN page for developers for the release:
+**'''Developer''' - Changes affecting [https://developer.mozilla.org/en-US/Firefox/Releases/59 developers]
+* Add a note for security fixes pointing to our security advisories, this link is provided by the Security team:
+** '''Fixed''' - Various [https://www.mozilla.org/security/advisories/mfsa2018-06/ security fixes]
 * Release Management sends out the links to staging to the communications team
 * Final edit phase
 
 Relevant information from the bug should be added as an item in the [https://nucleus.mozilla.org/ Nucleus database] for a specific release.
-Look for the "fixed" or "verified" flag to make sure the issue is fixed for the first time in that release.
-
-Add a link in our release notes to the MDN documentation above with a single note with the wording "Changes affecting developers" pointing to the MDN page for developers for the release.
-
-Example:
-'''Developer''' - Changes affecting [https://developer.mozilla.org/en-US/Firefox/Releases/59 developers]
-
-Add a link to our security advisories within a single note with the wording "Various security fixes", this link is provided by the Security team.
-Example:
-'''Fixed''' - Various [https://www.mozilla.org/security/advisories/mfsa2018-06/ security fixes]
-
+Look for the "fixed" or "verified" flag in Bugzilla to make sure the issue is fixed for the first time in that release.
 
 == Best practices for writing release notes ==
 * Web Developer Release Notes are now added as one note and then point directly to MDN for that release (Example: https://developer.mozilla.org/en-US/Firefox/Releases/49#Changes_for_Web_developers).
