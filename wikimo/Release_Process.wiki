@@ -180,4 +180,5 @@ Please check the [[Release_Management/Release_Notes_Process#What.27s_New.2FKnown
 ** mozilla.announce
 * '''Be part of the [[Firefox/Channels/Meetings|Channel Meetings]] if you are interested in day-day updates for desktop/mobile releases'''
 
-[[Category:Release Management]]
+[[Category:Release Management|Release Process]]
+[[Category:Release Management:Processes|Release Process]]

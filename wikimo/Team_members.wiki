@@ -1,3 +1,4 @@
+{{DISPLAYTITLE:Meet the Release Management team!}}
 The Release Management team (part of the Product Integrity department) ensures that we ship the best possible software to our end users.
 
 The team is comprised of release managers that sheperd our beta and final releases, release engineers that build tools allowing release managers to make more informed decisions on releases, uplift and crashes as well as project managers that make sure we have a sizable and active pre-release population so as to catch functional and stability regressions at the earliest stage possible.
@@ -55,4 +56,4 @@ Some of our team members are also active on their personal blog and Twitter:
 
 
 
-[[category:Release_Management]]
+[[category:Release_Management|Team]]

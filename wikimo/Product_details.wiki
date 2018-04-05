@@ -1,5 +1,4 @@
 {{DISPLAYTITLE:The Product-Details JSON API}}
-
 '''Product Details''' is a public JSON API which contains release information for Firefox (desktop and mobile) and Thunderbird.
 The data is managed by the Release Management team through Ship-it and exported available at this domain:
 
@@ -12,7 +11,6 @@ Historically that data was managed with direct commits into a code repository on
 The mozilla.org development team maintains a copy of the [https://github.com/mozilla/product-details-json product-details files on GitHub ] that is synced with product-details.mozilla.org so as to facilitate deployment and continuous deployment of mozilla.org.
 
 Since this data is managed via Ship-It, bug reports about the data or requests for additional data should be done on bugzilla in [https://bugzilla.mozilla.org/enter_bug.cgi?product=Release%20Engineering&component=Ship%20It Release Engineering::Ship-It] and not through the Github Repository.
-
 
 Here is the list of files we provide:
 

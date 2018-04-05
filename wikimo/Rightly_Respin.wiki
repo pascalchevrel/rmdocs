@@ -1,4 +1,4 @@
-{{DISPLAYTITLE:Nightly Respin}}
+{{DISPLAYTITLE:The Firefox Nightly respin process}}
 
 <p style="font-size: larger; font-weight:bold;">This page details the process to back out a faulty patch and, if needed, get nightlies respun.</p>
 

@@ -1,5 +1,4 @@
 {{DISPLAYTITLE:Glossary}}
-
 We have a lot of internal jargon, acronyms and internal project names at Mozilla.
 This glossary lists some of the key terms we use in the Release Management team.
 
