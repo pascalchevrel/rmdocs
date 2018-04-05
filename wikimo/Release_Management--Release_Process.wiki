@@ -39,7 +39,7 @@ will be a new version of Firefox Release.
 
 Release day activities/checklist can be found on the [[Release_Management/Release_Day|Release Day wiki page]].
 
-Our release schedule is meant to be flexible and we may occasionally modify the length of a cycle to be shorter or longer than the 6-8 week cycle mentioned. Check the [[RapidRelease/Calendar|Rapid Release Calendar] to stay updated with the upcoming branch dates.
+Our release schedule is meant to be flexible and we may occasionally modify the length of a cycle to be shorter or longer than the 6-8 week cycle mentioned. Check the [[Release_Management/Calendar|Release Calendar] to stay updated with the upcoming branch dates.
 
 
 === Nightly soft code freeze ===
