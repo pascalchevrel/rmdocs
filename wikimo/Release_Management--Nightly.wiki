@@ -1,4 +1,4 @@
-{{DISPLAYTITLE:Nightly channel}}
+{{DISPLAYTITLE:The Firefox Nightly channel}}
 <div style="float:right; clear:both; margin-left:0.5em;">__TOC__</div>
 <p style="font-size: x-large; font-weight:bold;">This page lists what the release management team should do during the Nightly development cycle on Desktop.</p>
 

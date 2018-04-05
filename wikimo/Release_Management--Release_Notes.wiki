@@ -1,4 +1,4 @@
-{{DISPLAYTITLE:Release Notes}}
+{{DISPLAYTITLE:The Firefox release notes process}}
 <p style="font-size: larger; font-weight:bold;">This page explains how the release management team prepares release notes for Firefox.</p>
 
 == Summarized process ==
@@ -163,6 +163,9 @@ For the release, from the nucleus interface:
 Note that the System Requirements page for a release is also managed from Nucleus. If Firefox system requirements change, don't forget to update them for the release affected.
 
 === Release notes Categories ===
+
+In Nucleus you should associate each note with a category. The notes will be grouped by category in the templated page on mozilla.org.
+
 {| class="wikitable"
 |-
 | New || New features

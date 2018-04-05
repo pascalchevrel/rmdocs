@@ -1,3 +1,4 @@
+{{DISPLAYTITLE:The Firefox release process}}
 == Channels/Repositories ==
 * '''Firefox Release/[https://hg.mozilla.org/releases/mozilla-release mozilla-release]''' — The official release of Firefox.
 * '''Firefox Beta/[https://hg.mozilla.org/releases/mozilla-beta mozilla-beta]''' — Testing the next version of Firefox before it becomes the official release. Firefox Beta channel is also built from the Beta branch.

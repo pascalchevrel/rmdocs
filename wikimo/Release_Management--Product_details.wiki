@@ -1,3 +1,5 @@
+{{DISPLAYTITLE:The Product-Details JSON API}}
+
 '''Product Details''' is a public JSON API which contains release information for Firefox (desktop and mobile) and Thunderbird.
 The data is managed by the Release Management team through Ship-it and exported available at this domain:
 
