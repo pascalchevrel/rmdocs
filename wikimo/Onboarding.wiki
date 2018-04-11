@@ -1,0 +1,194 @@
+{{DISPLAYTITLE:Onboarding process in the Release Management team}}
+Welcome to Release Management.
+
+Here's a list of accounts to set up, tools to check out, and any other details we can think of to help you start getting yourself set up.
+
+=Account Permissions=
+You'll want to make sure you have the necessary permissions to do the following and some will take longer than others to achieve so start early:
+* Bugs
+** Create a [https://bugzilla.mozilla.org/createaccount.cgi Bugzilla] account. Ask for "edit-bugs" permissions. Request for your bugzilla account to be added to <tt>mozilla-next-drivers</tt> and <tt>mozilla-stable-branch-drivers</tt> groups in order to set tracking flags. -- file a bug (eg: {{bug|962151}}).
+** You can see security sensitive bugs if someone CCs you into the bug, or if you eventually join the security group list. [http://www.mozilla.org/en-US/about/governance/policies/security-group/bugs/#expanding Security permission] comes later.
+* Repos
+** n.b. If this is going to be a regular set of requests it would probably be better to create a group for them.
+
+** hg commit access (''scm_level3'') -- read http://www.mozilla.org/hacking/committer/, fill out a committer agreement, file a bug (eg: {{bug|738713}} except you'll request '''commit''' access, not elevation of current permissions). For this, you will need two [https://wiki.mozilla.org/Modules/All#Core owners or peers for a core hg module] to vouch for you as described in [https://www.mozilla.org/en-US/about/governance/policies/commit/access-policy/ Commit Access Policy]. (later)
+** Example of asking for level 1 commit access (which lets you push changes to the ''try'' server): {{bug|1116226}}. This is good to start with to get your SSH key and committer agreement set up. (earlier)
+** Socorro permissions: {{bug|1229732}}
+* Communications
+** Ask your manager for the permissions to access the [https://drive.google.com/drive/u/1/folders/0B0AhJMhJM7DnbXQ0NlplR0swdjQ|team Google drive]
+* Builds - Request Mozilla VPN access (required for ship-it and l10n) (earlier)
+** Ask to be added to the groups ''shipit'' and ''vpn_shipit'' to get access to the build tool, by filing a bug in [https://bugzilla.mozilla.org/enter_bug.cgi?product=Infrastructure%20%26%20Operations&component=Infrastructure%3A%20LDAP Infrastructure & Operations::Infrastructure:LDAP]. Example: {{Bug|1135198}}
+** Ask to be added to the LDAP group called ''verbatim'' by filing a bug in [https://bugzilla.mozilla.org/enter_bug.cgi?product=Infrastructure%20%26%20Operations&component=Infrastructure%3A%20LDAP Infrastructure & Operations::Infrastructure:LDAP]. This will give you permission to access to https://l10n.mozilla.org/  You can ask in the same bug as for shipit.  (Note: Is this true? Axel says we should not need to be in the verbatim group.)
+* Release Notes
+** Request admin access to https://nucleus.mozilla.org by filing two bugs. First, one to get the Nucleus site added to your SSO account in [https://bugzilla.mozilla.org/enter_bug.cgi?product=Infrastructure%20%26%20Operations&component=Infrastructure%3A%20SSO Infrastructure & Operations::Infrastructure: SSO], Example: {{Bug|1351680}}. The second bug is to be added as admin in the Web App [https://bugzilla.mozilla.org/enter_bug.cgi?product=Websites&component=Nucleus Websites::Nucleus]. Example: {{Bug|1135186}} (earlier)
+
+* github
+* ssh
+
+=Communication Channels=
+==Release Calendar==
+This page describes the rapid release schedules: https://wiki.mozilla.org/RapidRelease/Calendar. You should add these to your regular Google calender so you can easily see the state of any release.
+* This is the basic public calendar with release dates: https://www.google.com/calendar/embed?src=mozilla.com_2d37383433353432352d3939%40resource.calendar.google.com
+* This is the release manager team with tons of detail: https://www.google.com/calendar/embed?src=bW96aWxsYS5jb21fZGJxODRhbnI5aTh0Y25taGFiYXRzdHY1Y29AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ - This is really helpful for the first managed release cycle.
+
+==E-Mail==
+Note that some of these mailing lists need approval from an administrator.
+
+*release-mgmt@mozilla.com - ask your manager
+*release-drivers - visit https://mail.mozilla.org/listinfo/release-drivers to add yourself to release-drivers@ once your email is working
+*security-group - Here is the policy for getting added to the security-group list: https://www.mozilla.org/en-US/about/governance/policies/security-group/membership/ For the list, visit  https://mail.mozilla.org/listinfo/security-group
+
+You'll need to manually subscribe to:
+*release-automation-notifications - visit https://groups.google.com/a/mozilla.com/group/release-automation-notifications/ (Contributors need invite)
+*mozilla.dev.planning - visit https://lists.mozilla.org/listinfo/dev-planning
+*mozilla.dev.platform - visit https://lists.mozilla.org/listinfo/dev-platform
+*mozilla.dev.tree-management - visit https://lists.mozilla.org/listinfo/dev-tree-management
+*Enterprise - visit https://mail.mozilla.org/listinfo/enterprise
+*Stability - vist https://mail.mozilla.org/listinfo/stability
+
+These are available as [news://news.mozilla.org newsgroups], Google groups, and [https://lists.mozilla.org/listinfo Mailman lists]
+
+==Websites==
+
+* [https://metrics.mozilla.com/pentaho Metric] (TODO: this url is out of date)
+* [http://crash-stats.mozilla.com/ Crash reports]
+* This wiki! Create an account at wiki.mozilla.org, and update the [https://wiki.mozilla.org/Release_Management/Team_members team members page].
+
+== IRC  ==
+
+*https://wiki.mozilla.org/IRC irc://irc.mozilla.org
+*irc.mozilla.org:6697
+** #airmozilla - back channel for public broadcasts
+** #developers - monitor check-ins and speak with devs
+** #fx-team - good place to speak with desktop team
+** #mobile - good place to speak with mobile devs
+** #moco [access_key is here [https://intranet.mozilla.org/StaffMeeting]]
+** #planning - back channel for product coordination meeting, good place to speak with broader product team
+** #pm - Project management
+** #release-drivers - release related discussions
+** #releng - releng team channel
+** #relman - our team channel
+** #security (ask for channel key) - the security team's channel
+** #qa - QE team channel
+** #www - for speaking with the mozilla.org team in case a push breaks or otherwise doesn't work
+* http://chatzilla.hacksrus.com/faq/#connect
+
+Many folks uses IRC Cloud as Mozilla as an instance (request an account in Service Now), others run a BNC (an IRC bouncer) (e.g. znc) and/or <tt>irssi</tt> under screen to get continuous view of traffic.
+
+See [[#pastebin|below]] for a local pastebin install, so you don't paste huge amounts in channel.
+
+==EtherPad==
+
+EtherPad is a great tool for dynamic collaboration during meetings, brainstorming, or other times when you need to collaborate:
+* https://public.etherpad-mozilla.org/ for general use
+* https://public.etherpad-mozilla.org/p/channel-meeting for release information
+* https://public.etherpad-mozilla.org/p/firefox43-worry-list Worry list specific to each release (change the version in the url as needed)
+
+==Pastebin==
+
+There's a local pastebin instance at http://pastebin.mozilla.org/, so you don't need to paste multi-lines into a channel. Use this handy [http://hg.mozilla.org/build/braindump/file/tip/utils/pastebin helper script] to pipe to pastebin from terminal.
+
+    it creates a new page from stdin, and outputs the url to stdout
+    an argument will be interpretted as the syntax highlighting format to use
+    sample usage: hg diff | pastebin python | pbcopy (last part mac specific)
+    set & export PASTEBIN_NAME if you don't want to post as anonymous.
+
+==Planet==
+Add a bug similar to {{bug|605709}} to get your blog syndicated on http://planet.mozilla.org. You can choose to send every post, or create a feed for a custom tag (eg: 'mozilla').  Having your blog syndicated to planet is a great channel for announcing new features (along with tweeting and posting to newsgroups).
+
+==Trello==
+*[https://trello.com/b/HFf1xGCC/platform-status-board Platform Status Board]
+** request access from elancaster
+*[https://trello.com/b/D5vYvuGP/release-management Release management board]
+
+==Aha!==
+[https://mozilla.aha.io/ Feature Roadmap dashboard]
+
+=Software=
+
+==Firefox==
+
+# Please download & install Firefox [http://www.mozilla.org/fr/firefox/channel/#aurora aurora], [http://www.mozilla.org/fr/firefox/channel/#beta beta] and [http://www.mozilla.org/fr/firefox/channel/#firefox release]
+# [https://support.mozilla.org/en-US/kb/profile-manager-create-and-remove-firefox-profiles#w_creating-a-profile Create new profiles] for each version + your own profile. Read [https://developer.mozilla.org/en-US/docs/Mozilla/Multiple_Firefox_Profiles Multiple Firefox Profiles] for more help with the profile manager.
+
+Firefox Feature Road map is available here: https://mozilla.aha.io/products/ST/feature_cards. To login, choose "login with Okta" and provide your Mozilla LDAP crendentials.
+
+==VPN==
+
+* Configure your system to access to the Mozilla VPN in order to get access to internal tools.
+*[[https://mana.mozilla.org/wiki/pages/viewpage.action?pageId=30769829 VPN General Info]]
+*[[https://mana.mozilla.org/wiki/display/SD/Viscosity+Install+for+Mac|Viscosity Install for Mac]]. *[[https://mana.mozilla.org/wiki/display/SD/Viscosity+Install+for+Windows|Viscosity Install for Windows]]
+* Then, report a bug in ''Infrastructure & Operations: Mozilla VPN: ACL requests'' to get the ACL to ship-it. Example: {{bug|986037}} and {{bug|1001632}}
+* Note that using the Mozilla DNS servers is necessary to resolve the necessary URLs
+
+=Handy Links=
+==How To and Oft-Used==
+* [[Release_Management]]
+* [[Firefox/Channels/Meetings]]
+* [https://www.mozilla.org/en-US/firefox/organizations/faq/ ESR FAQ]
+* [[Enterprise/Firefox/ExtendedSupport:Proposal]]
+* [[Release_Management/ESR_Landing_Process]]
+
+General info on module owners and partners:
+* Module owners [[https://wiki.mozilla.org/Modules/All All Modules]]
+* Mozilla Partners [https://docs.google.com/spreadsheets/d/1H38b9RgunWtuUjuv0jc3wiSwcAbpc4Ee2T5egmEojQw/edit#gid=0 Partner Rolodex] - Request permissions to your manager if you can't access this document.
+
+==Bugzilla ==
+* Install [https://addons.mozilla.org/en-US/firefox/addon/bugzillajs/ BugzillaJS] to be able to open all bugs in a search result.
+* Configure the [https://bugzilla.mozilla.org/userprefs.cgi?tab=securemail securemail] section if you want to see the content of security bugs in your email client. GPG key or [http://kb.mozillazine.org/Getting_an_SMIME_certificate SMIME certificate] are accepted.
+* If you don't mind receiving plenty of emails, you can [https://bugzilla.mozilla.org/show_bug.cgi?id=1144694 ask to the bugzilla admin to receive notifications] for Firefox uplift requests
+
+=== Reports ===
+* [https://bugzilla.mozilla.org/page.cgi?id=release_tracking_report.html release tracking report]
+=== Queries ===
+In your bugzilla preferences, under Saved Searches, you can add some of the following to your footer for quick access:
+* [https://bugzilla.mozilla.org/buglist.cgi?cmdtype=dorem&remaction=run&namedcmd=approval-aurora%3F&sharer_id=272375 approval-aurora?]
+* [https://bugzilla.mozilla.org/buglist.cgi?cmdtype=dorem&remaction=run&namedcmd=approval-beta%3F&sharer_id=272375 approval-beta?]
+* As an exercise, also create the query approval-release? (hint: edit the approval-beta? such, update the value and save it with the new name)
+* [https://bugzilla.mozilla.org/buglist.cgi?o1=equals&v1=%3F&known_name=tracking-ff32%3F&f1=cf_tracking_firefox37&query_based_on=tracking-ff32%3F&query_format=advanced&list_id=12037223 tracking_firefoxXY?] (adjust for current beta version as needed)
+* [https://bugzilla.mozilla.org/buglist.cgi?o5=notequals&v11=unaffected&j10=OR&o14=notequals&f13=OP&o2=equals&j16=OR&f23=cf_status_firefox50&f29=CP&v5=wontfix&f12=CP&j4=OR&f14=cf_status_firefox50&o17=notequals&o20=notequals&f24=CP&v2=%2B&f21=CP&known_name=Tracking50%2B-Remaining&f10=OP&f19=OP&f22=OP&f1=OP&f20=cf_status_firefox50&f0=OP&f8=cf_status_firefox50&j13=OR&j19=OR&o11=notequals&f18=CP&columnlist=bug_severity%2Cpriority%2Ccomponent%2Clast_visit_ts%2Cassigned_to%2Cbug_status%2Cresolution%2Cshort_desc%2Cchangeddate%2Ccf_status_firefox47%2Ccf_status_firefox48%2Ccf_status_firefox49%2Ccf_status_firefox50%2Ccf_status_firefox51%2Ccf_status_firefox52&f15=CP&resolution=---&resolution=FIXED&query_based_on=Tracking50%2B-Remaining&f9=CP&j7=OR&v20=verified%20disabled&f4=OP&o23=notequals&query_format=advanced&v23=fix-optional&j1=OR&f3=CP&v17=disabled&f2=cf_tracking_firefox50&f11=cf_status_firefox50&bug_status=UNCONFIRMED&bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&f5=cf_status_firefox50&f17=cf_status_firefox50&v8=fixed&f6=CP&v14=verified&f7=OP&o8=notequals&f16=OP&list_id=13255854 Firefox XY tracked bugs] (Make sure to query for the resolved bugs as well as open ones)
+* [https://bugzilla.mozilla.org/buglist.cgi?o5=notequals&list_id=13255848&v11=unaffected&j10=OR&o14=notequals&f13=OP&o2=equals&j16=OR&f29=CP&v5=wontfix&f12=CP&j4=OR&f14=cf_status_firefox_esr45&o17=notequals&o20=notequals&f21=CP&v2=50%2B&known_name=Tracking-esr-50%2B-Remaining&f10=OP&f19=OP&f1=OP&f20=cf_status_firefox_esr45&j13=OR&f8=cf_status_firefox_esr45&f0=OP&j19=OR&o11=notequals&f18=CP&columnlist=bug_severity%2Cpriority%2Ccomponent%2Clast_visit_ts%2Cassigned_to%2Cbug_status%2Cresolution%2Cshort_desc%2Cchangeddate%2Ccf_status_firefox40%2Ccf_status_firefox41%2Ccf_status_firefox42%2Ccf_status_firefox43%2Ccf_status_firefox44%2Ccf_status_firefox45%2Ccf_status_firefox46&f15=CP&resolution=---&resolution=FIXED&query_based_on=Tracking-esr-50%2B-Remaining&f9=CP&v20=verified%20disabled&j7=OR&f4=OP&query_format=advanced&j1=OR&v17=disabled&f3=CP&f2=cf_tracking_firefox_esr45&f11=cf_status_firefox_esr45&bug_status=UNCONFIRMED&bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&f5=cf_status_firefox_esr45&f17=cf_status_firefox_esr45&v8=fixed&v14=verified&f6=CP&f7=OP&o8=notequals&f16=OP ESR tracked list]
+* [https://bugzilla.mozilla.org/buglist.cgi?o5=equals&keywords=regression%2C&keywords_type=allwords&list_id=13255849&v11=INCOMPLETE&j2=OR&o1=equals&o9=notequals&v10=WORKSFORME&f13=CP&v5=---&f12=resolution&v9=WONTFIX&o4=equals&o12=notequals&v1=affected&known_name=New-Regressions-50&v4=%3F&f10=resolution&f1=cf_status_firefox50&o3=equals&f8=resolution&v3=unaffected&o11=notequals&columnlist=product%2Ccomponent%2Cassigned_to%2Cbug_status%2Cresolution%2Cshort_desc%2Cchangeddate%2Ccf_status_firefox48%2Ccf_status_firefox49%2Ccf_status_firefox50%2Ccf_status_firefox51%2Ccf_status_firefox52&query_based_on=New-Regressions-50&f9=resolution&f4=cf_status_firefox49&query_format=advanced&o10=notequals&f3=cf_status_firefox49&f2=OP&v12=EXPIRED&f11=resolution&f5=cf_status_firefox49&v8=INVALID&f6=CP&f7=OP&o8=notequals New regressions] - Note that fix-optional should  be removed from this query
+* [https://bugzilla.mozilla.org/buglist.cgi?o5=equals&n2=1&keywords=regression%2C&keywords_type=allwords&list_id=13255850&v11=INCOMPLETE&j2=OR&o1=equals&o9=notequals&v10=WORKSFORME&f13=CP&v5=---&f12=resolution&v9=WONTFIX&o4=equals&o12=notequals&v1=affected&known_name=Carryover-Regressions-50&v4=%3F&f10=resolution&f1=cf_status_firefox50&o3=equals&f8=resolution&o11=notequals&v3=unaffected&columnlist=product%2Ccomponent%2Cassigned_to%2Cbug_status%2Cresolution%2Cshort_desc%2Cchangeddate%2Ccf_status_firefox47%2Ccf_status_firefox48%2Ccf_status_firefox49%2Ccf_status_firefox50%2Ccf_status_firefox51%2Ccf_status_firefox52&query_based_on=Carryover-Regressions-50&f9=resolution&f4=cf_status_firefox49&o10=notequals&query_format=advanced&f3=cf_status_firefox49&f2=OP&v12=EXPIRED&f11=resolution&f5=cf_status_firefox49&v8=INVALID&f6=CP&f7=OP&o8=notequals Carryover regressions]  - Note that fix-optional should  be removed from this query
+* [https://bugzilla.mozilla.org/buglist.cgi?cmdtype=dorem&remaction=run&namedcmd=relnote-firefox%3F&sharer_id=272375 relnote-firefox?]
+* Also create query for approval-esrXY
+
+=Tools=
+==Repos to check out==
+* [https://github.com/mozilla/relman-auto-nag Bugzilla nag tool]
+* [http://viewvc.svn.mozilla.org/vc/projects/mozilla.com/ svn repo for web pages]
+* [https://github.com/mozilla/ship-it/ ship-it]
+* [http://viewvc.svn.mozilla.org/vc/libs/product-details/ product details]
+* [https://github.com/mozilla/rna Nucleus]
+* [https://github.com/mozilla/bedrock Bedrock] (Mozilla website)
+* [http://harthur.github.io/mozregression/ mozregression]
+* [https://hg.mozilla.org/build/braindump/ braindump (for get_apk.sh)]
+* [https://hg.mozilla.org/build/mozharness/ mozharness (push_apk.py)]
+
+= Community Contributors =
+
+Some of the above access & permissions will either not be accessible to community contributors or it might take a bit longer to achieve depending on the level & needs of the contributions being made.
+
+Currently when Early Feedback Community Release Managers are onboarded we're basing it on these [http://lukasblakk.com/contribution-opportunity-early-feedback-community-release-manager/ blog] [http://lukasblakk.com/contribution-opportunity-early-feedback-community-release-manager-2/ posts] (one was based on the other).  The short version is that we're looking for people who are interested in understanding how Release Management in a major Open Source project works and our hope is that they learn while also helping us maintain a higher level of quality and visibility into release-affecting issues than a small team of employees can manage.
+
+How that can play out is in several ways.  First, any new community member who wants to work with RelMan should have a very informal conversation with a current staff member to discuss their experience, interests, and then ultimately to come up with a good time for a regular meeting that can onboard them (if they're still interested) over a period of weeks & months.
+
+Depending on the volunteer's time availability, usually 1 or 2 hour-long triage sessions a week are feasible.  Ideally these will at least sometimes include other members of the team so that the new contributor is getting to know the rest of the members.  Eventually the contributor should also start getting invited to (and attending when possible) our 30 min weekly team meeting.
+
+== Links to get started ==
+* [[Release_Management/Queries/Nightly|Nightly Triage]]
+* [[Release_Management/Queries|All Queries]]
+* [[RapidRelease/LandingPlan|Landing Plan]]
+* [[Release_Management/aurora_Landing_Process|Aurora/DevEdition Landing Process]]
+* Article on our release process in [http://www.drdobbs.com/architecture-and-design/firefox-release-engineering/240168409 Dr. Dobbs] (mostly still true)
+
+= Fun Tips & Tricks =
+== Vidyo Conference Rooms ==
+Sometimes when you're on the go and you need to dial into a vidyo room, you may not have time to find the info and having it already loaded in your phone can make a difference.  Your RelMan teammates might be able to beam you the contact info from their phones, or you can add them yourself like this:
+* Vidyo; Warp Core 6509030800,92,5312#
+Rooms to mark as favourites and contacts: Spadina (Toronto), Release Coordination (Virtual room, no physical location)
+
+== Subcribe to funstuff ==
+* Request here https://bugzilla.mozilla.org/show_bug.cgi?id=391268
+
+[[category:Release_Management|O]]
