@@ -1,0 +1,6 @@
+{{DISPLAYTITLE:Managing the existence of a What's New Page for a Firefox release}}
+{{RELEASE MANAGEMENT STUB}}
+
+
+[[Category:Release Management|W]]
+[[Category:Release_Management:Processes|W]]

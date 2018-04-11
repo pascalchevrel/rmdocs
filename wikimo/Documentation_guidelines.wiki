@@ -1,0 +1,57 @@
+{{DISPLAYTITLE:Release Management documentation guidelines}}
+{{RELEASE MANAGEMENT STUB}}
+
+The purpose of the guidelines below is to document the documentation writing process itself.
+
+The end goal is to share knowledge and make sure that we have some minimal consistency in our documentation over time.
+
+== Release_Management Namespace ==
+
+Our team namespace is Release_Management, don't create a RM page outside of this namespace.
+
+If an existing page in a different namespace is migrated under our responsability, the page should be renamed to use our namespace. Renaming preserves history of edits.
+
+Internal links to our namespace have this syntax (note the pipe before the title and the double brackets):
+<nowiki>
+[[Release_Management/Nightly|Firefox Nightly channel]]
+</nowiki>
+
+== Categories ==
+
+We currently use two categories, one with our Namespace only which is used to inventory all of our pages and one for pages that describre a process.
+
+If you create a page in our namespace, you should add the relecant categories to have them listed on our category pages
+
+Example with a page named Chemspill_management:
+
+<nowiki>
+[[category:Release_Management|Chemspill]]
+[[category:Release_Management:Processes|Chemspill]]
+</nowiki>
+
+Note that above we put Chemspill after the pipe, this is a sorting key so as to have pages in alphabetical order.
+
+If you redirect a page to another, remove the categories it belongs to in the source text to avoid having it listed twice with different names.
+
+== Header templates ==
+We use 3 headers on pages that indicate if a page is:
+1. Obsolete and dead <nowiki>{{RELEASE_MANAGEMENT_OBSOLETE}}</nowiki>
+2. Needs an update <nowiki>{{RELEASE_MANAGEMENT_UPDATE_NEEDED}}</nowiki>
+3. A stub for future content <nowiki>{{RELEASE_MANAGEMENT_STUB}}</nowiki>
+
+Just add the above template call at the top of your page to get the banner inserted.
+
+Here are the 3 banners:
+{{RELEASE_MANAGEMENT_OBSOLETE}}
+{{RELEASE_MANAGEMENT_UPDATE_NEEDED}}
+{{RELEASE_MANAGEMENT_STUB}}
+
+
+== Process pages ==
+All pages that describe a process (writing release notes, dealing with a chemspill, respinning nightlies…) should be added to the Processes category.
+
+The first section of the page should be called '''Summarized Process''' and consist in an ordered list of tasks to do. The purpose is to give a list of steps to do for people that already did the process while still documenting the details and background information in the later sections for people that are learning the process or look for a specific information about the process. This way we maintain one document only for both new and experienced release managers.
+
+
+
+[[category:Release_Management|Documentation, guidelines]]
