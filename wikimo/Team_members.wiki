@@ -1,4 +1,5 @@
 {{DISPLAYTITLE:Meet the Release Management team!}}
+
 The Release Management team (part of the Product Integrity department) ensures that we ship the best possible software to our end users.
 
 The team is comprised of release managers that sheperd our beta and final releases, release engineers that build tools allowing release managers to make more informed decisions on releases, uplift and crashes as well as project managers that make sure we have a sizable and active pre-release population so as to catch functional and stability regressions at the earliest stage possible.
@@ -9,16 +10,15 @@ The team is comprised of release managers that sheperd our beta and final releas
 * Firefox Release Managers:
 ** [https://mozillians.org/u/lizhenry/ Liz Henry (:lizzard)]
 ** [https://mozillians.org/u/rkothari/ Ritu Kothari (:ritu)]
-** [https://mozillians.org/u/gchang/ Gerry Chang (:gchang)]
 ** [https://mozillians.org/u/jcristau/ Julien Cristau (:jcristau)]
 ** [https://mozillians.org/u/RyanVM/ Ryan VanderMeulen (:RyanVM)]
 * Firefox Nightly Release Manager and crash analysis: [https://mozillians.org/u/marcia/ Marcia Knous (:marcia)]
 * Firefox Nightly Project Manager: [https://mozillians.org/u/pascalc/ Pascal Chevrel (:pascalc)]
-* Release Engineers:
+* Tooling engineers:
 ** [https://mozillians.org/u/cdenizet/ Calixte Denizet (:calixte)]
 ** [https://mozillians.org/u/marco/ Marco Castelluccio (:marco)]
 ** [https://mozillians.org/u/janx/ Jan Keromnes (:janx)]
-* Static Analyzer Specialist: [https://mozillians.org/u/ABPostelnicu/ Andi Bogdan Postelnicu]
+** [https://mozillians.org/u/ABPostelnicu/ Andi Bogdan Postelnicu]
 
 {{clear}}
 
@@ -28,8 +28,7 @@ Mozilla is an open source project and as such we work with many volunteers acros
 A special shout-out to
 [https://mozillians.org/u/philipp/ Philipp Madersbacher (:philipp)] for his crash triage help and his work on identifying regressions reported by our end-users before and after we ship Firefox.
 
-=Team Blogs=
-
+= Team Blogs =
 We blog and tweet as a team there:
 * [http://release.mozilla.org/ Release Management Blog]
 * [[File:Twitter-icon.png|16px]] [https://twitter.com/MozillaReleases MozillaReleases]
@@ -42,7 +41,7 @@ Some of our team members are also active on their personal blog and Twitter:
 * Jan Keromnes [https://plus.google.com/+JanKeromnes In the clouds] [[File:Twitter-icon.png|16px]] [https://twitter.com/jankeromnes jankeromnes]
 
 = Alumni =
-
+* Release Manager [https://mozillians.org/u/gchang/ Gerry Chang (:gchang)]
 * Release Quality Manager: [https://mozillians.org/fr/u/KaiRo/ Robert Kaiser (:KaiRo)]
 * Staff Release Manager: [https://mozillians.org/en-US/u/lsblakk/ Lukas Blakk (:lsblakk)]
 * Manager: [https://mozillians.org/en-US/u/lmandel/ Lawrence Mandel (:lmandel)]
@@ -53,7 +52,5 @@ Some of our team members are also active on their personal blog and Twitter:
 * 2015 Intern/ESR release: [https://mozillians.org/en-US/u/kglazko/ Kate Glazko]
 * 2013 Intern: [https://mozillians.org/en-US/u/wcheong/ Willie Cheong]
 * 2012 Intern: [https://mozillians.org/en-US/u/lianne719/ Lianne Lee]
-
-
 
 [[category:Release_Management|Team]]
