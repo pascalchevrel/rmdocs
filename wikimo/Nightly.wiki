@@ -1,7 +1,12 @@
+{{Processbox
+  | Process name = Nightly cycle tasks
+  | Purpose      = Ensure maximum quality on mozilla-central
+  | Why          = Regression introduced during the nightly cycle identified in Beta/Release only are costly
+  | Goals        = Improve quality early, ship faster, identify and fix regressions at the earliest stage possible
+  | People       = Relman, Nightly community, Triagers
+}}
 {{DISPLAYTITLE:The Firefox Nightly channel}}
-<div style="float:right; clear:both; margin-left:0.5em;">__TOC__</div>
-<p style="font-size: x-large; font-weight:bold;">This page lists what the release management team should do during the Nightly development cycle on Desktop.</p>
-
+<p style="font-size: large; font-weight:bold;">This page lists what the release management team should do during the Nightly development cycle on Desktop.</p>
 
 = Summarized process =
 # Update nightly version in Ship-it at the beginning of the cyle

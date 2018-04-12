@@ -185,4 +185,3 @@ In Nucleus you should associate each note with a category. The notes will be gro
 
 [[category:Release_Management|Release Notes]]
 [[category:Release_Management:Processes|Release Notes]]
-

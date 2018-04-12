@@ -1,11 +1,19 @@
 {{DISPLAYTITLE:The Firefox Nightly respin process}}
 
+{{Processbox
+  | Process name = Nightly respin
+  | Purpose      = Update our users' broken nightlies
+  | Why          = A patch on mozilla-central broke Nightly badly (crash, broken UI…)
+  | Goals        = Nightly population retention
+  | People       = Relman, releng
+}}
+
 <p style="font-size: larger; font-weight:bold;">This page details the process to back out a faulty patch and, if needed, get nightlies respun.</p>
 
 
 == Summarized process ==
 
-# File a bug with as much details possible about the regression / crash if a bug hasn't been filed yet
+# File a bug with as much detail as possible about the regression / crash if a bug hasn't been filed yet
 # Ask sheriffs to stop automatic nightly updates because of the bug filed in step 1
 # Warn our users about the regression via our Twitter account and #nightly IRC channel, give the bug number.
 # Investigate to find the faulty patch via mozregression or stack traces for crashes
