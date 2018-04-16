@@ -1,11 +1,11 @@
 __NOEDITSECTION__
 [[File:All-firefox-logos.png|500px|center]]
 =Quick Links=
-* [[Release_Management/Calendar | Release Calendar ]]
+* [[Release_Management/Calendar | Release Calendar overview ]]
 * The [[Release_Management/Release_Process | Release Process]] explained
 * [[Releases | Current and Past Releases]]
-* [https://www.google.com/calendar/embed?src=mozilla.com_2d37383433353432352d3939%40resource.calendar.google.com Firefox Merge/Release Calendar]
-* [https://www.google.com/calendar/embed?src=mozilla.com_dbq84anr9i8tcnmhabatstv5co%40group.calendar.google.com Release  Calendar] (Details)
+* [https://www.google.com/calendar/embed?src=mozilla.com_2d37383433353432352d3939%40resource.calendar.google.com Firefox Merge/Release Calendar] (Just the major release dates)
+* [https://www.google.com/calendar/embed?src=mozilla.com_dbq84anr9i8tcnmhabatstv5co%40group.calendar.google.com Release  Calendar] (Details, with every beta listed)
 
 =About Release Management=
 The Release Management team keeps the release process on track for upcoming releases. We focus on release quality, security, and stability. As release managers follow specific features and individual bugs, we work with developers, engineering managers, product managers, UI/UX teams, QE, and release engineering, doing whatever it takes to coordinate the many details in the creation of a new version of Firefox.  We aim to get features & fixes landed in time for proper evaluation. Our goal is to ship the most stable & excellent product possible for Firefox Desktop & Mobile for our users.
@@ -80,7 +80,7 @@ Each version of Firefox is followed by a release manager who owns it from start 
 * [[Release Management/Release Days|Release Days]] Merge and release day processes
 * Point releases and chemspills
 * Releng release flow for [http://moz-releng-docs.readthedocs.org/en/latest/release_workflows/fx_beta_release.html Beta] and [http://moz-releng-docs.readthedocs.org/en/latest/release_workflows/fx_ga_release.html Release]
-* [https://drive.google.com/open?id=1x27I7hAmWDWiqk3o3YC3fklhE3N59bdgHCQHF5p_lkU GoFaster release and relnote process]
+* [https://drive.google.com/open?id=1x27I7hAmWDWiqk3o3YC3fklhE3N59bdgHCQHF5p_lkU GoFaster release and relnote process] and other [https://docs.google.com/document/d/1_Xga8Mkb3IBZiiMlZiIfLuEtrjnFA1UZkiD0S7nKsjA/ Off-train releases]
 
 ;Dashboards
 * [https://mozilla.github.io/delivery-dashboard/ Delivery Dashboard]
