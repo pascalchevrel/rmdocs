@@ -126,6 +126,15 @@ Look for the "fixed" or "verified" flag in Bugzilla to make sure the issue is fi
 * "Developer" tag is for "Developer Tools".
 * Get the release notes ready for review by requesting feedback across Mozilla. The audience reviewing this includes RelMan, release-drivers, fx-team, front-end team, SUMO team, platform-devs, QE, etc. Please follow up and close on the review feedback comments promptly.
 
+=== Dot-Release Notes ===
+There are a few specifics to notes for a dot-release.
+
+Example: [https://www.mozilla.org/en-US/firefox/60.0.1/releasenotes/ 60.0.1 release notes]
+
+* Notes '''do''' have the bug number indicated (and linked to) between parenthesis at the end, ex: ''WebVR has been disabled by default on macOS ([https://bugzilla.mozilla.org/show_bug.cgi?id=1459362 Bug 1459362])''
+* Put a link to the reference release notes for the major version with this sentence, ex: ''Reference link to [https://www.mozilla.org/firefox/60.0/releasenotes/ 60.0 release notes]''
+* In Nucleus make the note pointing to the reference mailing list as "release-specific" and don't associate any tag to it
+
 == Nucleus: our publishing tool ==
 Release notes are written and managed in [https://nucleus.mozilla.org Nucleus].
 
