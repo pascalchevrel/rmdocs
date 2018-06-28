@@ -127,6 +127,20 @@ See [[#pastebin|below]] for a local pastebin install, so you don't paste huge am
 * <code>moco</code> - backchannel for meetings
 * <code>firefox</code> - firefox development room
 
+== Meetings ==
+As a release manager, you will need to attend recurrent meetings, here is the list:
+
+'''Tuesday:'''
+* 1st Channel meeting
+* Feature Deep Dive meeting
+'''Wednesday'''
+* Cross Functionnal meeting
+'''Thursday'''
+* 2nd Channel meeting
+* Our Team meeting
+
+Ask your manager and colleagues to invite you to these meetings.
+
 == EtherPad ==
 EtherPad is a great tool for dynamic collaboration during meetings, brainstorming, or other times when you need to collaborate:
 * https://public.etherpad-mozilla.org/ for general use
