@@ -134,7 +134,6 @@ General info on module owners and partners:
 * Mozilla Partners [https://docs.google.com/spreadsheets/d/1H38b9RgunWtuUjuv0jc3wiSwcAbpc4Ee2T5egmEojQw/edit#gid=0 Partner Rolodex] - Request permissions to your manager if you can't access this document.
 
 ==Bugzilla ==
-* Install [https://addons.mozilla.org/en-US/firefox/addon/bugzillajs/ BugzillaJS] to be able to open all bugs in a search result.
 * Configure the [https://bugzilla.mozilla.org/userprefs.cgi?tab=securemail securemail] section if you want to see the content of security bugs in your email client. GPG key or [http://kb.mozillazine.org/Getting_an_SMIME_certificate SMIME certificate] are accepted.
 * If you don't mind receiving plenty of emails, you can [https://bugzilla.mozilla.org/show_bug.cgi?id=1144694 ask to the bugzilla admin to receive notifications] for Firefox uplift requests
 
@@ -142,7 +141,6 @@ General info on module owners and partners:
 * [https://bugzilla.mozilla.org/page.cgi?id=release_tracking_report.html release tracking report]
 === Queries ===
 In your bugzilla preferences, under Saved Searches, you can add some of the following to your footer for quick access:
-* [https://bugzilla.mozilla.org/buglist.cgi?cmdtype=dorem&remaction=run&namedcmd=approval-aurora%3F&sharer_id=272375 approval-aurora?]
 * [https://bugzilla.mozilla.org/buglist.cgi?cmdtype=dorem&remaction=run&namedcmd=approval-beta%3F&sharer_id=272375 approval-beta?]
 * As an exercise, also create the query approval-release? (hint: edit the approval-beta? such, update the value and save it with the new name)
 * [https://bugzilla.mozilla.org/buglist.cgi?o1=equals&v1=%3F&known_name=tracking-ff32%3F&f1=cf_tracking_firefox37&query_based_on=tracking-ff32%3F&query_format=advanced&list_id=12037223 tracking_firefoxXY?] (adjust for current beta version as needed)
@@ -154,16 +152,17 @@ In your bugzilla preferences, under Saved Searches, you can add some of the foll
 * Also create query for approval-esrXY
 
 =Tools=
-==Repos to check out==
+==Repos to check out if you are going to develop==
 * [https://github.com/mozilla/relman-auto-nag Bugzilla nag tool]
-* [http://viewvc.svn.mozilla.org/vc/projects/mozilla.com/ svn repo for web pages]
 * [https://github.com/mozilla/ship-it/ ship-it]
-* [http://viewvc.svn.mozilla.org/vc/libs/product-details/ product details]
 * [https://github.com/mozilla/rna Nucleus]
-* [https://github.com/mozilla/bedrock Bedrock] (Mozilla website)
+* [https://github.com/mozilla/bedrock Bedrock] Mozilla website
 * [http://harthur.github.io/mozregression/ mozregression]
-* [https://hg.mozilla.org/build/braindump/ braindump (for get_apk.sh)]
-* [https://hg.mozilla.org/build/mozharness/ mozharness (push_apk.py)]
+* [https://github.com/mozilla-releng/mozapkpublisher/ mozapkpublisher]
+
+==Helpful webextensions==
+* [https://addons.mozilla.org/en-US/firefox/addon/bugzilla-crash-stop/ Crash Stop] provides crash data in Bugzilla
+* [https://addons.mozilla.org/en-US/firefox/addon/gecko-code-coverage/ Gecko Code Coverage] provides code coverage info in Bugzilla, crash-stats, dxr, hg.m.o, ...
 
 = Community Contributors =
 
