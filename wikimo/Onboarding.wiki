@@ -1,7 +1,5 @@
 {{DISPLAYTITLE:Onboarding process in the Release Management team}}
-Welcome to Release Management.
-
-Here's a list of accounts to set up, tools to check out, and any other details we can think of to help you start getting yourself set up.
+<p style="font-size: large; font-weight:bold;">Welcome to Release Management. Here's a list of accounts to set up, tools to check out, and any other details we can think of to help you start getting yourself set up.</p>
 
 = Account Permissions =
 You'll want to make sure you have the necessary permissions to do the following and some will take longer than others to achieve so start early:
