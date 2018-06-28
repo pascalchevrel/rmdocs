@@ -34,19 +34,22 @@ This page describes our release schedule: [[Release_Management/Calendar | Firefo
 == E-Mail ==
 Note that some of these mailing lists need approval from an administrator.
 
-*release-mgmt@mozilla.com - ask your manager
-*release-drivers - visit https://mail.mozilla.org/listinfo/release-drivers to add yourself to release-drivers@ once your email is working
-*security-group - Here is the policy for getting added to the security-group list: https://www.mozilla.org/en-US/about/governance/policies/security-group/membership/ For the list, visit  https://mail.mozilla.org/listinfo/security-group
+=== Our team lists ===
+* release-mgmt-team@mozilla.com: General discussions for the whole team
+* release-mgmt@mozilla.com: Discussions about releases, schedule…
+* release-mgmt-analysis@mozilla.com: Discussions about code coverage, machine learning/Artificial Intelligence, static analysis…
 
+=== Other useful lists ===
 You'll need to manually subscribe to:
-*release-automation-notifications - visit https://groups.google.com/a/mozilla.com/group/release-automation-notifications/ (Contributors need invite)
-*mozilla.dev.planning - visit https://lists.mozilla.org/listinfo/dev-planning
-*mozilla.dev.platform - visit https://lists.mozilla.org/listinfo/dev-platform
-*mozilla.dev.tree-management - visit https://lists.mozilla.org/listinfo/dev-tree-management
-*Enterprise - visit https://mail.mozilla.org/listinfo/enterprise
-*Stability - vist https://mail.mozilla.org/listinfo/stability
+* [https://mail.mozilla.org/listinfo/release-drivers release-drivers]
+* [https://lists.mozilla.org/listinfo/dev-planning mozilla.dev.planning]
+* [https://lists.mozilla.org/listinfo/dev-platform mozilla.dev.platform]
+* [https://mail.mozilla.org/listinfo/enterprise Enterprise]
+* [https://mail.mozilla.org/listinfo/stability Stability]
+* [https://groups.google.com/a/mozilla.com/group/release-automation-notifications/ release-automation-notifications] (Contributors need aninvite)
+* [https://mail.mozilla.org/listinfo/security-group security-group] Check out the [https://www.mozilla.org/en-US/about/governance/policies/security-group/membership/ policy] for getting added to the security-group list.
 
-These are available as [news://news.mozilla.org newsgroups], Google groups, and [https://lists.mozilla.org/listinfo Mailman lists]
+These are available as [news://news.mozilla.org nntp newsgroups], [https://groups.google.com/forum/#!overview Google groups], and [https://lists.mozilla.org/listinfo mailing](1), [https://mail.mozilla.org/ lists](2).
 
 == Websites ==
 * [https://metrics.mozilla.com/pentaho Metric] (TODO: this url is out of date)
@@ -174,7 +177,7 @@ Depending on the volunteer's time availability, usually 1 or 2 hour-long triage 
 == Vidyo Conference Rooms ==
 Sometimes when you're on the go and you need to dial into a vidyo room, you may not have time to find the info and having it already loaded in your phone can make a difference.  Your RelMan teammates might be able to beam you the contact info from their phones, or you can add them yourself like this:
 * Vidyo; Warp Core 6509030800,92,5312#
-Rooms to mark as favourites and contacts: Spadina (Toronto), Release Coordination (Virtual room, no physical location)
+Virtual rooms to mark as favourites and contacts: ReleaseCoordination, ProgramManagement.
 
 == Subcribe to fun stuff ==
 * Request here https://bugzilla.mozilla.org/show_bug.cgi?id=391268
