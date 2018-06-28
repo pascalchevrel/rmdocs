@@ -7,11 +7,11 @@ Here's a list of accounts to set up, tools to check out, and any other details w
 You'll want to make sure you have the necessary permissions to do the following and some will take longer than others to achieve so start early:
 * Bugs
 ** Create a [https://bugzilla.mozilla.org/createaccount.cgi Bugzilla] account. Ask for "edit-bugs" permissions. Request for your bugzilla account to be added to <tt>mozilla-next-drivers</tt> and <tt>mozilla-stable-branch-drivers</tt> groups in order to set tracking flags. -- file a bug (eg: {{bug|962151}}).
-** You can see security sensitive bugs if someone CCs you into the bug, or if you eventually join the security group list. [http://www.mozilla.org/en-US/about/governance/policies/security-group/bugs/#expanding Security permission] comes later.
+** You can see security sensitive bugs if someone CCs you into the bug, or if you eventually join the security group list. [https://www.mozilla.org/en-US/about/governance/policies/security-group/bugs/#expanding Security permission] comes later.
 * Repos
 ** n.b. If this is going to be a regular set of requests it would probably be better to create a group for them.
 
-** hg commit access (''scm_level3'') -- read http://www.mozilla.org/hacking/committer/, fill out a committer agreement, file a bug (eg: {{bug|738713}} except you'll request '''commit''' access, not elevation of current permissions). For this, you will need two [[Modules/All#Core | owners or peers for a core hg module]] to vouch for you as described in [https://www.mozilla.org/en-US/about/governance/policies/commit/access-policy/ Commit Access Policy]. (later)
+** hg commit access (''scm_level3'') -- read https://www.mozilla.org/hacking/committer/, fill out a committer agreement, file a bug (eg: {{bug|738713}} except you'll request '''commit''' access, not elevation of current permissions). For this, you will need two [[Modules/All#Core | owners or peers for a core hg module]] to vouch for you as described in [https://www.mozilla.org/en-US/about/governance/policies/commit/access-policy/ Commit Access Policy]. (later)
 ** Example of asking for level 1 commit access (which lets you push changes to the ''try'' server): {{bug|1116226}}. This is good to start with to get your SSH key and committer agreement set up. (earlier)
 ** Socorro permissions: {{bug|1229732}}
 * Communications
@@ -50,7 +50,7 @@ These are available as [news://news.mozilla.org newsgroups], Google groups, and 
 
 == Websites ==
 * [https://metrics.mozilla.com/pentaho Metric] (TODO: this url is out of date)
-* [http://crash-stats.mozilla.com/ Crash reports]
+* [https://crash-stats.mozilla.com/ Crash reports]
 * This wiki! Create an account at https://wiki.mozilla.org, and update the [[Release_Management/Team_members | team members page]].
 
 == IRC  ==
@@ -82,7 +82,7 @@ EtherPad is a great tool for dynamic collaboration during meetings, brainstormin
 * https://public.etherpad-mozilla.org/p/firefox43-worry-list Worry list specific to each release (change the version in the url as needed)
 
 == Pastebin ==
-There's a local pastebin instance at http://pastebin.mozilla.org/, so you don't need to paste multi-lines into a channel. Use this handy [http://hg.mozilla.org/build/braindump/file/tip/utils/pastebin helper script] to pipe to pastebin from terminal.
+There's a local pastebin instance at https://pastebin.mozilla.org/, so you don't need to paste multi-lines into a channel. Use this handy [https://hg.mozilla.org/build/braindump/file/tip/utils/pastebin helper script] to pipe to pastebin from terminal.
 
     it creates a new page from stdin, and outputs the url to stdout
     an argument will be interpretted as the syntax highlighting format to use
@@ -90,7 +90,7 @@ There's a local pastebin instance at http://pastebin.mozilla.org/, so you don't 
     set & export PASTEBIN_NAME if you don't want to post as anonymous.
 
 == Planet ==
-Add a bug similar to {{bug|605709}} to get your blog syndicated on http://planet.mozilla.org. You can choose to send every post, or create a feed for a custom tag (eg: 'mozilla').  Having your blog syndicated to planet is a great channel for announcing new features (along with tweeting and posting to newsgroups).
+Add a bug similar to {{bug|605709}} to get your blog syndicated on https://planet.mozilla.org. You can choose to send every post, or create a feed for a custom tag (eg: 'mozilla').  Having your blog syndicated to planet is a great channel for announcing new features (along with tweeting and posting to newsgroups).
 
 == Trello ==
 *[https://trello.com/b/HFf1xGCC/platform-status-board Platform Status Board]
@@ -99,7 +99,7 @@ Add a bug similar to {{bug|605709}} to get your blog syndicated on http://planet
 
 = Software =
 == Firefox ==
-# Please download & install Firefox [http://www.mozilla.org/fr/firefox/channel/#aurora aurora], [http://www.mozilla.org/fr/firefox/channel/#beta beta] and [http://www.mozilla.org/fr/firefox/channel/#firefox release]
+# Please download & install Firefox [https://www.mozilla.org/fr/firefox/channel/#aurora aurora], [https://www.mozilla.org/fr/firefox/channel/#beta beta] and [https://www.mozilla.org/fr/firefox/channel/#firefox release]
 # [https://support.mozilla.org/en-US/kb/profile-manager-create-and-remove-firefox-profiles#w_creating-a-profile Create new profiles] for each version + your own profile. Read [https://developer.mozilla.org/en-US/docs/Mozilla/Multiple_Firefox_Profiles Multiple Firefox Profiles] for more help with the profile manager.
 
 Firefox Feature Road map is available here: https://mozilla.aha.io/products/ST/feature_cards. To login, choose "login with Okta" and provide your Mozilla LDAP crendentials.
