@@ -3,25 +3,31 @@
 
 = Account Permissions =
 You'll want to make sure you have the necessary permissions to do the following and some will take longer than others to achieve so start early:
-* Bugs
-** Create a [https://bugzilla.mozilla.org/createaccount.cgi Bugzilla] account. Ask for "edit-bugs" permissions. Request for your bugzilla account to be added to <tt>mozilla-next-drivers</tt> and <tt>mozilla-stable-branch-drivers</tt> groups in order to set tracking flags. -- file a bug (eg: {{bug|962151}}).
-** You can see security sensitive bugs if someone CCs you into the bug, or if you eventually join the security group list. [https://www.mozilla.org/en-US/about/governance/policies/security-group/bugs/#expanding Security permission] comes later.
-* Repos
-** n.b. If this is going to be a regular set of requests it would probably be better to create a group for them.
 
-** hg commit access (''scm_level3'') -- read https://www.mozilla.org/hacking/committer/, fill out a committer agreement, file a bug (eg: {{bug|738713}} except you'll request '''commit''' access, not elevation of current permissions). For this, you will need two [[Modules/All#Core | owners or peers for a core hg module]] to vouch for you as described in [https://www.mozilla.org/en-US/about/governance/policies/commit/access-policy/ Commit Access Policy]. (later)
-** Example of asking for level 1 commit access (which lets you push changes to the ''try'' server): {{bug|1116226}}. This is good to start with to get your SSH key and committer agreement set up. (earlier)
-** Socorro permissions: {{bug|1229732}}
-* Communications
-** Ask your manager for the permissions to access the [https://drive.google.com/open?id=0B0AhJMhJM7DnbXQ0NlplR0swdjQ|shared team Google drive folder]
-* Builds - Request Mozilla VPN access (required for ship-it and l10n) (earlier)
-** Ask to be added to the groups ''shipit'' and ''vpn_shipit'' to get access to the build tool, by filing a bug in [https://bugzilla.mozilla.org/enter_bug.cgi?product=Infrastructure%20%26%20Operations&component=Infrastructure%3A%20LDAP Infrastructure & Operations::Infrastructure:LDAP]. Example: {{Bug|1135198}}
-** Ask to be added to the LDAP group called ''verbatim'' by filing a bug in [https://bugzilla.mozilla.org/enter_bug.cgi?product=Infrastructure%20%26%20Operations&component=Infrastructure%3A%20LDAP Infrastructure & Operations::Infrastructure:LDAP]. This will give you permission to access to https://l10n.mozilla.org/  You can ask in the same bug as for shipit.  (Note: Is this true? Axel says we should not need to be in the verbatim group.)
-* Release Notes
-** Request admin access to https://nucleus.mozilla.org by filing two bugs. First, one to get the Nucleus site added to your SSO account in [https://bugzilla.mozilla.org/enter_bug.cgi?product=Infrastructure%20%26%20Operations&component=Infrastructure%3A%20SSO Infrastructure & Operations::Infrastructure: SSO], Example: {{Bug|1351680}}. The second bug is to be added as admin in the Web App [https://bugzilla.mozilla.org/enter_bug.cgi?product=Websites&component=Nucleus Websites::Nucleus]. Example: {{Bug|1135186}} (earlier)
+== Bugs ==
+* Create a [https://bugzilla.mozilla.org/createaccount.cgi Bugzilla] account. Ask for "edit-bugs" permissions. Request for your bugzilla account to be added to <tt>mozilla-next-drivers</tt> and <tt>mozilla-stable-branch-drivers</tt> groups in order to set tracking flags. -- file a bug (eg: {{bug|962151}}).
+* You can see security sensitive bugs if someone CCs you into the bug, or if you eventually join the security group list. [https://www.mozilla.org/en-US/about/governance/policies/security-group/bugs/#expanding Security permission] comes later.
 
-* github
-* ssh
+==  Repos ==
+* n.b. If this is going to be a regular set of requests it would probably be better to create a group for them.
+
+* hg commit access (''scm_level3'') -- read https://www.mozilla.org/hacking/committer/, fill out a committer agreement, file a bug (eg: {{bug|738713}} except you'll request '''commit''' access, not elevation of current permissions). For this, you will need two [[Modules/All#Core | owners or peers for a core hg module]] to vouch for you as described in [https://www.mozilla.org/en-US/about/governance/policies/commit/access-policy/ Commit Access Policy]. (later)
+* Example of asking for level 1 commit access (which lets you push changes to the ''try'' server): {{bug|1116226}}. This is good to start with to get your SSH key and committer agreement set up. (earlier)
+* Socorro permissions: {{bug|1229732}}
+
+== Communications ==
+* Ask your manager for the permissions to access the [https://drive.google.com/open?id=0B0AhJMhJM7DnbXQ0NlplR0swdjQ|shared team Google drive folder]
+
+== Builds - Request Mozilla VPN access (required for ship-it and l10n) (earlier) ==
+* Ask to be added to the groups ''shipit'' and ''vpn_shipit'' to get access to the build tool, by filing a bug in [https://bugzilla.mozilla.org/enter_bug.cgi?product=Infrastructure%20%26%20Operations&component=Infrastructure%3A%20LDAP Infrastructure & Operations::Infrastructure:LDAP]. Example: {{Bug|1135198}}
+* Ask to be added to the LDAP group called ''verbatim'' by filing a bug in [https://bugzilla.mozilla.org/enter_bug.cgi?product=Infrastructure%20%26%20Operations&component=Infrastructure%3A%20LDAP Infrastructure & Operations::Infrastructure:LDAP]. This will give you permission to access to https://l10n.mozilla.org/  You can ask in the same bug as for shipit.  (Note: Is this true? Axel says we should not need to be in the verbatim group.)
+
+== Release Notes ==
+* Request admin access to https://nucleus.mozilla.org by filing two bugs. First, one to get the Nucleus site added to your SSO account in [https://bugzilla.mozilla.org/enter_bug.cgi?product=Infrastructure%20%26%20Operations&component=Infrastructure%3A%20SSO Infrastructure & Operations::Infrastructure: SSO], Example: {{Bug|1351680}}. The second bug is to be added as admin in the Web App [https://bugzilla.mozilla.org/enter_bug.cgi?product=Websites&component=Nucleus Websites::Nucleus]. Example: {{Bug|1135186}} (earlier)
+
+== Other ==
+* Get a github account
+* Set up an ssh key
 
 = Communication Channels =
 == Release Calendar ==
