@@ -41,10 +41,12 @@ Ask your manager to add you.
 == Trello ==
 Trello is used to track the shipping of Firefox features in the [https://trello.com/b/8k1hT2vh/firefox Firefox Trello Board]. Ask Erin Lancaster (elan on IRC) for access.
 
+Our also has a [https://trello.com/b/D5vYvuGP/release-management Trello board ] but we currently do not use it.
+
 == Github ==
 Some of our tools are developped on Github, some Firefox features are also developped on Github and many teams use Github for development but also documentation, blogging, project management…
 
-* if you don't have an account, create one
+* if you don't have an account, [https://github.com/join get one].
 * Ask your manager to add you to the Release management team on Github (https://github.com/orgs/mozilla/teams/release-management/members)
 
 Please note that although you can use Github to file bugs in Bugzilla, you should not use it as your work account because Github accounts on bugzilla can't access security and internal bugs.
@@ -55,8 +57,7 @@ Please note that although you can use Github to file bugs in Bugzilla, you shoul
 * Socorro permissions: {{bug|1229732}}
 
 == Other ==
-* Get a GitHub account
-* Set up an ssh key
+* This wiki! Create an account at https://wiki.mozilla.org, and update the [[Release_Management/Team_members | team members page]].
 
 = Communication Channels =
 == Release Calendar ==
@@ -67,12 +68,12 @@ This page describes our release schedule: [[Release_Management/Calendar | Firefo
 == E-Mail ==
 Note that some of these mailing lists need approval from an administrator.
 
-=== Our team lists ===
+'''Our team lists '''
 * release-mgmt-team@mozilla.com: General discussions for the whole team
 * release-mgmt@mozilla.com: Discussions about releases, schedule…
 * release-mgmt-analysis@mozilla.com: Discussions about code coverage, machine learning/Artificial Intelligence, static analysis…
 
-=== Other useful lists ===
+''' Other useful lists '''
 You'll need to manually subscribe to:
 * [https://mail.mozilla.org/listinfo/release-drivers release-drivers]
 * [https://lists.mozilla.org/listinfo/dev-planning mozilla.dev.planning]
@@ -85,31 +86,40 @@ You'll need to manually subscribe to:
 These are available as [news://news.mozilla.org nntp newsgroups], [https://groups.google.com/forum/#!overview Google groups], and [https://lists.mozilla.org/listinfo mailing](1), [https://mail.mozilla.org/ lists](2).
 
 == Websites ==
-* [https://metrics.mozilla.com/pentaho Metric] (TODO: this url is out of date)
 * [https://crash-stats.mozilla.com/ Crash reports]
-* This wiki! Create an account at https://wiki.mozilla.org, and update the [[Release_Management/Team_members | team members page]].
 
 == IRC  ==
 * [[IRC | irc://irc.mozilla.org]]
 * irc.mozilla.org:6697
-** #airmozilla - back channel for public broadcasts
-** #developers - monitor check-ins and speak with devs
-** #fx-team - good place to speak with desktop team
-** #mobile - good place to speak with mobile devs
-** #moco [access_key is here [https://mana.mozilla.org/wiki/display/AVSE/MoCo+Vidyo+Room+and+%23moco+IRC+Channel+Security]]
-** #planning - back channel for product coordination meeting, good place to speak with broader product team
-** #pm - Project management
-** #release-drivers - release related discussions
-** #releng - releng team channel
-** #relman - our team channel
-** #security (ask for channel key) - the security team's channel
-** #qa - QE team channel
-** #www - for speaking with the mozilla.org team in case a push breaks or otherwise doesn't work
+** <code>airmozilla</code> - back channel for public broadcasts
+** <code>developers</code> - monitor check-ins and speak with devs
+** <code>fx-team</code> - good place to speak with desktop team
+** <code>mobile</code> - good place to speak with mobile devs
+** <code>moco</code> [access_key is here [https://mana.mozilla.org/wiki/display/AVSE/MoCo+Vidyo+Room+and+%23moco+IRC+Channel+Security]]
+** <code>planning</code> - back channel for product coordination meeting, good place to speak with broader product team
+** <code>pm</code> - Project management
+** <code>release-drivers</code> - release related discussions
+** <code>releng</code> - releng team channel
+** <code>relman</code> - our team channel
+** <code>security</code> (ask for channel key) - the security team's channel
+** <code>qa</code> - QE team channel
+** <code>www</code> - for speaking with the mozilla.org team in case a push breaks or otherwise doesn't work
 * http://chatzilla.hacksrus.com/faq/#connect
 
 Many folks uses IRC Cloud as Mozilla as an instance (request an account in Service Now), others run a BNC (an IRC bouncer) (e.g. znc) and/or <code>irssi</code> under screen to get continuous view of traffic.
 
 See [[#pastebin|below]] for a local pastebin install, so you don't paste huge amounts in channel.
+
+== Slack ==
+[https://mozilla.slack.com/ Mozilla Slack], you can login with [https://sso.mozilla.org sso].
+
+* <code>release-drivers</code> - release related discussions
+* <code>qa-coordination</code> - QE team channel
+* <code>release-coordination</code> - Cross functional coordination room during a release
+* <code>triage-and-tracking</code> - All things bugzilla
+* <code>release-notes</code> - coordination with release notes stakeholders, marketing and writers
+* <code>moco</code> - backchannel for meetings
+* <code>firefox</code> - firefox development room
 
 == EtherPad ==
 EtherPad is a great tool for dynamic collaboration during meetings, brainstorming, or other times when you need to collaborate:
@@ -127,11 +137,6 @@ There's a local pastebin instance at https://pastebin.mozilla.org/, so you don't
 
 == Planet ==
 Add a bug similar to {{bug|605709}} to get your blog syndicated on https://planet.mozilla.org. You can choose to send every post, or create a feed for a custom tag (eg: 'mozilla').  Having your blog syndicated to planet is a great channel for announcing new features (along with tweeting and posting to newsgroups).
-
-== Trello ==
-*[https://trello.com/b/HFf1xGCC/platform-status-board Platform Status Board]
-** request access from elancaster
-*[https://trello.com/b/D5vYvuGP/release-management Release management board]
 
 = Software =
 == Firefox ==
