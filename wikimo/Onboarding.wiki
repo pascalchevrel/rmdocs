@@ -15,7 +15,7 @@ You'll want to make sure you have the necessary permissions to do the following 
 ** Example of asking for level 1 commit access (which lets you push changes to the ''try'' server): {{bug|1116226}}. This is good to start with to get your SSH key and committer agreement set up. (earlier)
 ** Socorro permissions: {{bug|1229732}}
 * Communications
-** Ask your manager for the permissions to access the [https://drive.google.com/drive/u/1/folders/0B0AhJMhJM7DnbXQ0NlplR0swdjQ|team Google drive]
+** Ask your manager for the permissions to access the [https://drive.google.com/open?id=0B0AhJMhJM7DnbXQ0NlplR0swdjQ|shared team Google drive folder]
 * Builds - Request Mozilla VPN access (required for ship-it and l10n) (earlier)
 ** Ask to be added to the groups ''shipit'' and ''vpn_shipit'' to get access to the build tool, by filing a bug in [https://bugzilla.mozilla.org/enter_bug.cgi?product=Infrastructure%20%26%20Operations&component=Infrastructure%3A%20LDAP Infrastructure & Operations::Infrastructure:LDAP]. Example: {{Bug|1135198}}
 ** Ask to be added to the LDAP group called ''verbatim'' by filing a bug in [https://bugzilla.mozilla.org/enter_bug.cgi?product=Infrastructure%20%26%20Operations&component=Infrastructure%3A%20LDAP Infrastructure & Operations::Infrastructure:LDAP]. This will give you permission to access to https://l10n.mozilla.org/  You can ask in the same bug as for shipit.  (Note: Is this true? Axel says we should not need to be in the verbatim group.)
