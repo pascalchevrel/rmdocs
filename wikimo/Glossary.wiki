@@ -16,6 +16,12 @@ Dot Release is 60.0.1
 
 Dot releases are usually done to fix a stability (top-crash)  or a security (Chemspill) issue and are done outside of the usual release dates.
 
+== GTB ==
+Acronym for [[Release_Management/Beta_Release_Checklist#Go_to_build | Go to build ]].  Mostly used in the release schecule communication ("Go to build on March 18"), this means that we initiate the building of a specific release.
+
+== Merge Day ==
+This is the day in the release cycle when we merge mozilla-central into mozilla-beta and mozilla-beta into mozilla-release. That both means the release of a new version of Firefox and the beginning of a new development cycle on mozilla-central (the version numbers on mozilla-central and mozilla-release are bumped up). During the cycle, there is a first merge of mozilla-central into mozilla-beta used to produce Dev Edition Beta 1 and 2, this is called the "first merge". During the first merge, the version number on mozilla-central is not bumped.
+
 == Nightly soft code freeze ==
 Last week of the nightly cycle on mozilla-central justr before the merge to beta during which landing risky or experimental code in the repository is discouraged.
 
@@ -33,6 +39,9 @@ Short for Release Management.
 
 == Relnotes ==
 Short for Release notes.
+
+== REO ==
+Acronym for [[Platform#Regression_Engineering_Owner_.28REO.29 | Regression Engineering Owner ]]
 
 == Ship-It ==
 Name of the internal application used by release management to store all the metadata relevant to a release (version, code and l10n shas, date, platforms, chemspill or not…) and make it available to release engineering tools for releases. The data is also exposed publicly as JSON files as part of a public API called [[https://wiki.mozilla.org/Release_Management/Product_details|Product-Details]].
