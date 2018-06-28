@@ -15,11 +15,11 @@ You'll want to make sure you have the necessary permissions to do the following 
 == VPN ==
 Configure your system to access to the Mozilla VPN in order to get access to internal tools like Ship-It.
 
-''Documentation:''
+'''Documentation:'''
 * [https://mana.mozilla.org/wiki/pages/viewpage.action?pageId=30769829 VPN General Info]
 * [https://mana.mozilla.org/wiki/display/SD/Viscosity+Install+for+Windows Viscosity Install for Windows]
 * [https://mana.mozilla.org/wiki/display/SD/Viscosity+Install+for+Mac Viscosity Install for Mac].
-* [https://mana.mozilla.org/wiki/display/IT/Configuring+OpenVPN+on+Ubuntu Viscosity Install for Linux]
+* [https://mana.mozilla.org/wiki/display/IT/Configuring+OpenVPN+on+Ubuntu OpenVPN Install for Linux]
 
 == Ship It ==
 [https://ship-it.mozilla.org/ Ship It] is available behind our VPN, note that you will need to use Mozilla DNS servers to resolve the url.
@@ -29,16 +29,33 @@ File a bug ([https://bugzilla.mozilla.org/enter_bug.cgi?product=Infrastructure%2
 Once you are using the Mozilla VPN, you can access the application and use your LDAP account to log in.
 
 == Release Notes ==
-* Request admin access to https://nucleus.mozilla.org by filing two bugs. First, one to get the Nucleus site added to your SSO account in [https://bugzilla.mozilla.org/enter_bug.cgi?product=Infrastructure%20%26%20Operations&component=Infrastructure%3A%20SSO Infrastructure & Operations::Infrastructure: SSO], Example: {{Bug|1351680}}. The second bug is to be added as admin in the Web App [https://bugzilla.mozilla.org/enter_bug.cgi?product=Websites&component=Nucleus Websites::Nucleus]. Example: {{Bug|1135186}} (earlier)
+Request admin access to https://nucleus.mozilla.org by filing two bugs.
+
+First, one to get the Nucleus site added to your SSO account in [https://bugzilla.mozilla.org/enter_bug.cgi?product=Infrastructure%20%26%20Operations&component=Infrastructure%3A%20SSO Infrastructure & Operations::Infrastructure: SSO], Example: {{Bug|1351680}}.
+
+The second bug is to be added as admin in the Web App [https://bugzilla.mozilla.org/enter_bug.cgi?product=Websites&component=Nucleus Websites::Nucleus]. Example: {{Bug|1135186}}
+
+== Google Play Console ==
+Ask your manager to add you.
+
+== Trello ==
+Trello is used to track the shipping of Firefox features in the [https://trello.com/b/8k1hT2vh/firefox Firefox Trello Board]. Ask Erin Lancaster (elan on IRC) for access.
+
+== Github ==
+Some of our tools are developped on Github, some Firefox features are also developped on Github and many teams use Github for development but also documentation, blogging, project management…
+
+* if you don't have an account, create one
+* Ask your manager to add you to the Release management team on Github (https://github.com/orgs/mozilla/teams/release-management/members)
+
+Please note that although you can use Github to file bugs in Bugzilla, you should not use it as your work account because Github accounts on bugzilla can't access security and internal bugs.
 
 ==  Repositories ==
-* n.b. If this is going to be a regular set of requests it would probably be better to create a group for them.
 * hg commit access (''scm_level3'') -- read https://www.mozilla.org/hacking/committer/, fill out a committer agreement, file a bug (eg: {{bug|738713}} except you'll request '''commit''' access, not elevation of current permissions). For this, you will need two [[Modules/All#Core | owners or peers for a core hg module]] to vouch for you as described in [https://www.mozilla.org/en-US/about/governance/policies/commit/access-policy/ Commit Access Policy]. (later)
 * Example of asking for level 1 commit access (which lets you push changes to the ''try'' server): {{bug|1116226}}. This is good to start with to get your SSH key and committer agreement set up. (earlier)
 * Socorro permissions: {{bug|1229732}}
 
 == Other ==
-* Get a github account
+* Get a GitHub account
 * Set up an ssh key
 
 = Communication Channels =
