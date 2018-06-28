@@ -38,6 +38,12 @@ The second bug is to be added as admin in the Web App [https://bugzilla.mozilla.
 == Google Play Console ==
 Ask your manager to add you.
 
+== Balrog ==
+TBD
+
+== Socorro (crash-stats) ==
+TBD
+
 == Trello ==
 Trello is used to track the shipping of Firefox features in the [https://trello.com/b/8k1hT2vh/firefox Firefox Trello Board]. Ask Erin Lancaster (elan on IRC) for access.
 
@@ -57,7 +63,7 @@ Please note that although you can use Github to file bugs in Bugzilla, you shoul
 * Socorro permissions: {{bug|1229732}}
 
 == Other ==
-* This wiki! Create an account at https://wiki.mozilla.org, and update the [[Release_Management/Team_members | team members page]].
+* This wiki! [[Special:RequestAccount | Create an account]] and update the [[Release_Management/Team_members | team members page]].
 
 = Communication Channels =
 == Release Calendar ==
@@ -89,21 +95,21 @@ These are available as [news://news.mozilla.org nntp newsgroups], [https://group
 * [https://crash-stats.mozilla.com/ Crash reports]
 
 == IRC  ==
-* [[IRC | irc://irc.mozilla.org]]
-* irc.mozilla.org:6697
-** <code>airmozilla</code> - back channel for public broadcasts
-** <code>developers</code> - monitor check-ins and speak with devs
-** <code>fx-team</code> - good place to speak with desktop team
-** <code>mobile</code> - good place to speak with mobile devs
-** <code>moco</code> [access_key is here [https://mana.mozilla.org/wiki/display/AVSE/MoCo+Vidyo+Room+and+%23moco+IRC+Channel+Security]]
-** <code>planning</code> - back channel for product coordination meeting, good place to speak with broader product team
-** <code>pm</code> - Project management
-** <code>release-drivers</code> - release related discussions
-** <code>releng</code> - releng team channel
-** <code>relman</code> - our team channel
-** <code>security</code> (ask for channel key) - the security team's channel
-** <code>qa</code> - QE team channel
-** <code>www</code> - for speaking with the mozilla.org team in case a push breaks or otherwise doesn't work
+[[IRC | IRC]] is our traditionnal chatting tool, we run our own server (irc.mozilla.org) with a thousand specialized chat rooms. Some people prefer Slack, other IRC so we have chatroom in both.
+
+* <code>airmozilla</code> - back channel for public broadcasts
+* <code>developers</code> - monitor check-ins and speak with devs
+* <code>fx-team</code> - good place to speak with desktop team
+* <code>mobile</code> - good place to speak with mobile devs
+* <code>moco</code> [access_key is here [https://mana.mozilla.org/wiki/display/AVSE/MoCo+Vidyo+Room+and+%23moco+IRC+Channel+Security]]
+* <code>planning</code> - back channel for product coordination meeting, good place to speak with broader product team
+* <code>pm</code> - Project management
+* <code>release-drivers</code> - release related discussions
+* <code>releng</code> - releng team channel
+* <code>relman</code> - our team channel
+* <code>security</code> (ask for channel key) - the security team's channel
+* <code>qa</code> - QE team channel
+* <code>www</code> - for speaking with the mozilla.org team in case a push breaks or otherwise doesn't work
 * http://chatzilla.hacksrus.com/faq/#connect
 
 Many folks uses IRC Cloud as Mozilla as an instance (request an account in Service Now), others run a BNC (an IRC bouncer) (e.g. znc) and/or <code>irssi</code> under screen to get continuous view of traffic.
@@ -140,11 +146,8 @@ Add a bug similar to {{bug|605709}} to get your blog syndicated on https://plane
 
 = Software =
 == Firefox ==
-# Please download & install Firefox [https://www.mozilla.org/fr/firefox/channel/#aurora aurora], [https://www.mozilla.org/fr/firefox/channel/#beta beta] and [https://www.mozilla.org/fr/firefox/channel/#firefox release]
+# Please download & install Firefox [https://nightly.mozilla.org nightly], [https://beta.mozilla.org beta] and [https://firefox.com release]
 # [https://support.mozilla.org/en-US/kb/profile-manager-create-and-remove-firefox-profiles#w_creating-a-profile Create new profiles] for each version + your own profile. Read [https://developer.mozilla.org/en-US/docs/Mozilla/Multiple_Firefox_Profiles Multiple Firefox Profiles] for more help with the profile manager.
-
-Firefox Feature Road map is available here: https://mozilla.aha.io/products/ST/feature_cards. To login, choose "login with Okta" and provide your Mozilla LDAP crendentials.
-
 
 = Handy Links =
 == How To and Oft-Used ==
