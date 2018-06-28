@@ -3,7 +3,7 @@ Welcome to Release Management.
 
 Here's a list of accounts to set up, tools to check out, and any other details we can think of to help you start getting yourself set up.
 
-=Account Permissions=
+= Account Permissions =
 You'll want to make sure you have the necessary permissions to do the following and some will take longer than others to achieve so start early:
 * Bugs
 ** Create a [https://bugzilla.mozilla.org/createaccount.cgi Bugzilla] account. Ask for "edit-bugs" permissions. Request for your bugzilla account to be added to <tt>mozilla-next-drivers</tt> and <tt>mozilla-stable-branch-drivers</tt> groups in order to set tracking flags. -- file a bug (eg: {{bug|962151}}).
@@ -11,7 +11,7 @@ You'll want to make sure you have the necessary permissions to do the following 
 * Repos
 ** n.b. If this is going to be a regular set of requests it would probably be better to create a group for them.
 
-** hg commit access (''scm_level3'') -- read http://www.mozilla.org/hacking/committer/, fill out a committer agreement, file a bug (eg: {{bug|738713}} except you'll request '''commit''' access, not elevation of current permissions). For this, you will need two [https://wiki.mozilla.org/Modules/All#Core owners or peers for a core hg module] to vouch for you as described in [https://www.mozilla.org/en-US/about/governance/policies/commit/access-policy/ Commit Access Policy]. (later)
+** hg commit access (''scm_level3'') -- read http://www.mozilla.org/hacking/committer/, fill out a committer agreement, file a bug (eg: {{bug|738713}} except you'll request '''commit''' access, not elevation of current permissions). For this, you will need two [[Modules/All#Core | owners or peers for a core hg module]] to vouch for you as described in [https://www.mozilla.org/en-US/about/governance/policies/commit/access-policy/ Commit Access Policy]. (later)
 ** Example of asking for level 1 commit access (which lets you push changes to the ''try'' server): {{bug|1116226}}. This is good to start with to get your SSH key and committer agreement set up. (earlier)
 ** Socorro permissions: {{bug|1229732}}
 * Communications
@@ -25,13 +25,13 @@ You'll want to make sure you have the necessary permissions to do the following 
 * github
 * ssh
 
-=Communication Channels=
-==Release Calendar==
-This page describes the rapid release schedules: https://wiki.mozilla.org/RapidRelease/Calendar. You should add these to your regular Google calender so you can easily see the state of any release.
+= Communication Channels =
+== Release Calendar ==
+This page describes our release schedule: [[Release_Management/Calendar | Firefox Release Calendar]]. You should add these to your regular Google calender so you can easily see the state of any release.
 * This is the basic public calendar with release dates: https://www.google.com/calendar/embed?src=mozilla.com_2d37383433353432352d3939%40resource.calendar.google.com
 * This is the release manager team with tons of detail: https://www.google.com/calendar/embed?src=bW96aWxsYS5jb21fZGJxODRhbnI5aTh0Y25taGFiYXRzdHY1Y29AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ - This is really helpful for the first managed release cycle.
 
-==E-Mail==
+== E-Mail ==
 Note that some of these mailing lists need approval from an administrator.
 
 *release-mgmt@mozilla.com - ask your manager
@@ -48,16 +48,14 @@ You'll need to manually subscribe to:
 
 These are available as [news://news.mozilla.org newsgroups], Google groups, and [https://lists.mozilla.org/listinfo Mailman lists]
 
-==Websites==
-
+== Websites ==
 * [https://metrics.mozilla.com/pentaho Metric] (TODO: this url is out of date)
 * [http://crash-stats.mozilla.com/ Crash reports]
-* This wiki! Create an account at wiki.mozilla.org, and update the [https://wiki.mozilla.org/Release_Management/Team_members team members page].
+* This wiki! Create an account at https://wiki.mozilla.org, and update the [[Release_Management/Team_members | team members page]].
 
 == IRC  ==
-
-*https://wiki.mozilla.org/IRC irc://irc.mozilla.org
-*irc.mozilla.org:6697
+* [[IRC | irc://irc.mozilla.org]]
+* irc.mozilla.org:6697
 ** #airmozilla - back channel for public broadcasts
 ** #developers - monitor check-ins and speak with devs
 ** #fx-team - good place to speak with desktop team
@@ -77,15 +75,13 @@ Many folks uses IRC Cloud as Mozilla as an instance (request an account in Servi
 
 See [[#pastebin|below]] for a local pastebin install, so you don't paste huge amounts in channel.
 
-==EtherPad==
-
+== EtherPad ==
 EtherPad is a great tool for dynamic collaboration during meetings, brainstorming, or other times when you need to collaborate:
 * https://public.etherpad-mozilla.org/ for general use
 * https://public.etherpad-mozilla.org/p/channel-meeting for release information
 * https://public.etherpad-mozilla.org/p/firefox43-worry-list Worry list specific to each release (change the version in the url as needed)
 
-==Pastebin==
-
+== Pastebin ==
 There's a local pastebin instance at http://pastebin.mozilla.org/, so you don't need to paste multi-lines into a channel. Use this handy [http://hg.mozilla.org/build/braindump/file/tip/utils/pastebin helper script] to pipe to pastebin from terminal.
 
     it creates a new page from stdin, and outputs the url to stdout
@@ -93,36 +89,30 @@ There's a local pastebin instance at http://pastebin.mozilla.org/, so you don't 
     sample usage: hg diff | pastebin python | pbcopy (last part mac specific)
     set & export PASTEBIN_NAME if you don't want to post as anonymous.
 
-==Planet==
+== Planet ==
 Add a bug similar to {{bug|605709}} to get your blog syndicated on http://planet.mozilla.org. You can choose to send every post, or create a feed for a custom tag (eg: 'mozilla').  Having your blog syndicated to planet is a great channel for announcing new features (along with tweeting and posting to newsgroups).
 
-==Trello==
+== Trello ==
 *[https://trello.com/b/HFf1xGCC/platform-status-board Platform Status Board]
 ** request access from elancaster
 *[https://trello.com/b/D5vYvuGP/release-management Release management board]
 
-==Aha!==
-[https://mozilla.aha.io/ Feature Roadmap dashboard]
-
-=Software=
-
-==Firefox==
-
+= Software =
+== Firefox ==
 # Please download & install Firefox [http://www.mozilla.org/fr/firefox/channel/#aurora aurora], [http://www.mozilla.org/fr/firefox/channel/#beta beta] and [http://www.mozilla.org/fr/firefox/channel/#firefox release]
 # [https://support.mozilla.org/en-US/kb/profile-manager-create-and-remove-firefox-profiles#w_creating-a-profile Create new profiles] for each version + your own profile. Read [https://developer.mozilla.org/en-US/docs/Mozilla/Multiple_Firefox_Profiles Multiple Firefox Profiles] for more help with the profile manager.
 
 Firefox Feature Road map is available here: https://mozilla.aha.io/products/ST/feature_cards. To login, choose "login with Okta" and provide your Mozilla LDAP crendentials.
 
-==VPN==
-
+== VPN ==
 * Configure your system to access to the Mozilla VPN in order to get access to internal tools.
 *[[https://mana.mozilla.org/wiki/pages/viewpage.action?pageId=30769829 VPN General Info]]
 *[[https://mana.mozilla.org/wiki/display/SD/Viscosity+Install+for+Mac|Viscosity Install for Mac]]. *[[https://mana.mozilla.org/wiki/display/SD/Viscosity+Install+for+Windows|Viscosity Install for Windows]]
 * Then, report a bug in ''Infrastructure & Operations: Mozilla VPN: ACL requests'' to get the ACL to ship-it. Example: {{bug|986037}} and {{bug|1001632}}
 * Note that using the Mozilla DNS servers is necessary to resolve the necessary URLs
 
-=Handy Links=
-==How To and Oft-Used==
+= Handy Links =
+== How To and Oft-Used ==
 * [[Release_Management]]
 * [[Firefox/Channels/Meetings]]
 * [https://www.mozilla.org/en-US/firefox/organizations/faq/ ESR FAQ]
@@ -130,10 +120,10 @@ Firefox Feature Road map is available here: https://mozilla.aha.io/products/ST/f
 * [[Release_Management/ESR_Landing_Process]]
 
 General info on module owners and partners:
-* Module owners [[https://wiki.mozilla.org/Modules/All All Modules]]
+* Module owners [[Modules/All | All Modules]]
 * Mozilla Partners [https://docs.google.com/spreadsheets/d/1H38b9RgunWtuUjuv0jc3wiSwcAbpc4Ee2T5egmEojQw/edit#gid=0 Partner Rolodex] - Request permissions to your manager if you can't access this document.
 
-==Bugzilla ==
+== Bugzilla ==
 * Configure the [https://bugzilla.mozilla.org/userprefs.cgi?tab=securemail securemail] section if you want to see the content of security bugs in your email client. GPG key or [http://kb.mozillazine.org/Getting_an_SMIME_certificate SMIME certificate] are accepted.
 * If you don't mind receiving plenty of emails, you can [https://bugzilla.mozilla.org/show_bug.cgi?id=1144694 ask to the bugzilla admin to receive notifications] for Firefox uplift requests
 
@@ -151,8 +141,8 @@ In your bugzilla preferences, under Saved Searches, you can add some of the foll
 * [https://bugzilla.mozilla.org/buglist.cgi?cmdtype=dorem&remaction=run&namedcmd=relnote-firefox%3F&sharer_id=272375 relnote-firefox?]
 * Also create query for approval-esrXY
 
-=Tools=
-==Repos to check out if you are going to develop==
+= Tools =
+== Repos to check out if you are going to develop ==
 * [https://github.com/mozilla/relman-auto-nag Bugzilla nag tool]
 * [https://github.com/mozilla/ship-it/ ship-it]
 * [https://github.com/mozilla/rna Nucleus]
@@ -160,12 +150,11 @@ In your bugzilla preferences, under Saved Searches, you can add some of the foll
 * [http://harthur.github.io/mozregression/ mozregression]
 * [https://github.com/mozilla-releng/mozapkpublisher/ mozapkpublisher]
 
-==Helpful webextensions==
+== Helpful webextensions ==
 * [https://addons.mozilla.org/en-US/firefox/addon/bugzilla-crash-stop/ Crash Stop] provides crash data in Bugzilla
 * [https://addons.mozilla.org/en-US/firefox/addon/gecko-code-coverage/ Gecko Code Coverage] provides code coverage info in Bugzilla, crash-stats, dxr, hg.m.o, ...
 
 = Community Contributors =
-
 Some of the above access & permissions will either not be accessible to community contributors or it might take a bit longer to achieve depending on the level & needs of the contributions being made.
 
 Currently when Early Feedback Community Release Managers are onboarded we're basing it on these [http://lukasblakk.com/contribution-opportunity-early-feedback-community-release-manager/ blog] [http://lukasblakk.com/contribution-opportunity-early-feedback-community-release-manager-2/ posts] (one was based on the other).  The short version is that we're looking for people who are interested in understanding how Release Management in a major Open Source project works and our hope is that they learn while also helping us maintain a higher level of quality and visibility into release-affecting issues than a small team of employees can manage.
@@ -187,7 +176,7 @@ Sometimes when you're on the go and you need to dial into a vidyo room, you may 
 * Vidyo; Warp Core 6509030800,92,5312#
 Rooms to mark as favourites and contacts: Spadina (Toronto), Release Coordination (Virtual room, no physical location)
 
-== Subcribe to funstuff ==
+== Subcribe to fun stuff ==
 * Request here https://bugzilla.mozilla.org/show_bug.cgi?id=391268
 
 [[category:Release_Management|O]]
