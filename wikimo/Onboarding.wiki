@@ -28,6 +28,15 @@ File a bug ([https://bugzilla.mozilla.org/enter_bug.cgi?product=Infrastructure%2
 
 Once you are using the Mozilla VPN, you can access the application and use your LDAP account to log in.
 
+== Ubuntu Snaps ==
+We build and publish a [https://snapcraft.io/firefox Firefox Ubuntu snap package] ourselves.
+
+Release Engineering has [https://github.com/JohanLorenzo/releasewarrior-2.0/blob/b9db9be529e8e9fa7300bdad06862bcf6a651e17/docs/release-promotion/desktop/ubuntu-snap.md some documentation] on how we create and push snaps.
+
+The [https://dashboard.snapcraft.io/snaps/firefox/  Firefox Snaps Dashboard] to have a [https://login.ubuntu.com Ubuntu One developer account] and this account to be associated with your @mozilla.com email address. Your Ubuntu One account should have 2FA activated ([https://help.ubuntu.com/community/SSO/FAQs/2FA#How_do_I_add_a_new_authentication_device_and_start_using_2-factor_authentication.3F Ubuntu Specific instructions]).
+
+Once you have set up your Ubuntu One account and registered as a developer on Snapcraft with this account, ask Release Engineering (currently specifically Johan Lorenzo) to send you an invite to manage Firefox snaps. The Snap uploading process was defined in {{Bug|1467261}}.
+
 == Release Notes ==
 Request admin access to https://nucleus.mozilla.org by filing two bugs.
 
