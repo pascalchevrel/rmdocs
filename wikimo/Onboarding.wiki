@@ -56,7 +56,9 @@ TBD
 == Trello ==
 Trello is used to track the shipping of Firefox features in the [https://trello.com/b/8k1hT2vh/firefox Firefox Trello Board]. Ask Erin Lancaster (elan on IRC) for access.
 
-Our also has a [https://trello.com/b/D5vYvuGP/release-management Trello board ] but we currently do not use it.
+Each release has its own column listing the features planned for that specific version. Pro tip: subscribe to a column notification to receive updates given to all the cards in that column.
+
+Our team also has a [https://trello.com/b/D5vYvuGP/release-management Trello board ] but we currently do not use it.
 
 == Github ==
 Some of our tools are developped on Github, some Firefox features are also developped on Github and many teams use Github for development but also documentation, blogging, project management…
@@ -70,6 +72,9 @@ Please note that although you can use Github to file bugs in Bugzilla, you shoul
 * hg commit access (''scm_level3'') -- read https://www.mozilla.org/hacking/committer/, fill out a committer agreement, file a bug (eg: {{bug|738713}} except you'll request '''commit''' access, not elevation of current permissions). For this, you will need two [[Modules/All#Core | owners or peers for a core hg module]] to vouch for you as described in [https://www.mozilla.org/en-US/about/governance/policies/commit/access-policy/ Commit Access Policy]. (later)
 * Example of asking for level 1 commit access (which lets you push changes to the ''try'' server): {{bug|1116226}}. This is good to start with to get your SSH key and committer agreement set up. (earlier)
 * Socorro permissions: {{bug|1229732}}
+
+== PTO calendar ==
+Ask your manager to give you access to the Release Management PTO calendar where all release managers indicate when they are on PTO.
 
 == Other ==
 * This wiki! [[Special:RequestAccount | Create an account]] and update the [[Release_Management/Team_members | team members page]].
