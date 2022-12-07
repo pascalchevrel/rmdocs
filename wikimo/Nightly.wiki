@@ -1,53 +1,240 @@
-{{Processbox
-  | Process name = Nightly cycle tasks
-  | Purpose      = Ensure maximum quality on mozilla-central
-  | Why          = Regression introduced during the nightly cycle identified in Beta/Release only are costly
-  | Goals        = Improve quality early, ship faster, identify and fix regressions at the earliest stage possible
-  | People       = Relman, Nightly community, Triagers
-}}
-{{DISPLAYTITLE:The Firefox Nightly channel}}
-<p style="font-size: large; font-weight:bold;">This page lists what the release management team should do during the Nightly development cycle on Desktop.</p>
+[[File:Firefox-nightly logo-only RGB 25%.png|150px|Nightly Logo]][[File:Firefox-nightly wordmark-only RGB 25%.png||x100px|Nightly Wordmark]]
 
-= Summarized process =
-# Update nightly version in Ship-it at the beginning of the cyle
-# Create new blank release notes in Nucleus
-# Watch regressions during the cycle,
-# File top crashes in Bugzilla from Socorro
-# Watch commits and communicate to testers what needs testing
-# Check for bugs nominated for tracking and find owners
-# Add interesting features to release notes
-# Create new flags in Bugzilla for the next version at the end of the cycle
+== What is Firefox Nightly? ==
 
-= Cycle details =
-== Beginning of a new cycle ==
-* Update the version number on Ship-it on merge day when [https://hg.mozilla.org/mozilla-central/file/tip/browser/config/version.txt mozilla-central] is updated with a new version number.
-* Ask releng for a push of [[Release_Management/Product_details|product-details]] to production once we have all the locales built.
-* Copy the previous release notes template in Nucleus with the new version number. You don't have to set it as public as long as there are no note added, a 'coming soon' page will be displayed on mozilla.org as long as the release is created in Nucleus.
+Every day, Mozilla developers write code that is merged into a common code repository (mozilla-central) and every day that code is compiled so as to create a pre-release version of Firefox based on this code for testing purposes, this is what we call a Nightly build. Once this code matures, it is merged into stabilization repositories (Beta and Dev Edition) where that code will be polished until we reach a level of quality that allows us to ship a new final version of Firefox to hundreds of millions of people. This development process used to ship a new version of Firefox every 4 weeks is called the Train Model.
 
-== During the cycle ==
-* Check for bugs nominated for tracking
-* Check bugs filed with the ''nightly-community'' keyword, those are filed by our more engaged alpha-testers and are often recent regressions
-* Find owners for tracked bugs. This is important as it gives us a chance to fix new regressions and crashes before they move to channels which have more users.
-* Track bugs related to new feature development that are aimed for their release.
-* File top crashes and newly appearing crashes from crash-stats
-* Watch all commits on mozilla-central for interesting features
-** Interesting changes should be communicated to our alpha-testers via our @FirefoxNightly Twitter account
-** Interesting changes with an end-user impact to the end user should have the relnote flag set
-* Write Release Notes during the cycle based on what is nominated to be included in release notes
-* Watch reports on Twitter, IRC and other communication channels about major regressions. Ask releng for a patch to be backed out and nightlies re-spun if the end-user impact may lead to loosing alpha testers.
+{| style="border: 1px solid darkgray; width: 50em"
+|+ style="font-weight: bold;" |Firefox channels after April 18, 2017
+|- style="color: black; background-color: white;"
+! | 74
+! | 73
+! | 72
+! | 71
+|- style="color:white;"
+| style="background-color: black;text-align: center" | Nightly
+| style="background-color: orange;text-align: center" | Beta
+| style="background-color: green;text-align: center" | Release
+| style="background-color: transparent" | 
+| style="background-color: transparent" | 
+|- style="color:white;"
+| style="background-color: transparent;text-align: center" | 
+| style="background-color: black;text-align: center" | Nightly
+| style="background-color: orange;text-align: center" | Beta
+| style="background-color: green;text-align: center" | Release
+| style="background-color: transparent" | 
+|}
 
-== End of cycle ==
-* Check that there is no visual regression on the What's New Page caused by template changes on mozilla.org or gecko changes in rendering a week before merge day
-* Ask the Bugzilla team to create status and tracking flags for the next version, ex: [https://bugzilla.mozilla.org/show_bug.cgi?id=1444839 Bug 1444839]
+== Should I become a Nightly user? ==
 
-== Android ==
-* We do not maintain release notes for Firefox Nightly on Android
-* There is no what's new page for Android
+Of course, Nightly does not have the polish, quality and stability of the Release channel as this is a work in progress but we are doing our best through automation, QA and community to provide you the best nightly builds possible.
 
-== See also ==
-* [[Nightly|FAQ about Firefox Nightly]]
-* [[Release_Management/Queries/Nightly|Bugzilla Queries for Firefox Nightly]]
-* [[Release_Management/Beta_Release_Checklist|Beta Release Checklist]]
+If you are a power-user, that you want to have access to features in developments months before they become mainstream, have tolerance for occasional functional regressions and are looking for an easy way to help Mozilla  and Firefox development, you should use Nightly (ideally as your main browser but you can also use it alongside Firefox on the release channel or another browser).
 
-[[Category:Release Management|N]]
-[[Category:Release_Management:Processes|N]]
+Unlike Firefox on the Release channel, Nightly sends by default anonymized usage statistics, called [https://www.mozilla.org/en-US/privacy/firefox/#telemetry Telemetry] which helps us improve Firefox and track regressions on a daily basis. Just using Nightly and sending telemetry data is already of great help to all Mozilla developers as it allows them to get usage statistics on the features they work on.
+
+Of course, Nightly may be more likely to crash than a final release and sending your crashes to our engineers is also of considerable help as it helps us catch instabilities and identify issues long before end-users are exposed to them.
+
+And if you want to go a step further, you can file bugs in our [https://bugzilla.mozilla.org Bug tracker] with detailed information about what is not working for you in Nightly.
+
+== Where can I download Firefox Nightly? ==
+
+'''&#x27A1; Go to [https://nightly.mozilla.org nightly.mozilla.org]'''
+
+Nightly is available for all the platforms we support officially (Windows 7 and later, MacOS, Linux) and we provide both 32 and 64 bits for Linux and Windows. We also support a large range of languages ranging from Albanian to Vietnamese.
+
+All of our available builds are listed on this page: https://www.mozilla.org/firefox/nightly/all/
+
+== How does it update? Update interval? ==
+
+Nightly gets an update twice a day (or night, depending on your timezone), building starts at 10:00 and 22:00 UTC, usually builds are available one hour or two later. That means that there is an update in the morning for The Americas and another one for EMEA/Asia
+
+The update is downloaded in the background, when this is done, there is a small green badge that appears on the hamburger menu which indicates that if you restart your Nightly, an update will be applied.
+
+If you don't apply this update within 12 hours, a dialog box will pop up asking you to do so. If you want this dialog to show up later than 12h, in about:config change the ''app.update.promptWaitTime'' value from 43200 to a higher value, 86400 for 24 hours for example.
+
+Sometimes, we will issue more than two updates per day, typically this is because we found out we introduced a major regression (a spike in crashes for example) and we don't want our users to have a broken browser for 24h.
+
+== My nightly build is broken and can't update to a newer nightly ==
+On very rare occasions, Nightly can suffer from a bad regression making it totally unusable or unable to receive updates. 
+
+If you are stuck on an unusable nightly or if you stopped receiving automated updates, the solution is to download and reinstall a newer Nightly build from [https://nightly.mozilla.org nightly.mozilla.org].
+
+== Where can I get news about Nightly? ==
+We maintain a few communication channels to give you news about the development of Nightly features or activities relevant to our community of Nightly users:
+
+* Twitter: https://twitter.com/FirefoxNightly
+* Blog: https://blog.nightly.mozilla.org
+* Matrix channel: [https://chat.mozilla.org/#/room/#nightly:mozilla.org #nightly on chat.mozilla.org]
+* Experimental platform features page on MDN: https://developer.mozilla.org/en-US/Firefox/Experimental_features
+* Release notes (updated every week): https://www.mozilla.org/en-US/firefox/nightly/notes/
+* Nightly category in our Mozilla Community Forums: https://discourse.mozilla-community.org/c/nightly
+
+== Nightly Activities ==
+This activity has great potential to make an impact by increasing overall involvement in Nightly, simply by introducing community to tasks that they can engage in related to Nightly. Finding and filing issues early in the cycle means by the time Firefox gets to release, the code is in good shape.
+* Mozilla Activate: https://activate.mozilla.community/nightly/
+
+== Filing Bugs ==
+=== I found a bug, how do I report it? ===
+
+First of all, thank you for doing that! Bugs reported early are also more easy to fix or back out than bugs reported weeks or months after the code was written, simply because developers just wrote it and have all of it fresh in their memory.
+
+If you think you have found a bug in Nightly, the best thing to do is indeed to report it in our Bug tracking system, called [https://bugzilla.mozilla.org Bugzilla].
+
+Bugzilla can be a bit intimidating when you use it for the first time, but we have documentation to help you make useful bug reports here that may get you started:
+[https://bugzilla.mozilla.org/page.cgi?id=bug-writing.html  Bugzilla: Bug writing guidelines]
+
+Don't hesitate to ask experienced Nightly users (staff or employees) to help you file the bug in the [https://chat.mozilla.org/#/room/#nightly:mozilla.org #nightly] channel on Matrix if you are unsure about the process or if English is not your native language and want to make sure your bug description is understandable.
+
+Once you have filed the bug, you may get questions from bug triagers (people that enrich existing bug reports with useful metadata and try to get the right dev in front of the right issue) or developers that are trying to reproduce your bug using your configuration or the steps to reproduce what you experienced - watch your mailbox for such messages!
+
+One more thing, please add the <code>nightly-community</code> word in the '''keyword''' field of your bug report, that helps us triage better the bugs filed by our core community.
+
+=== The bug I found is a regression! ===
+A regression is when something that used to work is no longer working or no longer working as expected.
+If your bug is a regression, please add the ''regression'' keyword to your bug report.
+
+We have a specific tool helping us to find when the code that introduced a regression landed in Nightly, this is called [https://mozilla.github.io/mozregression/ mozegression].
+
+There is a GUI for Windows and a command line interface for Linux/Mac.
+* Article about the CLI version: [https://blog.nightly.mozilla.org/2016/10/11/found-a-regression-in-firefox-give-us-details-with-mozregression/ Found a regression in Firefox? Give us details with mozregression!]
+* Article with a video tutorial about the Windows version: [https://blog.nightly.mozilla.org/2017/06/07/using-mozregression-on-windows/ Using mozregression on Windows]
+=== I found a bug in the 2021 redesign of Firefox!  ===
+On April 7 2021, we activated our new interface in Nightly (internally called ''Proton'').
+
+Our last major update to the Firefox interface was the ''Photon'' UI with Firefox 57 in 2017.
+
+[[File:Proton_Toolbar.png|1000px]]
+
+This is also of course a work in progress, there are dozens of patches every day that our front-end team lands on Nightly to implement the new design or fix bugs in the new design.
+
+To help catching bugs and regressions before we ship the new UI to the release channel, we launched a public [https://en.wikipedia.org/wiki/Eating_your_own_dog_food dogfooding] campaign, this campaign is called '''FoxFooding'''. 
+
+You can read more about this campaign and join the QA activities proposed here: [https://community.mozilla.org/en/campaigns/firefox-foxfooding-campaign/ Foxfooding].
+
+If as a nightly user you are already comfortable reporting bugs in Bugzilla, please continue to do so and just add the <code>[proton-foxfooding]</code> text in the '''whiteboard''' field of your bug report in addition to the usual <code>nightly-community</code> tag in the keywords field. 
+
+If you are unsure of the component you should file the bug in, just file it in the [https://bugzilla.mozilla.org/enter_bug.cgi?assigned_to=nobody%40mozilla.org&bug_ignored=0&bug_severity=--&bug_status=NEW&bug_type=defect&cf_a11y_review_project_flag=---&cf_fission_milestone=---&cf_fx_iteration=---&cf_fx_points=---&cf_root_cause=---&cf_status_firefox87=---&cf_status_firefox88=---&cf_status_firefox89=affected&cf_status_firefox_esr78=---&cf_tracking_firefox87=---&cf_tracking_firefox88=---&cf_tracking_firefox89=---&cf_tracking_firefox_esr78=---&cf_tracking_firefox_relnote=---&cf_tracking_firefox_sumo=---&cf_webcompat_priority=---&component=Foxfooding&contenttypemethod=list&contenttypeselection=text%2Fplain&defined_groups=1&filed_via=standard_form&flag_type-203=X&flag_type-37=X&flag_type-41=X&flag_type-607=X&flag_type-708=X&flag_type-721=X&flag_type-737=X&flag_type-748=X&flag_type-787=X&flag_type-799=X&flag_type-800=X&flag_type-803=X&flag_type-846=X&flag_type-855=X&flag_type-864=X&flag_type-930=X&flag_type-936=X&flag_type-945=X&form_name=enter_bug&keywords=nightly-community&maketemplate=Remember%20values%20as%20bookmarkable%20template&op_sys=Unspecified&priority=--&product=Firefox&rep_platform=Desktop&status_whiteboard=%5Bproton-foxfooding%5D&target_milestone=---&version=unspecified Firefox::Foxfooding component] (you can click or bookmark this link to file a bug) and our QA team will triage it to the right destination. <big>'''Bug reports are very welcome!'''</big>
+
+=== I want to report a website that doesn't work in Firefox ===
+Some websites do not work in Firefox not because of a Firefox bug but because the site is restricting (intentionally or not) their audience to users of a specific browser. This is what we call a Web Compatibility issue. Since these issues can also affect other browsers than Firefox, web compatibility reports are filed in a separate bug tracker at https://webcompat.com/
+There is a special menu item in Firefox Nightly to easily report the site you are visiting as being incompatible with Firefox. Click on the "Report Site Issue" link in the Page Actions menu (... in the right side of the url bar):
+
+[[File:ReportSiteNightlyIcon.png|thumb|none|left|Report Site Icon]]
+
+=== What is the Nightly Tester Tools extension? ===
+This is a useful extension which adds many tools dedicated to bug filing and regression finding.
+
+You can find it on addons.mozilla.org: [https://addons.mozilla.org/firefox/addon/nightly-tester-tools/ Nightly Tester Tools]
+
+The [https://github.com/mozilla/nightlytt Github repository] has a short description of what it can do.
+
+=== I found a bug and I want to write the patch myself! ===
+This is a great way to get involved, our developers have full documentation on how to get started hacking on Mozilla code on MDN:
+
+[https://developer.mozilla.org/en-US/docs/Mozilla/Developer_guide/Introduction Contributing to the Mozilla code base]
+
+== Platform specific instructions ==
+'''Firefox does not support downgrades, even though this may have worked in past versions. If you install Firefox Nightly and later downgrade to an earlier version, you may experience issues with Firefox if they share the same profile of data.'''
+
+'''Until we support dedicated profiles per channel in the installer [https://bugzilla.mozilla.org/show_bug.cgi?id=1373244 Bug 1373244], so as to use Firefox Nightly alongside another version of Firefox such as Beta, Release or ESR you need to create and use a separate profile for Nightly!'''
+
+
+Our end-user support site has explanations on the process: [https://support.mozilla.org/en-US/kb/using-dedicated-profile-firefox-nightly Using a dedicated profile for Firefox Nightly]
+
+You will find below additional OS specific instructions as well as a video tutorial for Windows.
+
+=== Windows ===
+=====   How do I install Firefox Nightly alongside Firefox Release? =====
+Here is a video tutorial explaining how to install Firefox Nightly on Windows alongside an existing installation of Firefox:
+[https://www.youtube.com/watch?v=Gvh3PxD_p50  Install Firefox Nightly cleanly on Windows]
+=== MacOS ===
+=====   How do I install Firefox Nightly alongside Firefox Release? =====
+Download [https://nightly.mozilla.org/ Firefox Nightly].
+As for any Mac OS app, open it either from Firefox or by double-clicking it in the folder, then drag and drop the icon into the application folder and you're done for the installation part. For detailed instructions, see [https://support.mozilla.org/en-US/kb/how-download-and-install-firefox-mac here].
+
+Now you'll need to create a dedicated profile for your Nightly, different from your Firefox stable one to avoid trouble.
+
+To do that, you need to open your terminal and run Nightly, only for the first time by running the following command:
+
+ /Applications/FirefoxNightly.app/Contents/MacOS/firefox -P --no-remote
+
+This will open the profile manager. Here, create a new profile with the name you want, and uncheck the checkbox saying "Use the selected profile without asking at startup", so that at every Firefox start you can choose the profile you want and corresponding to either your Nightly or Stable Firefox.
+
+=== Linux ===
+
+===== Why is Nightly provided as a tar.bz2 archive? Do I have to compile it? =====
+We build and provide distribution-neutral binaries and these binaries can be installed and updated without any dependency to a package manager.
+
+You don't have to compile anything, just unarchive the tar.bz2 file into your ''/home'' or your ''/opt'' folder if you want to make it available to all the accounts on your machine and launch the ''firefox'' file from your shell. If you decide to install Firefox Nightly outside of your Home, such as in ''/opt/firefoxnightly'', don't forget to give this folder the same rights as your user otherwise it won't auto-update:
+ sudo chown -R $USER:$USER /opt/firefoxnightly
+
+If you want to create a Launcher for your app, you will need to create a ''.desktop'' file, here is on our blog an article about it for Ubuntu and Unity: [https://blog.nightly.mozilla.org/2016/09/19/getting-firefox-nightly-to-stick-to-ubuntus-unity-dock/ Getting Firefox Nightly to stick to Ubuntu’s Unity Dock]
+
+===== Is Nightly available as a .deb/.rpm? =====
+Mozilla does not provide packages (.deb/.rpm) for Linux, our tar.bz2 binaries work on all distributions which meet Firefox [https://www.mozilla.org/en-US/firefox/aurora/system-requirements/ system requirements].
+
+===== Is there a Nightly repository for my distro? =====
+Mozilla does not maintain repositories for distributions, some volunteers maintain their own repository or ppa but usually those are not maintained over time for Nightly. 
+
+The advised installation method is to use Mozilla-provided builds and its software updater.
+
+You can use "The Unofficial Nightly installer package for Debian" based distros: https://github.com/Vitexus/FirefoxNightlyDeb
+
+If you really can't live without updates being provided through a repository, the Ubuntu Team sometimes maintains this ppa: https://launchpad.net/~ubuntu-mozilla-daily/+archive/ubuntu/ppa
+
+===== Is there a FlatPak/Snap package =====
+We are providing Snap binaries of Firefox and will probably propose also them for Nightly at some point. The tracking bug is [https://bugzilla.mozilla.org/show_bug.cgi?id=1297513 Automate generation of Firefox snap packages].
+
+We support FlatPack for Beta builds (since Firefox 75) but not for Nightly builds yet.
+
+There is an unofficial Firefox Flatpak repository created by the Fedora/RedHat maintainers for testing purposes: https://firefox-flatpak.mojefedora.cz/
+With this FlatPak repository, your profile is stored in <code>$HOME/.var/app/org.mozilla.FirefoxNightlyWayland/.mozilla</code>
+
+If you are on Ubuntu, here is a detailed article on how to install it here: [http://www.omgubuntu.co.uk/2017/02/install-firefox-nightly-flatpak-ubuntu How to Install Firefox Nightly as a Flatpak App on Ubuntu]
+
+== Promoting Nightly in your community ==
+
+If Open Source guerrilla community marketing is something you would like to get involved with and Nightly works great for you, maybe you could promote it to other power-users in your personal or professional networks, getting more users across the globe would help us catch more regressions, get more technical feedback and would allow us to ship a better browser.
+
+There are many ways you can get help at the local level or online. 
+
+Some of them are very easy, such as retweeting interesting tweets from our [https://twitter.com/FirefoxNightly @FirefoxNightly] or sharing them on other social networks, some represent more work such as participating to a local open source convention and presenting Nightly or organizing QA activities through Nightly via your local Mozilla community or Mozilla Club.  
+
+If you want to present Nightly at an event, please read this blog report: [https://blog.nightly.mozilla.org/2017/02/20/fosdem-2017-nightly-slides-and-video/ Fosdem 2017 Nightly slides and video]
+
+The slides in this presentation are online and can be used as a basis for your own presentation.
+
+You can also work through the '''[https://activate.mozilla.community/nightly/ Activate Mozilla]''' program to organize events in the framework provided by the Mozilla Participation team. 
+
+We are progressively setting up regional teams and '''''Firefox Nightly Champions''''' so as to have a per country or per language action which is often useful to solve issues such as language, timezones and regional specific sites. If you want to organize something online or offline related to Nightly, please contact [https://mozillians.org/fr/u/pascalc Pascal Chevrel] or [https://mozillians.org/en-US/?next=/en-US/u/marcia Marcia Knous]
+
+If you want to join an existing regional or language focused team, you can contact the following champions:
+=== Regional Teams and their Nightly Champions===
+==== Francophone team ====
+* Team leader: [https://mozillians.org/fr/u/pascalc Pascal Chevrel]
+* [https://forums.mozfr.org/viewforum.php?f=24 Forums Nightly]
+
+==== Italian team ====
+* [https://mozillians.org/fr/u/Mte90/ Daniele Scasciafratte]
+
+==== Spanish-speaking team ====
+* [https://mozillians.org/fr/u/pascalc Pascal Chevrel]
+
+==== Switzerland team ====
+* [https://mozillians.org/en-US/u/mkohler/ Michael Kohler]
+* [https://mozillians.org/en-US/u/freaktechnik/ Martin Giger]
+
+==== Indian team ====
+* [https://mozillians.org/en-US/u/SHIHAN.VISWA/ Viswaprasath] (English)
+* [https://mozillians.org/en-US/u/DineshMv/ Dinesh Mv] (English/ Telugu)
+* [https://mozillians.org/en-US/u/prasanthp96/ Prasanth P] (English/Tamil)
+* [https://mozillians.org/en-US/u/Madhuri_QA/  Madhuri Mittal ] (English/ hindi)
+* [https://mozillians.org/en-US/u/gurumukhi/  Ram Dayal Vaishnav ] (English/ hindi)
+
+==== Brazilian team ====
+* [https://reps.mozilla.org/u/geraldobarros Geraldo Barros]
+* [https://reps.mozilla.org/u/cynthiapereira Cynthia Pereira]
+
+==== Czech team ====
+* [https://mozillians.org/u/mstanke/ Michal Stanke]
