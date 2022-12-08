@@ -1,0 +1,57 @@
+== What is Firefox beta? ==
+
+Every 4 weeks, at the end of the development cycle, the Firefox source code is merged into the mozilla-beta stabilization repository where that code will be polished until we reach a level of quality that allows us to ship a new final version of Firefox to hundreds of millions of people.
+
+We build 3 Firefox Betas a week from the mozilla-beta branch and these builds can be downloaded and used alongside another copy of Firefox.
+
+== Should I become a Beta user? ==
+
+If you are willing to have access to upcoming Firefox features with a bit of advance and are looking for an easy way to help Mozilla and Firefox development, you should use Beta (ideally as your main browser but you can also use it alongside Firefox on the release channel or another browser).
+
+Unlike Firefox on the Release channel, Beta sends by default anonymized usage statistics, called [https://www.mozilla.org/en-US/privacy/firefox/#telemetry Telemetry] which helps us improve Firefox and track regressions on a daily basis. Just using Beta and sending telemetry data is already of great help to all Mozilla developers as it allows them to get usage statistics on the features they work on.
+
+Of course, while Firefox Beta is a much more stable than a Nightly build, it may occasionnally crash and sending your crash reports to our engineers is also of considerable help as it helps us catch instabilities and identify issues before end-users are exposed to them.
+
+And if you want to go a step further, you can file bugs in our [https://bugzilla.mozilla.org Bug tracker] with detailed information about what is not working for you in Beta.
+
+== Where can I download Firefox Beta? ==
+
+'''&#x27A1; Go to [https://beta.mozilla.org beta.mozilla.org]'''
+
+Beta is available for all the platforms we support officially (Windows 7 and later, MacOS, Linux) and we provide both 32 and 64 bits for Linux and Windows. We also support a large range of languages ranging from Albanian to Vietnamese.
+
+All of our available builds are listed on this page: https://www.mozilla.org/firefox/beta/all/
+
+== How does it update? Update interval? ==
+
+Beta gets updates three times a week. 
+
+The update is downloaded in the background, when this is done, there is a small green badge that appears on the main menu which indicates that if you restart your Beta, an update will be applied.
+
+== Where can I get news about Beta? ==
+We maintain a couple of communication channels to give you news about the development of Beta features or activities relevant to our community of Beta users:
+
+* Twitter: https://twitter.com/FirefoxBeta
+* Release notes (updated every week): https://www.mozilla.org/en-US/firefox/beta/notes/
+
+
+== Filing Bugs ==
+=== I found a bug, how do I report it? ===
+
+First of all, thank you for doing that! 
+
+If you think you have found a bug in beta, the best thing to do is indeed to report it in our Bug tracking system, called [https://bugzilla.mozilla.org Bugzilla].
+
+Bugzilla can be a bit intimidating when you use it for the first time, but we have documentation to help you make useful bug reports here that may get you started:
+[https://developer.mozilla.org/docs/Mozilla/QA/Bug_writing_guidelines  Bugzilla: Bug writing guidelines]
+
+Once you have filed the bug, you may get questions from bug triagers (people that enrich existing bug reports with useful metadata and try to get the right dev in front of the right issue) or developers that are trying to reproduce your bug using your configuration or the steps to reproduce what you experienced - watch your mailbox for such messages!
+
+
+=== The bug I found is a regression! ===
+A regression is when something that used to work is no longer working or no longer working as expected.
+If your bug is a regression, please add the ''regression'' keyword to your bug report.
+
+
+=== I want to report a website that doesn't work in Firefox ===
+Some websites do not work in Firefox not because of a Firefox bug but because the site is restricting (intentionally or not) their audience to users of a specific browser. This is what we call a Web Compatibility issue. Since these issues can also affect other browsers than Firefox, web compatibility reports are filed in a separate bug tracker at https://webcompat.com/
